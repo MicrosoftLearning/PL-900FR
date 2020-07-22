@@ -34,7 +34,7 @@ Nous travaillerons avec les composants suivants :
 - **Vues** : Les vues permettent à l’utilisateur d’afficher les données existantes dans le formulaire
 d’un tableau.
 
-- **Formulaires **: C’est là que l’utilisateur crée ou met à jour de nouveaux enregistrements dans les entités.
+- **Formulaires** : C’est là que l’utilisateur crée ou met à jour de nouveaux enregistrements dans les entités.
 
 Les deux seront intégrés à l’application basée sur un modèle pour une meilleure expérience utilisateur.
 

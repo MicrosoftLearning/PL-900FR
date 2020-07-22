@@ -172,7 +172,7 @@ Tâche \#3 : Ajouter des boutons d’entrée et de sortie
      )
      ```
 
-5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer **puis appuyez sur **Enregistrer**.
+5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer** puis appuyez sur **Enregistrer**.
 
 6. Appuyez sur **F5** pour exécuter l’application. Les deux boutons doivent être désactivés. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer.
 
@@ -202,7 +202,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * `Patch(Visits, Visit, {'Actual Start': Now()});`. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * `Patch(Visits, Visit, {'Actual Start': Now()});`. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
    * `Refresh([@Visits]);`. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
    * `Set(Visit, LookUp(Visits, Code = textCode.Text));` Cette expression met à jour la variable *Visite* avec de nouvelles données du CDS.
 
@@ -225,7 +225,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    La seule différence par rapport à l’expression d’entrée est le champ *État* à valeur *Inactif*.
 
-5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer **puis appuyez sur **Enregistrer**.
+5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer** puis appuyez sur **Enregistrer**.
 
 6. Appuyez sur **F5** pour exécuter l’application. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer.
 
@@ -264,7 +264,7 @@ La convivialité d’une application mobile s’améliore considérablement lors
    )
    ```
 
-5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer **puis appuyez sur **Enregistrer**.
+5. Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer** puis appuyez sur **Enregistrer**.
 6. Appuyez sur **F5** pour exécuter l’application. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Vérifiez que l’icône affiche un emoji aux sourcils froncés.
 7. Recherchez une valeur de code différente, qui n’a pas été utilisée auparavant. Vous pouvez exécuter l’application **Personnel du campus**, créée précédemment, pour créer de nouveaux enregistrements de visites. Vérifiez que l’icône affiche un emoji souriant.
 8. Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.

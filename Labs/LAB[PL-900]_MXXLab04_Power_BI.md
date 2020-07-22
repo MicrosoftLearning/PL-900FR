@@ -59,7 +59,7 @@ Tâche \#1 : Préparez les données
 
 3. Ouvrez Power BI Desktop, connectez-vous si vous y êtes invité.
 
-4. Sélectionnez ** Obtenir les données**.
+4. Sélectionnez **Obtenir les données**.
 
 5. Sélectionnez **Power Plateform**, puis sélectionnez **Common Data Service** et appuyez sur **Connecter**.
 

@@ -59,7 +59,7 @@ Tâche \#1 : Créer un flux
 
 3. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel).**
 
-4. Sélectionnez le déclencheur** Lorsqu’un enregistrement est créé **, **Mis à jour** ou **Supprimé**.
+4. Sélectionnez le déclencheur** Lorsqu’un enregistrement est créé**, **Mis à jour** ou **Supprimé**.
 
    * Sélectionnez **Créer** pour **Condition de déclenchement**
    * Sélectionnez **Visites** pour **Le nom de l’entité**
@@ -160,7 +160,7 @@ Tâche \#2 : Validez et testez le flux.
     * Sélectionnez **Bâtiments** comme **Nom d’entité**
     * Sélectionnez **Bâtiment (Valeur)** comme **ID d’article**
 
-9.  Répétez la séquence d’extraction de données précédente pour **Visiteur** et **Utilisateur**, en sélectionnant le nom de l’entité associée et en utilisant **Visiteur (Valeur)** et **Propriétaire (Valeur) **comme **ID d’article**, respectivement
+9.  Répétez la séquence d’extraction de données précédente pour **Visiteur** et **Utilisateur**, en sélectionnant le nom de l’entité associée et en utilisant **Visiteur (Valeur)** et **Propriétaire (Valeur)** comme **ID d’article**, respectivement
 
 10.  Ajoutez une action **Envoyer une notification par e-mail** à partir de la connexion **Courrier**.
 

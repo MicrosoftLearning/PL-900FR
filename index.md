@@ -1,25 +1,25 @@
 ---
-title: Online Hosted Instructions
+title: Instructions hébergées en ligne
 permalink: index.html
 layout: home
 ---
 
-# Content Directory
+# Répertoire de contenu
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+Les liens hypertexte vers chaque exercice et démonstration d’atelier sont répertoriés ci-dessous.
 
-## Labs
+## Ateliers
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
+| Module | Atelier |
 | --- | --- | 
 {% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-## Demos
+## Démonstrations
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
+| Module | Démonstration |
 | --- | --- | 
 {% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
