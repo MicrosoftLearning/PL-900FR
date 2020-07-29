@@ -50,12 +50,12 @@ Points à prendre en compte avant de commencer
 * Types de données, restrictions (par exemple, longueur maximale d’un nom)
 * Mise en forme DateHeure pour prendre en charge une localisation facile
 
-Exercice \#1 : Créer un environnement et une solution
+Exercice n°1 : Créer un environnement et une solution
 ==================================================
 
 **Objectif :** dans cet exercice, vous allez préparer l’environnement et créer une solution pour prendre en charge le processus de modélisation des données. 
 
-Tâche \#1 : Créer un environnement
+Tâche n°1 : Créer un environnement
 -----------------------------
 
 Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exercice, dans cette tâche, vous allez créer un nouvel environnement de travail. Sinon, vous pouvez passer à la tâche suivante.
@@ -98,7 +98,7 @@ Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exerci
 
     - Cliquez sur **Créer ma base de données**.
 
-Tâche \#2 : Créer une solution et un éditeur
+Tâche n°2 : Créer une solution et un éditeur
 ---------------------------------------
 
 1.  Créer une solution
@@ -126,7 +126,7 @@ Tâche \#2 : Créer une solution et un éditeur
 
     -   Entrez **1.0.0.0** pour **Version**, puis cliquez sur **Créer**.
 
-Tâche \#3 : Ajouter une entité existante
+Tâche n°3 : Ajouter une entité existante
 -----------------------------
 
 1.  Cliquez pour ouvrir la solution **Gestion du campus** que vous venez de créer.
@@ -143,7 +143,7 @@ Tâche \#3 : Ajouter une entité existante
     Cette action ajoute l’entité Contact à la solution nouvellement créée. 
 21.  Votre solution doit maintenant avoir une seule entité : Contact.
 
-Exercice \#2 : Créer des entités et des relations
+Exercice n°2 : Créer des entités et des relations
 ========================================
 
 **Objectif :** dans cet exercice, vous allez créer des entités, puis ajouter des relations
@@ -239,7 +239,7 @@ Tâche n°3 : Créer des relations
 4.  Cliquer sur **Enregistrer l’entité**
 5.  Sélectionner **Solutions** dans le menu supérieur, puis cliquer sur **Publier toutes Personnalisations**
 
-# Exercice \#3 : Importer des données
+# Exercice n°3 : Importer des données
 
 **Objectif :** dans cet exercice, vous allez importer des exemples de données dans la base de données Common Data Service.
 

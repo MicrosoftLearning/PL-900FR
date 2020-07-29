@@ -42,12 +42,12 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 -   Que doit-il se passer si le code visiteur n’est pas valide ?
 -   Que se passera-t-il si le visiteur arrive en dehors des heures prévues ? 
 
-Exercice \#1 : Créer une application canevas de sécurité
+Exercice n°1 : Créer une application canevas de sécurité
 ===============================
 
 **Objectif :** Dans cet exercice, vous allez créer une application canevas.
 
-Tâche \#1 : Créer une application de canevas
+Tâche n°1 : Créer une application de canevas
 ---------------------------
 
 1.  Ouvrez la solution Gestion du campus.
@@ -75,7 +75,7 @@ Tâche \#1 : Créer une application de canevas
     3.  Sélectionnez **Visites**
 4.  Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer**, puis appuyez sur **Enregistrer**
 
-Tâche \#2 : Affichez les informations sur les visiteurs
+Tâche n°2 : Affichez les informations sur les visiteurs
 --------------------------------
 
 1.  Ajoutez une zone de recherche
@@ -113,7 +113,7 @@ Tâche \#2 : Affichez les informations sur les visiteurs
 5.  Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
 
 
-Tâche \#3 : Ajouter des boutons d’entrée et de sortie
+Tâche n°3 : Ajouter des boutons d’entrée et de sortie
 ---------------------------------------
 
 1. Enregistrez les résultats de la recherche dans une variable à réutiliser dans la commande
@@ -125,7 +125,7 @@ Tâche \#3 : Ajouter des boutons d’entrée et de sortie
 
 2. Ajouter des boutons pour l’entrée et la sortie
    
-1. Sélectionnez l’onglet **Insertion**
+   1. Sélectionnez l’onglet **Insertion**
    2. Cliquez sur **Bouton**
    3. Changez la propriété **Texte** du bouton par **« Entrée »**
    4. Renommez le bouton en **BoutonEntrée**

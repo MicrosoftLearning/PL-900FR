@@ -42,12 +42,12 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 -   Que doit-il se passer si le code visiteur n’est pas valide ?
 -   Que se passera-t-il si le visiteur arrive en dehors des heures prévues ? 
 
-Exercice \#1 : Créer une application de canevas de sécurité
+Exercice n°1 : Créer une application de canevas de sécurité
 ===============================
 
 **Objectif :** Dans cet exercice, vous allez créer une application de canevas.
 
-Tâche \#1 : Créer une application de canevas
+Tâche n°1 : Créer une application de canevas
 ---------------------------
 
 1.  Ouvrez la solution Gestion du campus.
@@ -77,7 +77,7 @@ Tâche \#1 : Créer une application de canevas
     4.  Sélectionnez **Visites** et attendez que l’entité Visite s’affiche sous le champ Sources de données.
 4.  Pour conserver le travail en cours, cliquez sur **Fichier \| Enregistrez** puis appuyez sur **Enregistrer**
 
-Tâche \#2 : Affichez les informations sur les visiteurs
+Tâche n°2 : Affichez les informations sur les visiteurs
 --------------------------------
 
 1.  Ajoutez une zone de recherche
@@ -129,7 +129,7 @@ Tâche 3 : Ajouter des boutons d’entrée et de sortie
 
 2. Ajouter des boutons pour l’entrée et la sortie
    
-1. Sélectionnez l’onglet **Insertion**
+   1. Sélectionnez l’onglet **Insertion**
    2. Cliquez sur **Bouton**
    3. Remplacez la valeur de la propriété **Texte** du bouton par **« Entrée »** (vous pouvez taper entre les guillemets existants)
    4. Renommez le bouton **CheckInButton** en cliquant sur le nom du bouton (Bouton1) dans le volet de droite
@@ -206,7 +206,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * `Patch(Visits, Visit, {'Actual Start': Now()});`. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * `Patch(Visits, Visit, {'Actual Start': Now()});`. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
    * `Refresh([@Visits]);`. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
    * `Set(Visit, LookUp(Visits, Code = textCode.Text));` Cette expression met à jour la variable *Visite* avec de nouvelles données du CDS.
 

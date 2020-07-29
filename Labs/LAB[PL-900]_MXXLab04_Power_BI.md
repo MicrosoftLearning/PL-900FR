@@ -42,12 +42,12 @@ Points à prendre en compte avant de commencer
 -   Avez-vous suffisamment de données à visualiser ?
 -   Quelles sont les caractéristiques qu’il est possible d’utiliser pour analyser les données sur les visites ?
 
-Exercice \#1 : Créer des rapports Power BI 
+Exercice n°1 : Créer des rapports Power BI 
 ===============================
 
 **Objectif :** dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la base de données Common Data Service.
 
-Tâche \#1 : Préparer les données
+Tâche n°1 : Préparer les données
 ---------------------------
 
 1.  Découvrez l’URL de votre organisation

@@ -42,12 +42,12 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
 -   Avez-vous suffisamment de données à visualiser ?
 -   Quelles sont les caractéristiques qu’il est possible d’utiliser pour analyser les données sur les visites ?
 
-Exercice \#1 : Créer des rapports Power BI 
+Exercice n°1 : Créer des rapports Power BI 
 ===============================
 
 **Objectif :** Dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la base de données Common Data Service.
 
-Tâche \#1 : Préparez les données
+Tâche n°1 : Préparez les données
 ---------------------------
 
 1.  Découvrez l’URL de votre organisation
@@ -59,7 +59,7 @@ Tâche \#1 : Préparez les données
 
 3. Ouvrez Power BI Desktop et connectez-vous si vous y êtes invité.
 
-4. Sélectionnez ** Obtenir les données**.
+4. Sélectionnez **Obtenir les données**.
 
 5. Sélectionnez **Power Plateform**, puis sélectionnez **Common Data Service** et appuyez sur **Connecter**.
 
@@ -142,7 +142,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 ## Tâche 4 : Créer une vue de téléphone mobile
 
 1. Sélectionnez le rapport de la zone **Rapports**.
-2. Selon la version de l’interface utilisateur, sélectionnez soit : | Affichage mobile** ou **Affichage web | Affichage téléphone.
+2. Selon la version de l’interface utilisateur, sélectionnez soit **... | Affichage mobile** ou **Affichage web | Affichage téléphone**.
 3. Réorganisez les vignettes comme vous le souhaitez.
 4. Sélectionnez : | Générer un code QR.
 5. Si vous avez un appareil mobile, scannez le code à l’aide d’une application de scanner QR disponible sur les plates-formes iOS et Android.

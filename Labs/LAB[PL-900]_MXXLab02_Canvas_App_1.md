@@ -41,12 +41,12 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 -   Comment réduire les enregistrements sélectionnés pour améliorer les niveaux de performance de l’application et l’adoption par les utilisateurs
 
 
-Exercice \#1 : Créer une application de canevas du personnel 
+Exercice n°1 : Créer une application de canevas du personnel 
 ===============================
 
 **Objectif :** Dans cet exercice, vous allez créer une application canevas depuis un modèle, puis la modifier pour y inclure les données requises
 
-Tâche \#1 : Créer une application de canevas
+Tâche n°1 : Créer une application de canevas
 ---------------------------
 
 Dans cette tâche, vous allez créer une application de canevas à l’aide du modèle de disposition du téléphone basé sur Common Data Service. En utilisant Visites comme entité sélectionnée depuis CDS, le modèle génère l’application Galerie - Afficher - Éditer pour gérer les visites sur le campus.
@@ -71,7 +71,7 @@ Dans cette tâche, vous allez créer une application de canevas à l’aide du m
     2.  Tapez le nom de l’application comme **Personnel du campus**
     3.  Appuyez sur **Enregistrer**
 
-Tâche \#2 : Configurer le formulaire de détails des visites
+Tâche n°2 : Configurer le formulaire de détails des visites
 --------------------------------
 
 Dans cette tâche, vous allez configurer le formulaire de détails pour afficher les informations sur l’enregistrement de visite individuelle
@@ -112,7 +112,7 @@ Dans cette tâche, vous allez configurer un formulaire pour modifier les informa
     * Nom, bâtiment, visiteur, début planifié, fin planifiée
 9.  Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer**, puis appuyez sur **Enregistrer** 
 
-Tâche \#4 : Configurer la galerie de visites
+Tâche n°4 : Configurer la galerie de visites
 ---------------------------------------
 
 Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher le titre, les dates de début et de fin de la visite. 
@@ -169,7 +169,7 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 
 Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comme prévu, vous l’ajoutez ensuite à votre solution.
 
-Tâche \#1 : Tester l’application
+Tâche n°1 : Tester l’application
 --------------------------
 
 1.  Démarrer l’application

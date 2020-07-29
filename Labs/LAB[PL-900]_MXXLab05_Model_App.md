@@ -52,12 +52,12 @@ Les deux seront intégrés à l’application basée sur un modèle pour une mei
 -   Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
 
-Exercice \#1 : Personnaliser les vues et les formulaires
+Exercice n°1 : Personnaliser les vues et les formulaires
 =======================================
 
 **Objectif :** Dans cet exercice, vous allez personnaliser les vues et les formulaires des entités personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-Tâche \#1 : Modifier le formulaire de visite
+Tâche n°1 : Modifier le formulaire de visite
 -----------------------------------
 
 1.  Connectez-vous à <https://make.powerapps.com> si ce n’est pas encore fait.
@@ -82,7 +82,7 @@ Tâche \#1 : Modifier le formulaire de visite
 13.  Cliquez sur le bouton Précédent du navigateur. Vous devriez maintenant revenir au niveau
      de l’onglet Formulaires de l’entité Visite.
 
-## Tâche \#2 : Modifier les vues de visite
+## Tâche n°2 : Modifier les vues de visite
 
 Dans cette tâche, nous allons modifier la vue des visites actives par défaut et créer une nouvelle vue pour les visites d’aujourd’hui.
 
@@ -110,14 +110,14 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 17.  Cliquez sur **Publier** et attendez la fin de la publication.
 18.  Cliquez sur le bouton Précédent du navigateur.
 
-Exercice \#2 : Créer une application pilotée par modèle
+Exercice n°2 : Créer une application pilotée par modèle
 =============================================
 
 **Objectif :** Au cours de cet exercice, vous allez créer l’application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 **Remarque :** Vous verrez plusieurs champs non traités lors de la création de votre application, en particulier sur les étapes du plan du site. Nous avons pris quelques raccourcis dans le cadre de la réalisation des labos. Dans un projet réel, vous donneriez à ces éléments des noms logiques.
 
-Tâche \#1 : Création d’une application 
+Tâche n°1 : Création d’une application 
 ----------------------------
 
 1.  Ouvrez la solution Gestion du campus si vous n’y êtes pas déjà.
@@ -185,7 +185,7 @@ Tâche \#1 : Création d’une application
 17.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
 18.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
 
-Tâche \#2 : Application de test
+Tâche n°2 : Application de test
 --------------------------
 
 1.  Démarrer l’application

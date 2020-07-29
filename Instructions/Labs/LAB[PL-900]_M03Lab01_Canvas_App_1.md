@@ -41,7 +41,7 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 -   Comment réduire les enregistrements sélectionnés pour améliorer les niveaux de performance de l’application et l’adoption par les utilisateurs
 
 
-Exercice \#1 : Créer une application de canevas du personnel
+Exercice n°1 : Créer une application de canevas du personnel
 ===============================
 
 **Objectif :** Au cours de cet exercice, vous allez créer une application de canevas à partir d’un modèle, puis la modifier pour y inclure les données requises.
@@ -180,7 +180,7 @@ Au cours de cette tâche, vous allez configurer la galerie prégénérée pour a
 
 Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comme prévu, vous l’ajoutez ensuite à votre solution.
 
-Tâche \#1 : Tester l’application
+Tâche n°1 : Tester l’application
 --------------------------
 
 1.  Démarrer l’application

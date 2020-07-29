@@ -50,12 +50,12 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 * Types de données, restrictions (par exemple, longueur maximale d’un nom)
 * Formatage DateHeure pour prendre en charge une localisation facile
 
-Exercice \#1 : Créer un environnement et une solution
+Exercice n°1 : Créer un environnement et une solution
 ==================================================
 
 **Objectif :** Dans cet exercice, vous allez préparer l’environnement et créer une solution pour prendre en charge le processus de modélisation des données. 
 
-Tâche \#1 : Créer un environnement
+Tâche n°1 : Créer un environnement
 -----------------------------
 
 Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exercice, dans cette tâche, vous allez créer un nouvel environnement de travail. Sinon, vous pouvez passer à la tâche suivante.
@@ -99,7 +99,7 @@ Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exerci
 
     - Cliquez sur **Créer ma base de données**.
 
-Tâche \#2 : Créer une solution et un éditeur
+Tâche n°2 : Créer une solution et un éditeur
 ---------------------------------------
 
 1.  Créer une solution
@@ -148,7 +148,7 @@ Tâche 3 : Ajouter une entité existante
     Cela ajoutera l’entité Contact avec la vue et le formulaire sélectionnés à la solution nouvellement créée. 
 11.  Votre solution doit maintenant avoir une seule entité : Contact.
 
-Exercice \#2 : Créer des entités et des relations
+Exercice n°2 : Créer des entités et des relations
 ========================================
 
 **Objectif :** Dans cet exercice, vous allez créer des entités, puis ajouter des relations

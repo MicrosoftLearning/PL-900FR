@@ -37,12 +37,12 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 -   Quel est le mécanisme de distribution le plus approprié pour les codes des visiteurs.
 -   Comment mesurer les dépassements de plage horaire et appliquer des stratégies strictes.
 
-Exercice \#1 : Créer un flux de notification de visite
+Exercice n°1 : Créer un flux de notification de visite
 ===============================
 
 **Objectif :** Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. La notification des visiteurs se fait par e-mail. La notification comprend le code unique attribué à la visite.
 
-Tâche \#1 : Créer un flux
+Tâche n°1 : Créer un flux
 ---------------------------
 
 1.  Ouvrez la solution Gestion du campus.
@@ -99,7 +99,7 @@ Tâche \#1 : Créer un flux
 
 11.  Appuyez sur **Enregistrer**
 
-Tâche \#2 : Validez et testez le flux.
+Tâche n°2 : Validez et testez le flux.
 --------------------------------
 
 1.  Ouvrez l’application **Personnel du campus** que vous avez créée 
