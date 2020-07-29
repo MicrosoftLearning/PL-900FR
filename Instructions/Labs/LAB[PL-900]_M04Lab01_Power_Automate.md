@@ -1,20 +1,20 @@
 ---
 lab:
-    title: 'Labo 05 : Power Automate'
-    module: 'Module 04 : Premiers pas avec Power Automate'
+    title: 'Labo : Power Automate'
+    module: 'Module 4 : Premiers pas avec Power Automate'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
-## Module 4, Labo 5 : Power Automate
+# Module 4 : Premiers pas avec Power Automate
+## Labo : Power Automate
 
 Scénario
 ========
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
+Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
+Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
 Au cours de ce labo, vous allez créer des flux Power Automate pour automatiser différents aspects de la gestion du campus. 
 
@@ -57,9 +57,9 @@ Tâche \#1 : Créer un flux
 
 2.  Cliquez sur **Nouveau** et sélectionnez **Flux**. Cela ouvrira l’éditeur de flux dans une nouvelle fenêtre.
 
-3. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel).**
+3. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**.
 
-4. Sélectionnez le déclencheur** Lorsqu’un enregistrement est créé**, **Mis à jour** ou **Supprimé**.
+4. Sélectionnez le déclencheur **Lorsqu’un enregistrement est créé**, **Mis à jour** ou **Supprimé**.
 
    * Sélectionnez **Créer** pour **Condition de déclenchement**
    * Sélectionnez **Visites** pour **Le nom de l’entité**
@@ -67,7 +67,7 @@ Tâche \#1 : Créer un flux
 
 5.  Cliquez sur **Nouvelle étape**. Cette étape est nécessaire pour récupérer les informations des visiteurs, y compris les e-mails.
 
-6. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel).**
+6. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**.
 
 7. Sélectionnez l’action **Obtenir un enregistrement**. 
 
@@ -82,19 +82,23 @@ Tâche \#1 : Créer un flux
 
    * Entrez **Votre visite prévue à Bellows College** comme **Sujet**
 
-   * Saisissez le texte suivant dans le **Corps de l’e-mail**
-
-     > Cher {« Prénom »},
+   * Tapez le texte suivant dans le **corps du message électronique** :  
+        *Remarque : Le texte en gras indique le contenu dynamique qui doit être inséré à ces endroits. Il est recommandé de taper d’abord tout le texte, puis d’ajouter du contenu dynamique au bon endroit.*
      >
-     > vous avez programmé une visite à Bellows Campus du {**Début prévu**} au {**Fin prévue**}.
+     > Cher {**Prénom**},
+     >
+     > Vous avez actuellement prévu une visite à Bellows Campus de {**Début planifié**} à {**Fin planifiée**}.
      >
      > Votre code de sécurité est {**Code**}, veuillez ne pas le partager. Vous devrez renseigner ce code lors de votre visite.
      >
+     >
      > Cordialement,
+     >
      > Administration du campus
+     >
      > Bellows College
      
-   * Le texte en gras indique le contenu dynamique qui doit être inséré à ces endroits.
+   
 10.  Sélectionnez le nom du flux et renommez-le en **Notification de visite**
 
 11.  Appuyez sur **Enregistrer**
@@ -130,22 +134,22 @@ Tâche \#2 : Validez et testez le flux.
 
 4. Définissez la valeur du champ **Intervalle** sur **15 minutes**
 
-5. Cliquez sur **Nouvelle étape**. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel).** Sélectionnez l’action **Répertorier les enregistrements**.
+5. Cliquez sur **Nouvelle étape**. Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**. Sélectionnez l’action **Répertorier les enregistrements**.
 
    * Entrez **Visites** comme **Nom de l’entité**
 
    * Entrez l’expression suivante comme **Requête de filtre**
 
      ```
-     statecode eq 0 et bc_actualstart ne null et bc_actualend eq null et Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
+     statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
      ```
 
    Nous allons la décomposer.
 
-   * « statecode eq 0 » filtre les visites actives (où le statut est égal à Actif)
-   * « bc_actualstart ne null » restreint la recherche aux visites où Début effectif a une valeur, c’est-à-dire que quelqu’un est arrivé.
-   *  « bc_actualend eq null » limite la recherche aux visites où la personne n’est pas partie (le champ Fin réelle n’est pas renseigné) 
-   * « Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15) » restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.  
+   * `statecode eq 0` filtre les visites actives (où le statut est égal à Actif)
+   * `bc_actualstart ne null` restreint la recherche aux visites où Début effectif a une valeur, c’est-à-dire que quelqu’un est arrivé.
+   *  `bc_actualend eq null` limite la recherche aux visites où la personne n’est pas partie (le champ Fin réelle n’est pas renseigné) 
+   * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.  
 
 6.  Cliquez sur **Nouvelle étape**. Recherchez **Appliquer**, sélectionnez l’action **Appliquer à chacun** 
 
@@ -154,29 +158,29 @@ Tâche \#2 : Validez et testez le flux.
 8.  Ajoutez l’extraction de données pour l’enregistrement associé
 
     * Cliquez sur **Ajouter une action** à l’intérieur de la boucle.
-    * Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel).** 
+    * Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**. 
     * Sélectionnez l’action **Obtenir un enregistrement**.
     * Cliquez sur les points de suspension (« ... »), puis sélectionnez **Renommer**. Entrez **QuelBâtiment** comme nom d’étape
     * Sélectionnez **Bâtiments** comme **Nom d’entité**
     * Sélectionnez **Bâtiment (Valeur)** comme **ID d’article**
 
-9.  Répétez la séquence d’extraction de données précédente pour **Visiteur** et **Utilisateur**, en sélectionnant le nom de l’entité associée et en utilisant **Visiteur (Valeur)** et **Propriétaire (Valeur)** comme **ID d’article**, respectivement
+9.  Répétez la séquence d’extraction de données précédente pour **Visiteur** et **Utilisateur**, en sélectionnant le nom de l’entité associée et en utilisant **Visiteur (Valeur)** et **Propriétaire (Valeur) **comme **ID d’article**, respectivement
 
-10.  Ajoutez une action **Envoyer une notification par e-mail** à partir de la connexion **Courrier**.
+10.  Ajoutez une action **Envoyer une notification par e-mail** à partir de la connexion **Courrier** tout en restant dans la connexion **Appliquer à chaque boucle**
 
 11.  Tapez votre adresse électronique dans **À**
 
-12.  Entrez « Contact **Nom complet** a dépassé sa plage horaire de visite ». **Nom complet** est un contenu dynamique de l’enregistrement de visite actuel.
+12.  Entrez « Contact {**Nom complet**} a dépassé sa plage horaire de visite ». **Nom complet** est un contenu dynamique de l’enregistrement de visite actuel.
 
 13.  Entrez « C’est arrivé dans le bâtiment **Nom** », où **Nom** est le contenu dynamique de l’étape **QuelBâtiment**
 
 14.  Localisez **Courriel principal** de l’étape **QuelUtilisateur** et insérez-le dans le champ CC (la personne qui reçoit la visite recevra une copie de l’e-mail)
 
-15.  Sélectionnez le nom du flux et renommez-le en **Balayage de sécurité**
+15.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**
 
 16.  Appuyez sur **Enregistrer**
 
-## Tâche #2 : Validez et testez le flux.
+## Tâche 2 : Validez et testez le flux.
 
 1. Localisez ou créez des enregistrements de visite qui 
    1. ont un statut actif

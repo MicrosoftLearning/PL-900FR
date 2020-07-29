@@ -1,20 +1,20 @@
 ---
 lab:
-    title: 'Labo 06 : Power BI'
-    module: 'Module 05 : Premiers pas avec Power BI'
+    title: 'Labo : Power BI'
+    module: 'Module 5 : Premiers pas avec Power BI'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
-## Module 4, Labo 6 : Power BI
+# Module 5 : Premiers pas avec Power BI
+## Labo : Power BI
 
 Scénario
 ========
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
+Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
+Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
 Dans ce labo, vous allez créer un tableau de bord Power BI qui visualise les données sur les visites sur le campus.
 
@@ -25,9 +25,9 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
 
 -   Connectez-vous à Common Data Service 
 -   Transformez les données pour inclure des descriptions conviviales pour les enregistrements associés (recherches)
--    Créez et publiez un rapport avec diverses visualisations des informations sur les visites du campus
--    Utilisez un langage naturel pour créer des visualisations supplémentaires
--    Créer un affichage mobile
+-   Créez et publiez un rapport avec diverses visualisations des informations sur les visites du campus
+-   Utilisez un langage naturel pour créer des visualisations supplémentaires
+-   Créer un affichage mobile
 
 
 ## Conditions préalables
@@ -59,9 +59,9 @@ Tâche \#1 : Préparez les données
 
 3. Ouvrez Power BI Desktop et connectez-vous si vous y êtes invité.
 
-4. Sélectionnez **Obtenir les données**.
+4. Sélectionnez ** Obtenir les données**.
 
-5. Sélectionnez **Power Platform**, puis sélectionnez **Common Data Service** et appuyez sur **Connecter**.
+5. Sélectionnez **Power Plateform**, puis sélectionnez **Common Data Service** et appuyez sur **Connecter**.
 
 6. Collez l’URL d’environnement que vous avez copiée précédemment, puis appuyez sur **OK**.
 
@@ -99,7 +99,7 @@ Tâche \#1 : Préparez les données
 2. Faites glisser le champ **Bâtiment** et déposez-le dans la zone cible **Légende**.
 3. Faites glisser le champ **Visites** et déposez-le dans la zone cible **Valeurs**.
 4. Redimensionnez le graphique en secteurs à l’aide des poignées d’angle afin que tous les composants du graphique soient visibles.
-5. Cliquez sur **Nouveau visuel** sur le ruban Power BI, puis sélectionnez l’histogramme empilé dans le volet **Visualisations**. 
+5. Cliquez sur **Nouveau visuel** sur le ruban Power BI, puis sélectionnez, si ce n’est déjà fait, l’histogramme empilé dans le volet **Visualisations**. 
 6. Faites glisser le champ **Visites** et déposez-le dans la zone cible **Valeurs**.
 7. Faites glisser le champ **Début** et déposez-le dans la zone cible **Axe**.
 8. Cliquez sur **X** à côté de **Jour** et **Trimestre** pour ne laisser que les totaux **Année** et **Mois**.
@@ -121,7 +121,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 3. Attendez la fin de la publication et cliquez sur **Ouvrez \<nom de votre rapport \>.pbix dans Power BI**.
 
-## Tâche n°2 : Créer un tableau de bord Power BI
+## Tâche 2 : Créer un tableau de bord Power BI
 
 1. Développez **Mon espace de travail**.
 2. Sélectionnez le rapport sous l’en-tête **Rapports**.
@@ -142,7 +142,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 ## Tâche 4 : Créer une vue de téléphone mobile
 
 1. Sélectionnez le rapport de la zone **Rapports**.
-2. Selon la version de l’interface utilisateur, sélectionnez soit : | Affichage mobile ou **Affichage web | Affichage téléphone**.
+2. Selon la version de l’interface utilisateur, sélectionnez soit : | Affichage mobile** ou **Affichage web | Affichage téléphone.
 3. Réorganisez les vignettes comme vous le souhaitez.
 4. Sélectionnez : | Générer un code QR.
 5. Si vous avez un appareil mobile, scannez le code à l’aide d’une application de scanner QR disponible sur les plates-formes iOS et Android.
@@ -150,7 +150,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 # Défis
 
-* Inclure les plans du campus et des bâtiments dans les tableaux de bord et les rapports
+* Tableaux de bord et rapports incluant les plans du campus et des bâtiments.
 * Signaler et analyser les schémas et tendances des visites
 * Visualisation des visites qui ont duré trop longtemps
 * Diffuser Power BI en continu pour le traitement en temps quasi réel d’un grand campus 

@@ -1,20 +1,20 @@
 ---
 lab:
-    title: 'Labo 04 : Application basée sur un modèle'
-    module: 'Module 03 : Introduction au Common Data Service'
+    title: 'Labo : Application basée sur un modèle'
+    module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
-## Module 3, Labo 4 : Application basée sur un modèle
+# Module 3 : Premiers pas avec Power Apps
+## Labo : Application basée sur un modèle
 
 Scénario
 ========
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
+Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
+Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
 Dans ce labo, vous allez créer une application Power Apps pilotée par modèle pour permettre au personnel de bureau du campus de gérer les enregistrements de visites sur l’ensemble du campus.
 
@@ -34,7 +34,7 @@ Nous travaillerons avec les composants suivants :
 - **Vues** : Les vues permettent à l’utilisateur d’afficher les données existantes dans le formulaire
 d’un tableau.
 
-- **Formulaires** : C’est là que l’utilisateur crée ou met à jour de nouveaux enregistrements dans les entités.
+- **Formulaires **: C’est là que l’utilisateur crée ou met à jour de nouveaux enregistrements dans les entités.
 
 Les deux seront intégrés à l’application basée sur un modèle pour une meilleure expérience utilisateur.
 
@@ -47,7 +47,7 @@ Les deux seront intégrés à l’application basée sur un modèle pour une mei
 
 -   Quels changements devons-nous apporter pour améliorer l’expérience utilisateur ?
 
--   Que devrions-nous inclure dans une application basée sur le modèle de données que nous avons créé ?
+-   Quels sont les éléments à inclure dans une application basée sur le modèle de données que nous avons créé ?
     
 -   Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
@@ -65,8 +65,8 @@ Tâche \#1 : Modifier le formulaire de visite
 3.  Sélectionnez **Solutions**.
 4.  Cliquez pour ouvrir la solution de **Gestion du campus**.
 5.  Cliquez pour ouvrir l’entité **Visite**.
-7.  Cliquez sur l’onglet **Formulaires** et sélectionnez le type de formulaire **Principal**. Par défaut,
-    le formulaire comporte deux champs, Nom (Champ principal) et Propriétaire.
+6.  Cliquez sur l’onglet **Formulaires** et sélectionnez le type de formulaire **Principal**. 
+    -   Par défaut, le formulaire comporte deux champs, Nom (Champ principal) et Propriétaire.
 7.  Ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les champs vers le formulaire ou en double-cliquant simplement sur les noms de champ :
     * **Bâtiment**
     * **Visiteur**
@@ -75,11 +75,11 @@ Tâche \#1 : Modifier le formulaire de visite
     * **Début réel**
     * **Fin réelle** 
 8.  Faites glisser le champ **Code** et déposez-le dans l’en-tête du formulaire. (Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.)
-9.  Dans le panneau Propriétés, activez l’option du champ **Lecture seule**
+9.  Tout en restant sélectionné dans le champ Code, activez la case à cocher du champ **Lecture seule** dans le panneau Propriétés.
 10.  Sélectionnez le champ **Propriétaire** puis, dans le panneau Propriétés remplacez la valeur du champ **Étiquette de champ** par **Hôte**
-11.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
-12.  Cliquez sur **Publier** et attendez la fin de la publication.
-13.  Cliquez sur le bouton Précédent du navigateur. Vous devriez maintenant revenir au niveau
+11.  Cliquez sur **Enregistrer** en haut à droite et attendez la fin de l’enregistrement.
+12.  Cliquez sur **Publier** en haut à droite et attendez la fin de la publication.
+13.  Cliquez sur **Retour** en haut à gauche de l’écran. Vous devriez maintenant revenir au niveau
      de l’onglet Formulaires de l’entité Visite.
 
 ## Tâche \#2 : Modifier les vues de visite
@@ -93,22 +93,25 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
     3.  **Bâtiment**
     4.  **Début prévu** 
     5.  **Fin prévue**
-3.  Cliquez sur l’icône en chevron de la colonne **Créé sur** et sélectionnez **Supprimer**. Le champ **Créé sur** sera maintenant supprimé de la vue.
-4.  Cliquez sur l’icône en chevron de la colonne **Nom** et sélectionnez **Supprimer**. Le champ **Nom** sera maintenant supprimé de la vue.
+3.  Cliquez sur la flèche déroulante de la colonne **Créé sur** et sélectionnez **Supprimer**. Le champ **Créé sur** sera maintenant supprimé de la vue.
+4.  Cliquez sur la flèche déroulante de la colonne **Nom** et sélectionnez **Supprimer**. Le champ **Nom** sera maintenant supprimé de la vue.
 5.  Dans le panneau Propriétés, affichée dans le volet droit, cliquez sur **Trier par** et sélectionnez **Début programmé**. Cliquez à nouveau sur **Début programmé** pour changer l’ordre en descendant (nouvelles visites en haut).
-6.  Redimensionnez les colonnes individuelles pour qu’elles correspondent aux informations présentées.
+6.  Redimensionnez les largeurs de colonne individuelles pour qu’elles correspondent aux données.
 7.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
 8.  Cliquez sur **Publier** et attendez la fin de la publication.
-9.  Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui. Cliquez sur « x » à côté du filtre existant dans le panneau Propriétés pour supprimer le filtre.
-10.  Appuyez sur le chevron à côté du bouton **Enregistrer** (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
+9.  Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui. Cliquez sur `x` à côté du filtre existant dans le panneau Propriétés pour supprimer le filtre.
+10.  Cliquez sur la flèche déroulante affichée en regard du bouton **Enregistrer** (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 11.  Changez le nom en **Visites du jour** et appuyez sur **Enregistrer**.
 12.  Appuyez sur le lien **Modifier les filtres** dans le panneau Propriétés.
 13.  Cliquez sur **Ajouter**, puis sélectionnez **Ajouter une ligne**.
-14.  Sélectionnez le champ **Début programmé**, puis sélectionnez  la condition **Aujourd’hui**. Appuyez sur **OK** pour enregistrer la condition.
+14.  Sélectionnez le champ **Début programmé**, puis sélectionnez la condition **Aujourd’hui**. 
+15.  Cliquez sur le... sur la ligne **Statut** et cliquez sur **Supprimer**. 
+16.  La vue est désormais filtrée pour n’afficher que les enregistrements dont la date de début programmé est définie sur la date du jour. Appuyez sur **OK** pour enregistrer la condition.
 15.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 16.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
 17.  Cliquez sur **Publier** et attendez la fin de la publication.
-18.  Cliquez sur le bouton Précédent du navigateur.
+18.  Cliquez sur **Retour** en haut à gauche de l’écran. Vous devriez maintenant revenir au niveau
+     Onglet Vues de l’entité Visite.
 
 Exercice \#2 : Créer une application pilotée par modèle
 =============================================
@@ -117,7 +120,7 @@ Exercice \#2 : Créer une application pilotée par modèle
 
 **Remarque :** Vous verrez plusieurs champs non traités lors de la création de votre application, en particulier sur les étapes du plan du site. Nous avons pris quelques raccourcis dans le cadre de la réalisation des labos. Dans un projet réel, vous donneriez à ces éléments des noms logiques.
 
-Tâche \#1 : Création d’une application 
+Tâche \#1 : Création d’une application
 ----------------------------
 
 1.  Ouvrez la solution Gestion du campus si vous n’y êtes pas déjà.
@@ -125,10 +128,10 @@ Tâche \#1 : Création d’une application
     -   Connectez-vous à <https://make.powerapps.com>
 
     -   Dans votre environnement, cliquez pour ouvrir la solution **Gestion du campus**
-        solution.
+        .
 2.  Créer une application pilotée par modèle
 
-    -   Cliquez sur **Nouveau** et sélectionnez **App**,puis **Model-Drive App**. Cela va ouvrir un nouvel onglet.
+    -   Cliquez sur **Nouveau** et sélectionnez **App** puis **Application basée sur un modèle**. Cela va ouvrir un nouvel onglet.
     -   Activez la case à cocher **Utiliser la solution existante pour créer l’application**
     -   Saisissez **Gestion du campus** dans le champ Nom et cliquez sur **Suivant**.
     -   Sélectionnez la solution **Gestion du campus** dans la liste déroulante, puis cliquez sur **Terminé**.
@@ -139,7 +142,7 @@ Tâche \#1 : Création d’une application
 
     -   Accédez au volet des propriétés et saisissez **Campus** pour **Titre**.
 
-    -   Sélectionnez **Nouveau groupe**.
+    -   Sélectionnez **Grouper**.
 
     -   Allez dans le volet **Propriétés** et saisissez **Sécurité** pour **Titre**.
 5.  Ajoutez l’entité Contact au plan du site
@@ -206,7 +209,7 @@ Tâche \#2 : Application de test
     -   Vous devriez maintenant voir le contact créé dans la vue **Contacts actifs**.
 3.  Créer un enregistrement de bâtiment
 
-    -   Sélectionnez **Bâtiment** dans le plan du site.
+    -   Sélectionnez **Bâtiments** dans le plan du site.
 
     -   Cliquez sur **Nouveau**.
 

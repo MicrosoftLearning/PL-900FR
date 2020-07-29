@@ -4,7 +4,7 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
+# PL-900 : Microsoft Power Platform : Notions fondamentales
 ## Guide du formateur
 
 # Environnements

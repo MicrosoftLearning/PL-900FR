@@ -4,7 +4,7 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
+# PL-900 : Microsoft Power Platform : Notions fondamentales
 ## Module X, Labo 5 - Application basée sur un modèle
 
 Scénario
@@ -99,7 +99,7 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 6.  Redimensionnez les colonnes individuelles pour qu’elles correspondent aux informations présentées.
 7.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
 8.  Cliquez sur **Publier** et attendez la fin de la publication.
-9.  Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui. Cliquez sur « x » à côté du filtre existant dans le panneau Propriétés pour supprimer le filtre.
+9.  Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui. Cliquez sur `x` à côté du filtre existant dans le panneau Propriétés pour supprimer le filtre.
 10.  Appuyez sur le chevron à côté du bouton **Enregistrer** (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 11.  Changez le nom en **Visites du jour** et appuyez sur **Enregistrer**.
 12.  Appuyez sur le lien **Modifier les filtres** dans le panneau Propriétés.

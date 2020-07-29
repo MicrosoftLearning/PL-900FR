@@ -4,7 +4,7 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
+# PL-900 : Microsoft Power Platform : Notions fondamentales
 ## Module X, Labo 2 - Application canevas - Partie 1
 
 Scénario
@@ -120,14 +120,14 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 1.  Développez **BrowseScreen1** sous **Arborescence**
 2.  Sélectionnez **BrowseGallery1**
 3.  Sélectionnez la propriété **TemplateSize** depuis la liste déroulante des propriétés
-4.  Remplacez l’expression par la suivante « Min(150, BrowseGallery1.Height - 60) ». Cette action garantit un espace suffisant pour des informations supplémentaires.
+4.  Remplacez l’expression par la suivante `Min(150, BrowseGallery1.Height - 60)`. Cette action garantit un espace suffisant pour des informations supplémentaires.
 5.  Modifiez la galerie en appuyant sur l’icône en forme de crayon dans le coin supérieur gauche de la galerie
 6.  Sélectionnez le champ avec la date et l’heure 
-7.  Modifiez la propriété **Texte** depuis « ThisItem.'Created On' » vers « ThisItem.'Scheduled Start' »
+7.  Modifiez la propriété **Texte** depuis `ThisItem.'Created On'` vers `ThisItem.'Scheduled Start'`
 8.  Sélectionnez à nouveau le champ
-9.  Appuyez sur « CTRL-C », puis sur « CTRL-V » pour créer une copie du champ.
+9.  Appuyez sur `CTRL-C`, puis sur `CTRL-V` pour créer une copie du champ.
 10.  À l’aide de la souris ou du clavier, déplacez le contrôle copié vers le bas et alignez-le avec les autres contrôles dans la galerie
-11.  Modifiez la propriété **Texte** en « ThisItem.'Scheduled End' »
+11.  Modifiez la propriété **Texte** en `ThisItem.'Scheduled End'`
 12.  Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer**, puis appuyez sur **Enregistrer** 
 
 ## Tâche n°6 : Ajouter un filtre de date
@@ -146,7 +146,7 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 
 6. Sélectionnez la propriété **Items**
 
-7. Dans l’expression, recherchez « [@Visits] » et remplacez-le par « Filter(Visits, 'Scheduled End'>= DatePicker1.SelectedDate) ». L’expression complète devrait ressembler à ce qui suit :
+7. Dans l’expression, recherchez `[@Visits]` et remplacez-le par `Filter(Visits, 'Scheduled End'>= DatePicker1.SelectedDate)`. L’expression complète devrait ressembler à ce qui suit :
 
    ```
    SortByColumns(

@@ -4,7 +4,7 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
+# PL-900 : Microsoft Power Platform : Notions fondamentales
 ## Module X, Labo 3 : Power Automate
 
 Scénario
@@ -137,15 +137,15 @@ Tâche \#2 : Validez et testez le flux.
    * Entrez l’expression suivante comme **Requête de filtre**
 
      ```
-     statecode eq 0 et bc_actualstart ne null et bc_actualend eq null et Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
+     statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
      ```
 
    Nous allons la décomposer.
 
-   * « statecode eq 0 » filtre les visites actives (où le statut est égal à Actif)
-   * « bc_actualstart ne null » restreint la recherche aux visites où Début effectif a une valeur, c’est-à-dire que quelqu’un est arrivé.
-   *  « bc_actualend eq null » limite la recherche aux visites où la personne n’est pas partie (le champ Fin réelle n’est pas renseigné) 
-   * « Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15) » restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.  
+   * `statecode eq 0` filtre les visites actives (où le statut est égal à Actif)
+   * `bc_actualstart ne null` restreint la recherche aux visites où Début effectif a une valeur, c’est-à-dire que quelqu’un est arrivé.
+   *  `bc_actualend eq null` limite la recherche aux visites où la personne n’est pas partie (le champ Fin réelle n’est pas renseigné) 
+   * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.  
 
 6.  Cliquez sur **Nouvelle étape**. Recherchez **Appliquer**, sélectionnez l’action **Appliquer à chacun** 
 

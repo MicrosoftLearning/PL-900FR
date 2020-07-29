@@ -4,24 +4,24 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
-## Module X, Labo 4 : Power BI
+# PL-900 : Microsoft Power Platform : Notions fondamentales
+## Module X, atelier 4 : Power BI
 
 Scénario
 ========
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
+Bellows College est un organisme éducatif disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
+Tout au long de ce cours, vous allez créer des applications et effectuer une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
-Dans ce labo, vous allez créer un tableau de bord Power BI qui visualise les données sur les visites sur le campus.
+Dans cet atelier, vous allez créer un tableau de bord Power BI qui visualise les données sur les visites sur le campus.
 
-Étapes de labo de haut niveau
+Étapes générales de l’atelier
 ======================
 
-Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de bord Power BI :
+Pour concevoir et créer le tableau de bord Power BI vous allez procéder comme suit:
 
 -   Connectez-vous à Common Data Service 
 -   Transformez les données pour inclure des descriptions conviviales pour les enregistrements associés (recherches)
@@ -32,9 +32,9 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
 
 ## Conditions préalables
 
-* Achèvement du labo 1 - Modélisation de données
+* Réalisation de l’atelier 1 - Modélisation de données
 
-Éléments à considérer avant de commencer
+Points à prendre en compte avant de commencer
 -----------------------------------
 
 -   À quel public ce rapport est-il destiné ?
@@ -45,23 +45,23 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
 Exercice \#1 : Créer des rapports Power BI 
 ===============================
 
-**Objectif :** Dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la base de données Common Data Service.
+**Objectif :** dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la base de données Common Data Service.
 
-Tâche \#1 : Préparez les données
+Tâche \#1 : Préparer les données
 ---------------------------
 
 1.  Découvrez l’URL de votre organisation
 
     * Accédez au Centre d’administration Power Platform sur https://aka.ms/ppac.
     * Dans le volet de navigation de gauche, sélectionnez Environnements, puis l’environnement cible.
-    * Faites un clic droit sur l’**URL de l’environnement** sur le panneau **Détails**, puis sélectionnez **Copier le lien**.
+    * Cliquez avec le bouton droit sur l’**URL de l’environnement** dans le panneau **Détails**, puis sélectionnez **Copier le lien**.
 2. Si vous n’avez pas installé Power BI Desktop, accédez à https://aka.ms/pbidesktopstore pour télécharger et installer l’application Power BI.
 
 3. Ouvrez Power BI Desktop, connectez-vous si vous y êtes invité.
 
 4. Sélectionnez **Obtenir les données**.
 
-5. Sélectionnez **Power Plateform**, puis sélectionnez **Common Data Service** et appuyez sur **Connecter**.
+5. Sélectionnez **Power Plateform**, **Common Data Service**, puis appuyez sur **Connecter**.
 
 6. Collez l’URL d’environnement que vous avez copiée précédemment, puis appuyez sur **OK**.
 
@@ -69,7 +69,7 @@ Tâche \#1 : Préparez les données
 
 8. Cliquez sur l’icône **Modèle** dans la barre d’outils verticale de gauche.
 
-9. Faites glisser la colonne **bc_buildingid** du tableau **bc_Building** et déposez-la sur la colonne **bc_building** dans le tableau **bc_Visit**. Cela créera une relation entre deux entités que Power BI pourra utiliser pour afficher les données associées.
+9. Faites glisser la colonne **bc_buildingid** du tableau **bc_Building** et déposez-la sur la colonne **bc_building** dans le tableau **bc_Visit**. Une relation sera ainsi créée entre deux entités que Power BI pourra utiliser pour afficher les données associées.
 
 10. Sélectionnez l’icône **Rapport** dans la barre d’outils de gauche.
 
@@ -83,7 +83,7 @@ Tâche \#1 : Préparez les données
     Column = RELATED(bc_Building[bc_name])
     ```
 
-    Appuyez ensuite sur Entrée. Cela ajoutera un nouveau champ avec le nom du bâtiment dans les données de visites.
+    Appuyez ensuite sur Entrée. Un nouveau champ sera ajouté avec le nom du bâtiment dans les données de visites.
 
 14. Cliquez sur les points de suspension (« ... ») affichés en regard du champ et sélectionnez **Renommer**. Saisissez **Bâtiment** comme nom de champ.
 

@@ -4,20 +4,20 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
-## Module X, Labo 1 - Modélisation des données
+# PL-900 : Microsoft Power Platform : Notions fondamentales
+## Module X, atelier 1 - Modélisation des données
 
 
 Scénario
 ========
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
+Bellows College est une organisme éducatif disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données sur les visites sur l’ensemble du campus. 
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
+Tout au long de ce cours, vous allez créer des applications et effectuerer une automatisation pour permettre au personnel d’administration et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
-Dans ce labo, vous allez configurer un environnement, créer une base de données CDS (Common Data Service) et créer une solution pour retracer le suivi de vos modifications. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
+Dans cet atelier, vous allez configurer un environnement, créer une base de données CDS (Common Data Service) et concevoir une solution pour effectuer le suivi de vos modifications. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
 
 -   R1 - Suivre les emplacements (bâtiments) des visites du campus
 -   R2 - Enregistrer des informations de base pour identifier et suivre les visiteurs 
@@ -25,12 +25,12 @@ Dans ce labo, vous allez configurer un environnement, créer une base de donnée
 
 Enfin, vous allez importer des exemples de données dans CDS.
 
-Étapes de labo de haut niveau
+Étapes générales de l’atelier
 ======================
 
 Pour préparer vos environnements d’apprentissage, vous devez :
 
-* créer une solution et un éditeur
+* créer une solution et un éditeur;
 * ajouter les composants, nouveaux et existants, nécessaires pour répondre aux exigences de l’application. Se référer au [document de modèle de données](..\Allfiles\Campus Management.vsdx) pour la description des métadonnées (entités, types de champs et relations). 
 
 Votre solution contiendra plusieurs entités une fois toutes les personnalisations terminées :
@@ -41,19 +41,19 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 
 ## Conditions préalables
 
-* Aucun
+* Aucune
 
-Éléments à considérer avant de commencer
+Points à prendre en compte avant de commencer
 -----------------------------------
 
 * Convention d’affectation de noms
 * Types de données, restrictions (par exemple, longueur maximale d’un nom)
-* Formatage DateHeure pour prendre en charge une localisation facile
+* Mise en forme DateHeure pour prendre en charge une localisation facile
 
 Exercice \#1 : Créer un environnement et une solution
 ==================================================
 
-**Objectif :** Dans cet exercice, vous allez préparer l’environnement et créer une solution pour prendre en charge le processus de modélisation des données. 
+**Objectif :** dans cet exercice, vous allez préparer l’environnement et créer une solution pour prendre en charge le processus de modélisation des données. 
 
 Tâche \#1 : Créer un environnement
 -----------------------------
@@ -62,8 +62,7 @@ Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exerci
 
 1.  Connectez-vous à <https://aka.ms/ppac>
 
-2.  Sélectionnez **Environnements** et cliquez sur **Nouveau** dans le menu supérieur. Cela ouvrira
-    un menu sur le côté droit de la fenêtre.
+2.  Sélectionnez **Environnements** et cliquez sur **Nouveau** dans le menu supérieur. Un menu s’ouvrira sur le côté droit de la fenêtre.
 
 3.  Entrez **Bellows College [Votre nom de famille]** pour **Nom**.
 
@@ -83,10 +82,10 @@ Si vous ne disposez pas et n’avez pas reçu d’environnement avant l’exerci
     environnements ont les options **Anglais** et **Dollars américains** (USD) sélectionnées.
 
 10. Laissez **Activer les applications Dynamics 365** désactivé aux fins de ces
-    labos.
+    ateliers.
 
 11. Laissez **Déployer des exemples d’applications et de données** désactivé aux fins de ces
-    labos.
+    ateliers.
 
 12. Cliquez sur **Enregistrer**.
 
@@ -120,7 +119,7 @@ Tâche \#2 : Créer une solution et un éditeur
 
     -   Cliquez sur **Enregistrer et fermer**.
 
-3.  Terminez la création de la solution.
+3.  Finaliser la création de la solution.
 
     -   Maintenant, cliquez sur la liste déroulante **Éditeur**, puis sélectionnez l’éditeur **Bellows College**
         que vous venez de créer.
@@ -147,14 +146,13 @@ Tâche \#3 : Ajouter une entité existante
 Exercice \#2 : Créer des entités et des relations
 ========================================
 
-**Objectif :** Dans cet exercice, vous allez créer des entités, puis ajouter des relations
+**Objectif :** dans cet exercice, vous allez créer des entités, puis ajouter des relations
 entre les entités.
 
 Tâche #1 : Créer une entité et des champs de bâtiment
 -----------------------------------------
 
-1.  Tout en continuant dans votre environnement de développement, ouvrez la solution Gestion du campus
-    .
+1.  Tout en continuant dans votre environnement de développement, ouvrez la solution Gestion du campus.
     * Connectez-vous à <https://make.powerapps.com> (si vous n’êtes pas déjà connecté)
     * Sélectionnez **Solutions**, puis cliquez pour ouvrir la solution **Gestion du campus**
           que vous venez de créer (si vous n’êtes pas déjà dans cette solution).
@@ -174,7 +172,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 > [!REMARQUE]
 > Nous utilisons un comportement **indépendant du fuseau horaire** pour enregistrer les informations de date et d’heure car l’heure d’une visite est *toujours* locale par rapport à l’emplacement du bâtiment et ne doit pas changer lorsqu’elle est vue depuis un autre fuseau horaire. 
 
-1.  Sélectionnez la solution **Gestion du campus**
+1. Sélectionner la solution **Gestion du campus**
 2. Créer une entité de visite
 
    * Cliquez sur **Nouveau**, puis sélectionnez **Entité**.
@@ -224,7 +222,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 Tâche n°3 : Créer des relations
 ------------------------------
 
-1.  Sélectionnez la solution **Gestion du campus**.
+1.  Sélectionner la solution **Gestion du campus**.
 4.  Créer une relation Visite - Contact
     * Cliquez pour ouvrir l’entité **Visite**.
     * Sélectionnez l’onglet **Relations**.
@@ -238,17 +236,16 @@ Tâche n°3 : Créer des relations
     * Cliquez sur **Ajouter une relation**, puis sélectionnez **Plusieurs-à-un**
     * Sélectionnez un bâtiment pour **Associé (un)** 
     * Cliquez sur **Terminé**.
-4.  Cliquez sur **Enregistrer l’entité**.
-5.  Sélectionnez **Solutions** dans le menu supérieur, puis cliquez sur **Publier toutes
-    Personnalisations.**
+4.  Cliquer sur **Enregistrer l’entité**
+5.  Sélectionner **Solutions** dans le menu supérieur, puis cliquer sur **Publier toutes Personnalisations**
 
 # Exercice \#3 : Importer des données
 
-**Objectif :** Dans cet exercice, vous allez importer des exemples de données dans la base de données Common Data Service.
+**Objectif :** dans cet exercice, vous allez importer des exemples de données dans la base de données Common Data Service.
 
 ## Tâche #1 : Importer un mappage de données
 
-1. Téléchargez [CampusDataMap.xml](..\Allfiles\CampusDataMap.xml).
+1. Téléchargez [CampusDataMap.xml](../Allfiles/CampusDataMap.xml).
 2. Accédez à Centre d’administration Power Platform à l’adresse https://aka.ms/ppac, puis connectez-vous.
 3. Dans la page de navigation de gauche, sélectionnez Environnements, puis l’environnement cible et cliquez sur **Réglages**.
 4. Développez la section **Gestion des données**, puis sélectionnez **Mappages de données**. Cette action permet d’ouvrir un écran de mappage d’importation dans un nouvel onglet du navigateur.

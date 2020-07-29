@@ -4,7 +4,7 @@ lab:
     module: 'Module XX : Build de Power Apps'
 ---
 
-# PL-900 : Bases-Microsoft-Power-Platform
+# PL-900 : Microsoft Power Platform : Notions fondamentales
 ## Module X, Labo 2 : Application canevas, deuxième partie
 
 Scénario
@@ -97,7 +97,7 @@ Tâche \#2 : Affichez les informations sur les visiteurs
    -   Cliquez sur **Ajouter un champ** et sélectionnez les champs suivants : Fin effective, Début effectif, Bâtiment, Fin planifiée, Début planifié, Visiteur
    -   Appuyez sur **Ajouter**.
    -   Modifiez l’ordre des champs sélectionnés en faisant glisser les cartes de champ dans la liste. L’ordre recommandé est Visiteur, Bâtiment, Début planifié, Fin planifiée, Début réel, Fin réelle
-   -   Sélectionnez Propriété de l’**article** et entrez « LookUp(Visits, Code = textCode.Text) » 
+   -   Sélectionnez Propriété de l’**article** et entrez `LookUp(Visits, Code = textCode.Text)` 
 
 3.  Pour conserver le travail en cours, cliquez sur **Fichier | Enregistrer**, puis appuyez sur **Enregistrer**
 
@@ -120,7 +120,7 @@ Tâche \#3 : Ajouter des boutons d’entrée et de sortie
 
    * Sélectionnez la commande **textCode**
    * Sélectionnez la propriété **OnChange**
-   * Entrez l’expression suivante : « Set(Visit, LookUp(Visits, Code = textCode.Text)) »
+   * Entrez l’expression suivante : `Set(Visit, LookUp(Visits, Code = textCode.Text))`
      C’est la même expression que ci-dessus, sauf que cette fois, nous enregistrons les résultats dans une variable globale. Cela nous permet d’utiliser la variable *Visite* dans toute l’application, sans avoir à ressaisir l’expression de recherche entière.
 
 2. Ajouter des boutons pour l’entrée et la sortie
@@ -152,10 +152,10 @@ Tâche \#3 : Ajouter des boutons d’entrée et de sortie
 
    L’expression peut être décomposée comme suit :
 
-   * « !IsBlank(Visit) » : un enregistrement de visite a été trouvé
-   * « && » : opérateur ET logique
-   * « Visit.Status = 'Status (Visits)'.Active » : l’état de l’enregistrement est *Actif*
-   * « IsBlank(Visit.'Actual Start') » : le champ Début effectif ne contient aucune donnée
+   * `!IsBlank(Visit)` : un enregistrement de visite a été trouvé
+   * `&&` : opérateur ET logique
+   * `Visit.Status = 'Status (Visits)'.Active` : l’état de l’enregistrement est *Actif*
+   * `IsBlank(Visit.'Actual Start')` : le champ Début effectif ne contient aucune donnée
 
 4. Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
 
@@ -166,7 +166,7 @@ Tâche \#3 : Ajouter des boutons d’entrée et de sortie
      ```
      If(!IsBlank(Visit) 
      && Visit.Status = 'Status (Visits)'.Active
-      && !IsBlank(Visit.'Actual Start'),
+     && !IsBlank(Visit.'Actual Start'),
          DisplayMode.Edit,
          DisplayMode.Disabled
      )
