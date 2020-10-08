@@ -27,7 +27,7 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 -   Se connecter à Common Data Service en tant que source de données
 -   Capturez l’entrée (code visiteur) et localisez l’enregistrement visiteur
 -   Configurez un contrôle de visualiseur de formulaire pour afficher les informations sur le visiteur
--   Utilisez une vue CDS pour remplir la galerie
+-   Utiliser une vue Common Data Service pour remplir la galerie
 -   Gérez le processus d’arrivée et de départ d’un visiteur
 
 
