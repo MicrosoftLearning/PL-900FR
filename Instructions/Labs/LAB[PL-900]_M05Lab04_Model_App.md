@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Labo : Application pilotée par modèle'
     module: 'Module 3 : Premiers pas avec Power Apps'
