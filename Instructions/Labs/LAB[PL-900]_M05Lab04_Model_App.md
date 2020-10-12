@@ -105,7 +105,7 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 12.  Appuyez sur le lien **Modifier les filtres** dans le panneau Propriétés.
 13.  Cliquez sur **Ajouter**, puis sélectionnez **Ajouter une ligne**.
 14.  Sélectionnez le champ **Début prévu** et la condition **Aujourd’hui**. 
-15.  Cliquez sur les points de suspension (« ... ») sur la ligne **État **, puis sur **Supprimer**. 
+15.  Cliquez sur les points de suspension (« ... ») sur la ligne **État**, puis sur **Supprimer**. 
 16.  La vue est désormais filtrée pour n’afficher que les enregistrements dont la date de début prévue est aujourd’hui. Appuyez sur **OK** pour enregistrer la condition.
 15.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 16.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
@@ -119,7 +119,7 @@ Exercice \#2 : Créer une application pilotée par modèle
 
 **Remarque :** Vous verrez plusieurs champs non traités lors de la création de votre application, en particulier sur les étapes du plan du site. Nous avons pris quelques raccourcis dans le cadre de la réalisation des labos. Dans une mise en œuvre réelle, vous donneriez à ces éléments des noms logiques.
 
-Tâche \n°1 : Création d’une application
+Tâche \#1 : Création d’une application
 ----------------------------
 
 1.  Ouvrez la solution Gestion du campus si vous n’y êtes pas déjà.

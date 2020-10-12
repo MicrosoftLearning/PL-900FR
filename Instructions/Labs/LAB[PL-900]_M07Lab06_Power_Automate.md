@@ -113,7 +113,7 @@ Tâche \#2 : Validez et testez le flux.
 4.  Ouvrez le flux, localisez et ouvrez la plus récente **Exécution**
 5.  Ouvrez l’étape **Courrier** et vérifiez que le contenu de l’e-mail a été généré correctement.
 
-# Exercice n°2 : Créer un flux de balayage de sécurité
+# Exercice #2 : Créer un flux de balayage de sécurité
 
 **Objectif :** Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. Le balayage de sécurité est effectué toutes les 15 minutes et la sécurité est avertie si l’un des visiteurs a dépassé l’heure prévue.
 
@@ -177,6 +177,7 @@ Tâche \#2 : Validez et testez le flux.
     * Sélectionnez **Visiteur (valeur)** comme **ID de l’élément** dans le contenu dynamique
     
 10.  Accédez aux données Propriétaire pour l’enregistrement connexe
+
     * Cliquez sur **Ajouter une action** à l’intérieur de la boucle.
     * Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**. 
     * Sélectionnez l’action **Obtenir un enregistrement**.
@@ -200,7 +201,7 @@ Tâche \#2 : Validez et testez le flux.
 
 16.  Appuyez sur **Enregistrer**
 
-## Tâche n°2 : Validez et testez le flux.
+## Tâche #2 : Validez et testez le flux.
 
 1. Localisez ou créez des enregistrements de visite qui :
    1. ont un statut actif

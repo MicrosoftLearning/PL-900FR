@@ -51,7 +51,7 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 
 **Objectif :** Au cours de cet exercice, vous allez préparer l’environnement et créer une solution pour prendre en charge le processus de modélisation des données. 
 
-## Tâche \n°1 : Créer une solution et un éditeur
+## Tâche \#1 : Créer une solution et un éditeur
 
 1.  Créer une solution
 
@@ -82,7 +82,7 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
     
     -   Cliquez sur **Créer**.
 
-## Tâche \n°2 : Ajouter une entité existante
+## Tâche \#2 : Ajouter une entité existante
 
 1.  Cliquez pour ouvrir la solution **Gestion du campus** que vous venez de créer.
 2.  Cliquez sur **Ajouter existant**, puis sélectionnez **Entité**.
@@ -117,7 +117,7 @@ entre les entités.
             permet de démarrer l’approvisionnement de l’entité en arrière-plan, tandis que vous pouvez commencer à ajouter des éléments
             d’autres entités et champs.
 
-## Tâche n°2 : Créer une entité et des champs de visite
+## Tâche #2 : Créer une entité et des champs de visite
 
 L’entité **Visite** contient des informations sur les visites du campus, y compris le bâtiment, le visiteur, l’heure prévue et l’heure réelle de chaque visite. 
 
@@ -181,7 +181,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
 8.  Cliquez sur **Enregistrer l’entité**
 
-## Tâche n°3 : Créer des relations
+## Tâche #3 : Créer des relations
 
 1.  Vérifiez que vous visualisez encore l’entité **Visite** de votre solution **Gestion du campus**. Sinon, accédez à cette page.
 2.  Créer une relation Visite - Contact
@@ -212,7 +212,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 7. Le fichier Campus Data Map doit maintenant être importé avec succès. Si vous rencontrez une erreur, revenez en arrière et vérifiez que vous avez créé toutes les entités et champs requis à partir des tâches précédentes.
 8. Sélectionnez **Solutions** dans le menu supérieur, puis cliquez sur **Publier toutes les personnalisations.**
 
-## Tâche n°2 : Importer des données  
+## Tâche #2 : Importer des données  
 
 1. Téléchargez [CampusData.zip](../../Allfiles/Labs/CampusData.zip).
 2. Accédez au Centre d’administration Power Platform à l’adresse <https://admin.powerplatform.microsoft.com>.
@@ -227,9 +227,9 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 11. Appuyez sur **Terminer**.
 12. L’importation des données va maintenant commencer. Vous pouvez maintenant utiliser le bouton Actualiser dans le volet droit **Mes importations** pour actualiser le tableau et affecter aux quatre importations le motif de statut **Terminé**. Cela peut prendre quelques minutes.
 
-## Tâche n°3 : Vérifier une importation de données
+## Tâche #3 : Vérifier une importation de données
 
-1. Sélectionnez la solution **Gestion du campus**. Si vous ne l’avez pas encore ouvert, accédez à make.powerapps.com et cliquez sur solutions dans le volet gauche pour localiser votre solution.*
+1. Sélectionnez la solution **Gestion du campus**. Si vous ne l’avez pas encore ouvert, accédez à make.powerapps.com et cliquez sur solutions dans le volet gauche pour localiser votre solution.
 2. Sélectionnez l’entité **Visite**, puis l’onglet **Données**.
 3. Cliquez sur **Visites actives** dans le coin supérieur droit pour afficher le sélecteur de vue, puis sélectionnez **Tous les champs**
 4. Si l’importation a réussi, la liste des entrées de visite s’affiche.
