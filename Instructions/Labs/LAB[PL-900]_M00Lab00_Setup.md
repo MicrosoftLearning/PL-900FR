@@ -1,13 +1,13 @@
 ﻿---
 lab:
-    title: 'Atelier pratique : Valider un environnement de labo'
+    title: 'Labo : Valider un environnement de labo'
     module: 'Module 0 : Présentation du cours'
 ---
 
 Module 0 : Présentation du cours
 =================================
 
-## Atelier pratique : Valider un environnement de labo
+## Labo : Valider un environnement de labo
 
 Scénario
 --------

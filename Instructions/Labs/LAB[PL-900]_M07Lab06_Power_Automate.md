@@ -178,12 +178,12 @@ Tâche \#2 : Validez et testez le flux.
     
 10.  Accédez aux données Propriétaire pour l’enregistrement connexe
 
-    * Cliquez sur **Ajouter une action** à l’intérieur de la boucle.
-    * Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**. 
-    * Sélectionnez l’action **Obtenir un enregistrement**.
-    * Cliquez sur les points de suspension (« ... ») affichés en regard de l’option **Accéder à un enregistrement** et sélectionnez **Renommer**. Entrez **GetUser** comme nom d’étape
-    * Sélectionnez **Visites** comme **Nom de l’entité**
-    * Sélectionnez **Propriétaire (valeur)** comme **ID de l’élément** dans le contenu dynamique
+* Cliquez sur **Ajouter une action** à l’intérieur de la boucle.
+* Recherchez **Actuel** et sélectionnez le connecteur **Common Data Service (Environnement actuel)**. 
+* Sélectionnez l’action **Obtenir un enregistrement**.
+* Cliquez sur les points de suspension (« ... ») affichés en regard de l’option **Accéder à un enregistrement** et sélectionnez **Renommer**. Entrez **GetUser** comme nom d’étape
+* Sélectionnez **Visites** comme **Nom de l’entité**
+* Sélectionnez **Propriétaire (valeur)** comme **ID de l’élément** dans le contenu dynamique
 
 11.  Ajoutez l’action **Envoyer une notification par e-mail** depuis la connexion **Messagerie**, tout en restant au niveau de l’option **Appliquer à chaque boucle**
 
