@@ -95,7 +95,7 @@ Au cours de cet exercice, vous allez générer des sujets à partir du site FAQ 
 
 12. Une fois les sujets suggérés ajoutés, sélectionnez l’onglet **Existant**. Le statut des nouveaux sujets passe ensuite à Désactivé.
 
-13. Cliquez sur le bouton bascule de la colonne **Statut** pour les remplacer par **Activé**. Si vous manquez de temps, vous pouvez activer les dix premiers, mais assurez-vous d’avoir transformé « ** Dois-je porter un masque ? ** » sur **Activé**.
+13. Cliquez sur le bouton bascule de la colonne **Statut** pour les remplacer par **Activé**. Si vous manquez de temps, vous pouvez activer les dix premiers, mais assurez-vous d’avoir transformé «**Dois-je porter un masque ?**» sur **Activé**.
 
 14. Ne quittez pas cette fenêtre de navigateur.
 

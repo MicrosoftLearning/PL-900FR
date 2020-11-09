@@ -223,17 +223,17 @@ Tâche \n°2 : Validez et testez le flux.
     
     * Cliquez sur **...** en regard du champ **Obtenez un enregistrement**, puis sélectionnez **Renommer**. Saisissez **Obtenir un visiteur** comme nom d’étape
     
-11.  Ajoutez une action **Envoyer une notification par courrier** à partir de la connexion **Courrier**, tout en laissant l’option **Appliquer à chaque boucle** activée
+10.  Ajoutez une action **Envoyer une notification par courrier** à partir de la connexion **Courrier**, tout en laissant l’option **Appliquer à chaque boucle** activée
 
-12.  Tapez votre adresse électronique dans **À**
+11.  Tapez votre adresse électronique dans **À**
 
-13.  Saisissez ce qui suit dans le champ **Sujet**. **Visiteur (Valeur)** est un contenu dynamique de l’étape **Obtenir un visiteur**.
+12.  Saisissez ce qui suit dans le champ **Sujet**. **Visiteur (Valeur)** est un contenu dynamique de l’étape **Obtenir un visiteur**.
 
        ```
          {Full Name} a dépassé la durée autorisée de sa visite
        ```
    
-14.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
+13.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
 
        ```
          La durée limite de la visite a été dépassée pour {Name}
@@ -243,9 +243,9 @@ Tâche \n°2 : Validez et testez le flux.
          Sécurité du campus
        ```
 
-17.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.
+14.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.
 
-18. Appuyez sur **Enregistrer**
+15. Appuyez sur **Enregistrer**
 
     Votre flux doit ressembler à ceci :
 
@@ -261,7 +261,7 @@ Tâche \n°2 : Validez et testez le flux.
    
    3. Le champ Début réel est renseigné.
    
-         >**Remarque ** : Pour afficher ces données, accédez à <make.powerapps.com> sous un nouvel onglet. Cliquez sur Solutions dans le volet gauche pour localiser votre solution. Sélectionnez l’entité Visite, puis l’onglet Données. Cliquez sur Visites actives dans le coin supérieur droit pour afficher le sélecteur de vue, puis sélectionnez Tous les champs.
+         >**Remarque** : Pour afficher ces données, accédez à <make.powerapps.com> sous un nouvel onglet. Cliquez sur Solutions dans le volet gauche pour localiser votre solution. Sélectionnez l’entité Visite, puis l’onglet Données. Cliquez sur Visites actives dans le coin supérieur droit pour afficher le sélecteur de vue, puis sélectionnez Tous les champs.
    
 2. Accédez à votre solution et localisez le flux **Balayage de sécurité**. Cliquez sur **...** et cliquez sur **Éditer**.
 

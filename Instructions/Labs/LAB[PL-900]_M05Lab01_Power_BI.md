@@ -91,25 +91,25 @@ Tâche \n°2 : Préparez les données
     
 2.  Ouvrez Power BI Desktop et connectez-vous si vous y êtes invité.
 
-2. Sélectionnez ** Obtenir les données**.
+3. Sélectionnez **Obtenir les données**.
 
-3. Sélectionnez **Power Platform** sur la gauche, puis **Common Data Service** et appuyez sur **Connecter**.
+4. Sélectionnez **Power Platform** sur la gauche, puis **Common Data Service** et appuyez sur **Connecter**.
 
-4. Collez l’URL d’environnement que vous avez copiée précédemment dans le champ **URL du serveur** et cliquez sur **OK**.
+5. Collez l’URL d’environnement que vous avez copiée précédemment dans le champ **URL du serveur** et cliquez sur **OK**.
 
-5. Développez le nœud **Entités**, sélectionnez les entités **bc_Building** et **bc_Visit** et cliquez sur **Charger**.
+6. Développez le nœud **Entités**, sélectionnez les entités **bc_Building** et **bc_Visit** et cliquez sur **Charger**.
 
-6. Cliquez sur l’icône **Modèle** dans la barre d’outils verticale de gauche.
+7. Cliquez sur l’icône **Modèle** dans la barre d’outils verticale de gauche.
 
-7. Faites glisser la colonne **bc_buildingid** du tableau **bc_Building** et déposez-la sur la colonne **bc_building** dans le tableau **bc_Visit**. Cela créera une relation entre les deux entités que Power BI pourra utiliser pour afficher les données associées.
+8. Faites glisser la colonne **bc_buildingid** du tableau **bc_Building** et déposez-la sur la colonne **bc_building** dans le tableau **bc_Visit**. Cela créera une relation entre les deux entités que Power BI pourra utiliser pour afficher les données associées.
 
-8. Sélectionnez l’icône **Rapport** dans la barre d’outils de gauche.
+9. Sélectionnez l’icône **Rapport** dans la barre d’outils de gauche.
 
-9. Développez le nœud **bc_Visit** dans le panneau **Champs**.
+10. Développez le nœud **bc_Visit** dans le panneau **Champs**.
 
-10. Cliquez sur **...** en regard de **bc_Visit** et sélectionnez **Nouvelle colonne**.
+11. Cliquez sur **...** en regard de **bc_Visit** et sélectionnez **Nouvelle colonne**.
 
-11. Terminez la formule comme suit
+12. Terminez la formule comme suit
 
     ```
     Column = RELATED(bc_Building[bc_name])
@@ -117,13 +117,13 @@ Tâche \n°2 : Préparez les données
 
     Appuyez ensuite sur Entrée. Cela ajoutera un nouveau champ avec le nom du bâtiment dans les données de visites.
 
-12. Cliquez sur **...** en regard du champ **Colonne** que vous venez de créer et sélectionnez **Renommer**. Saisissez **Bâtiment** comme nom de champ.
+13. Cliquez sur **...** en regard du champ **Colonne** que vous venez de créer et sélectionnez **Renommer**. Saisissez **Bâtiment** comme nom de champ.
 
-13. Cliquez sur **...** en regard du champ **bc_visitid** et sélectionnez **Renommer**. Saisissez **Visite** comme nom de champ.
+14. Cliquez sur **...** en regard du champ **bc_visitid** et sélectionnez **Renommer**. Saisissez **Visite** comme nom de champ.
 
-14. Cliquez sur  **...** en regard du champ **bc_scheduledstart** et sélectionnez **Renommer**. Entrez **Démarrer** comme nom de champ.
+15. Cliquez sur  **...** en regard du champ **bc_scheduledstart** et sélectionnez **Renommer**. Entrez **Démarrer** comme nom de champ.
 
-15. Enregistrez le travail en cours en appuyant sur **Fichier \| Enregistrez** en saisissant le nom de fichier de votre choix.
+16. Enregistrez le travail en cours en appuyant sur **Fichier \| Enregistrez** en saisissant le nom de fichier de votre choix.
 
 ## Tâche n° 3 : Créer un graphique et des visualisations temporelles
 
