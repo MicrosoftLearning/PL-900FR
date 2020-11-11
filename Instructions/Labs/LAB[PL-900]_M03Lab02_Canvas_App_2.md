@@ -179,14 +179,14 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
    
    * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par `"Sortie"` (vous pouvez la taper entre les guillemets existants)
    
-   * Renommez le bouton `BoutonSortie`
+   * Renommez le bouton `CheckOutButton`
    
    * Positionnez les boutons côte à côte sous le mode formulaire d’enregistrement 
    
 3. Activez et désactivez les boutons en fonction des données de visite. 
    Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite est localisé (non vide), si l’état de l’enregistrement est actif et si la visite n’a pas encore commencé, c’est-à-dire si la valeur du champ Début réel n’est pas renseignée.
 
-   * Sélectionnez le bouton Entrée et cliquez sur la propriété **Mode d’affichage** du bouton dans l’onglet Propriétés
+   * Sélectionnez le bouton Entrée et cliquez sur la propriété **DisplayMode** du bouton dans l’onglet Propriétés
 
    * Saisissez l’expression ci-dessous dans la barre de fonctions.
 

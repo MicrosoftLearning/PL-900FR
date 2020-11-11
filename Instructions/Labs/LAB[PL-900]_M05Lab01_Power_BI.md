@@ -54,7 +54,7 @@ Tâche \#1 : Installer Power BI Desktop/Préparer Power BI service
 1.  Si vous n’avez pas encore installé Power BI Desktop, accédez à [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) pour télécharger et installer l’application Power BI.
 
 > [!IMPORTANT]
-> Si vous rencontrez des problèmes lors de l’installation de Power BI Desktop en utilisant le Microsoft Store, essayez le programme d’installation autonome pouvant être téléchargé à l’adresse [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+> Si vous rencontrez des problèmes lors de l’installation de Power BI Desktop en utilisant le Microsoft Store, essayez le programme d’installation autonome pouvant être téléchargé à l’adresse [https://aka.ms/pbiSingleInstaller-fra](https://aka.ms/pbiSingleInstaller-fra).
 
 2. **Si vous avez correctement installé Power BI Desktop, veuillez passer à la [Tâche \n° 2](#task-2-prepare-data)**. Si vous ne disposez pas des autorisations requises pour installer des applications de bureau ou que vous rencontrez des difficultés lors de l’exécution ou de la configuration de Power BI Desktop, suivez les étapes ci-dessous, puis passez à la [tâche \n° 3](#task-3-create-chart-and-time-visualizations), mais au lieu de Power BI Desktop, utilisez le Power BI service en ligne à l’adresse [https://app.powerbi.com](https://app.powerbi.com) pendant toute la durée du labo. 
 
