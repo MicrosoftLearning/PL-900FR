@@ -1,14 +1,13 @@
 ---
 lab:
-    title: 'Labo 3 : Comment créer une application canevas, partie 2'
+    title: 'Labo 3 : Comment créer une application canevas, partie 2'
     module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
+# Module 3 : Premiers pas avec Power Apps
 ## Labo 2 : Comment créer une application canevas, partie 2
 
-Scénario
-========
+# Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -18,8 +17,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans la deuxième partie de ce labo, vous allez concevoir et créer une application de canevas Power Apps que le personnel de sécurité utilisera aux entrées du bâtiment pour confirmer et enregistrer rapidement les visiteurs.
 
-Étapes de labo de haut niveau
-======================
+# Étapes de labo de haut niveau
 
 Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 
@@ -30,26 +28,22 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 -   Utilisez une vue Common Data Service pour remplir la galerie
 -   Gérez le processus d’arrivée et de départ d’un visiteur
 
-
-## Conditions préalables
+## Prérequis
 
 * Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
 * Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
 
-Éléments à considérer avant de commencer
------------------------------------
+## Éléments à considérer avant de commencer
 
 -   À quelles informations un agent de sécurité a-t-il besoin d’accéder rapidement ?
 -   Que doit-il se passer si le code visiteur n’est pas valide ?
 -   Que se passera-t-il si le visiteur arrive en dehors des heures prévues ? 
 
-Exercice \#1 : Créer une application canevas de sécurité
-===============================
+# Exercice \#1 : Créer une application canevas de sécurité
 
 **Objectif :** Au cours de cet exercice, vous allez créer une application canevas.
 
-Tâche \#1 : Créer une application de canevas
----------------------------
+## Tâche n°1 : Créer une application de canevas
 
 1.  Ouvrez votre solution Gestion du campus.
 
@@ -68,13 +62,15 @@ Tâche \#1 : Créer une application de canevas
         
     -   Cliquez sur **Ignorer** si la boîte de dialogue Bienvenue dans Power Apps Studio apparaît.
     
+3.  Enregistrez l’application canevas
+
     -   Cliquez sur **Fichier** et sélectionnez **Enregistrez sous**.
     
     -   Vérifiez si **le cloud** est sélectionné. 
     
-    -   Entrez **[Votre Nom] Campus Security** comme nom et cliquez sur **Enregistrer**. Cela garantit que les modifications ne seront pas supprimées si l’application se ferme de manière inattendue.
+    -   Entrez **[Your Last Name] Sécurité du campus** comme Nom et cliquez sur **Enregistrer**.
         
-    -   Cliquez sur la flèche Précédent, en haut à gauche (sous Power Apps) pour revenir à l’application.
+    -   Cliquez sur la flèche **Précédent**, en haut à gauche (sous Power Apps) pour revenir à l’application.
 
 3.  Se connecter à la source de données (visites)
 
@@ -86,8 +82,7 @@ Tâche \#1 : Créer une application de canevas
     
 4.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-Tâche \n°2 : Affichez les informations sur les visiteurs
---------------------------------
+## Tâche \n°2 : Affichez les informations sur les visiteurs
 
 1.  Ajoutez une zone de recherche
 
@@ -99,96 +94,107 @@ Tâche \n°2 : Affichez les informations sur les visiteurs
     
     -   Cliquez sur **Texte** et sélectionnez **Saisie de texte**.
     
-    -   Sélectionnez le texte de la propriété **Par défaut** et effacez la valeur.
+2.  Modifiez l’objet d’entrée de texte
+
+    -   Tout en gardant l’objet d’entrée de texte sélectionné, sélectionnez le texte dans la propriété **Par défaut** et effacez la valeur.
     
-    -   Sélectionnez la propriété **Texte d’information** et saisissez `"Saisir le code visiteur"` en tant que valeur (y compris les guillemets)
+    -   Sélectionnez la propriété **Texte d’information** et saisissez `Saisir le code visiteur` en tant que valeur (y compris les guillemets)
     
-    -   Cliquez sur **...** en regard du nom du contrôle dans une arborescence (TextInput1), sélectionnez **Renommer** et remplacez le nom par `**textCode**`
+    -   Cliquez sur **...**, à côté du nom du contrôle dans la vue d’arborescence (TextInput1), sélectionnez **Renommer** et remplacez le nom par `textCode`
     
-2. Ajouter un mode formulaire
+3.  Ajoutez une vue formulaire
 
-   -   Sur l’onglet **Insérer**, cliquez sur **Formulaires** puis sélectionnez **Afficher**
+    -   Sur l’onglet **Insérer**, cliquez sur **Formulaires** puis sélectionnez **Afficher**
    
-   -   À l’aide des poignées de taille, placez le formulaire sous la zone de texte de recherche
+    -   À l’aide des poignées de taille, placez le formulaire sous la zone de texte de recherche
    
-   -   Sélectionnez la propriété **DataSource** et entrez **Visites**
+    -   Sélectionnez la propriété **DataSource** et sélectionnez **Visites**
    
-   -   Dans le volet des propriétés, sélectionnez **Horizontale** comme **Disposition**
-   
-   -   Cliquez sur **Modifier les champs**
-   
-   -   Cliquez sur **Ajouter un champ** et sélectionnez les champs suivants : **Fin réelle**, **Début réel**, **Bâtiment**, **Fin prévue**, **Début prévu**, **Visiteur**
-   
-   -   Appuyez sur **Ajouter**.
-   
-   -   Modifiez l’ordre des champs sélectionnés en faisant glisser les cartes de champ dans la liste. L’ordre recommandé est Visiteur, Bâtiment, Début planifié, Fin planifiée, Début réel, Fin réelle
-   
-   -   Cliquez sur le **X** pour fermer le volet Champs
-   
-   -   Sous l’onglet Avancé, sélectionnez propriété de l’**Article** et saisissez `LookUp(Visits, Code = textCode.Text)` 
+    -   Dans le volet des propriétés, sélectionnez **Horizontale** comme **Disposition**
 
-3. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+4.  Modifiez la vue formulaire
 
-4. Testez l’application
+    -   Cliquez sur **Modifier les champs**
+   
+    -   Cliquez sur **Ajouter un champ** et sélectionnez les champs suivants : **Fin réelle**, **Début réel**, **Bâtiment**, **Fin prévue**, **Début prévu**, **Visiteur**
+   
+    -   Appuyez sur **Ajouter**.
+   
+    -   Supprimez les deux champs **Nom** et **Créé le** 
+   
+    -   Modifiez l’ordre des champs sélectionnés en faisant glisser les cartes de champ dans la liste. L’ordre recommandé est le suivant : Visiteur, Bâtiment, Début planifié, Fin planifiée, Début réel, Fin réelle
+   
+    -   Cliquez sur le **X** pour fermer le volet Champs
+   
+5.  Tout en conservant la vue formulaire sélectionnée, sélectionnez l’onglet Avancé dans le volet Propriétés. Sélectionnez Propriété de l’**article** et entrez `LookUp(Visits, Code = textCode.Text)` 
 
-   -   Passez à l’onglet du navigateur contenant la solution
-   
-   -   Sélectionnez l’entité **Visite**
-   
-   -   Sélectionnez l’onglet **Données**
-   
-   -   Ouvrez le sélecteur de vue en haut à droite en cliquant sur le nom de la vue actuelle, **Visites actives**
-   
-   -   Remplacez la valeur de la vue par **Tous les champs**
-   
-   -   Recherchez un enregistrement Visite ne possédant pas la valeur Début réel ou Fin réelle. Sélectionnez et copiez le **Code** pour cette visite.
-   
-   -   Basculez vers l’onglet du navigateur avec l’application, appuyez sur F5 ou cliquez sur l’icône Lecture dans le coin supérieur droit pour prévisualiser l’application.
-   
-   -   Collez la valeur copiée dans la zone de texte de recherche et vérifiez que l’enregistrement est affiché dans le formulaire
-   
-   -   Effacez le contenu de la zone de texte de recherche.
-   
-5.  Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
+6.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
+7.  Préparez-vous à tester l’application
 
-Tâche \n° 3 : Ajouter des boutons d’entrée et de sortie
----------------------------------------
+    -   Passez à l’onglet du navigateur contenant la solution
+   
+    -   Sélectionnez l’entité **Visite**
+   
+    -   Sélectionnez l’onglet **Données**
+   
+    -   Ouvrez le sélecteur de vue en haut à droite en cliquant sur le nom de la vue actuelle, **Visites actives**
+   
+    -   Remplacez la valeur de la vue par **Tous les champs**
+   
+    -   Recherchez un enregistrement Visite ne possédant pas la valeur Début réel ou Fin réelle. Sélectionnez et copiez le **Code** pour cette visite.
+
+8.  Testez l’application
+
+    -   Basculez vers l’onglet du navigateur dans l’application, appuyez sur **F5** ou cliquez sur l’icône **Lire** dans le coin supérieur droit pour affcher un aperçu de l’application.
+   
+    -   Collez la valeur copiée dans la zone de texte de recherche et vérifiez que l’enregistrement est affiché dans le formulaire
+   
+9.  Effacez le contenu de la zone de texte de recherche.
+   
+10.  Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
+
+## Tâche n°3 : Ajouter des boutons d’entrée et de sortie
+
 Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’enregistrer l’heure d’arrivée et de départ de sa visite. 
 
 1. Enregistrez les résultats de la recherche dans une variable à réutiliser dans la commande
 
-   * Sélectionnez la commande **textCode**
+    * Sélectionnez la commande **textCode**
    
-   * Dans le volet des propriétés, sélectionnez l’onglet **Avancé** et sélectionnez la propriété **OnChange**
+    * Dans le volet des propriétés, sélectionnez l’onglet **Avancé** et sélectionnez la propriété **OnChange**
    
-   * Entrez l’expression suivante : `Set(Visit, LookUp(Visits, Code = textCode.Text))`
-        > C’est la même expression que ci-dessus, sauf que cette fois, nous enregistrons les résultats dans une variable globale. Cela nous permet d’utiliser la variable *Visite* dans toute l’application, sans avoir à ressaisir l’expression de recherche entière.
+    * Entrez l’expression suivante : `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    
+    > Cela enregistrera la visite dans une variable globale lorsqu’un utilisateur effectuera une recherche dans la zone de recherche textCode. Cela nous permet d’utiliser la variable *Visite* dans toute l’application, sans avoir à ressaisir l’expression de recherche entière.
 
-2. Ajouter des boutons pour l’entrée et la sortie
+2. Ajoutez le bouton « Check In ».
 
    * Sélectionnez l’onglet **Insertion**
    
    * Cliquez sur **Bouton**
    
-   * Dans le volet des propriétés, remplacez la valeur du bouton propriété de **Texte** par `"Check In"` (vous pouvez taper la valeur entre les guillemets existants)
+   * Dans le volet des propriétés, remplacez la valeur du bouton propriété **Texte** par `Check In` (vous pouvez taper la valeur entre les guillemets existants)
    
    * Cliquez sur **...** en regard du nom du bouton dans une arborescence (Button1), sélectionnez **Renommer** et remplacez le nom par `CheckInButton`
-   
-   * Cliquez sur **Bouton** pour insérer un autre bouton
-   
-   * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par `"Sortie"` (vous pouvez la taper entre les guillemets existants)
-   
-   * Renommez le bouton `CheckOutButton`
-   
-   * Positionnez les boutons côte à côte sous le mode formulaire d’enregistrement 
-   
-3. Activez et désactivez les boutons en fonction des données de visite. 
-   Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite est localisé (non vide), si l’état de l’enregistrement est actif et si la visite n’a pas encore commencé, c’est-à-dire si la valeur du champ Début réel n’est pas renseignée.
 
-   * Sélectionnez le bouton Entrée et cliquez sur la propriété **DisplayMode** du bouton dans l’onglet Propriétés
+3. Ajoutez le bouton Check Out   
 
-   * Saisissez l’expression ci-dessous dans la barre de fonctions.
+   * Cliquez sur **Bouton** dans l’onglet Insertion pour insérer un autre bouton
+   
+   * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par `Check Out` (vous pouvez la taper entre les guillemets existants)
+   
+   * Renommez le bouton `BoutonSortie`
+   
+   * Positionnez les boutons sous le champ de recherche, en laissant **Check In** au-dessus de **Check Out** 
+   
+## Tâche n°4 : Activez et désactivez les boutons en fonction des données de visite
+
+Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite est localisé (non vide), si l’état de l’enregistrement est actif et si la visite n’a pas encore commencé, c’est-à-dire si la valeur du champ Début réel n’est pas renseignée.
+
+1. Sélectionnez le **bouton Check In** et cliquez sur la propriété **DisplayMode** du bouton dans l’onglet Propriétés
+
+2. Entrez l’expression ci-dessous dans la barre de fonctions :
 
       ```
       If(!IsBlank(Visit) 
@@ -201,16 +207,17 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
 
    L’expression peut être décomposée comme suit :
 
-   * `!IsBlank(Visit)` : un enregistrement de visite a été trouvé
-   * `&&` : opérateur ET logique
-   * `Visit.Status = 'Status (Visits)'.Active` : l’état de l’enregistrement est *Actif*
-   * `IsBlank(Visit.'Actual Start')` : le champ Début effectif ne contient aucune donnée
+   * **IsBlank(Visit)** -  : un enregistrement de visite a été trouvé
+   * **&&** : opérateur logique ET
+   * **Visit.Status = 'Status (Visits)'.Active** : le statut de l’enregistrement est *Actif*
+   * **IsBlank(Visit.'Actual Start')** - le champ Début effectif ne contient aucune donnée
+   * **DisplayMode.Edit, DisplayMode.Disabled** -  Si les conditions ci-dessus sont remplies, le bouton deviendra modifiable. Sinon, le bouton restera désactivé.
 
-4. Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
+Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
 
-   * Sélectionnez le bouton Sortie et cliquez sur la propriété **Mode d’affichage** du bouton sous l’onglet Propriétés
+3. Sélectionnez le bouton Sortie et cliquez sur la propriété **Mode d’affichage** du bouton sous l’onglet Propriétés
 
-   * Saisissez l’expression ci-dessous dans la barre de fonctions.
+4. Entrez l’expression ci-dessous dans la barre de fonctions :
 
      ```
      If(!IsBlank(Visit) 
@@ -223,11 +230,15 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
 
 5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-6. Appuyez sur **F5** pour exécuter l’application. Les deux boutons doivent être désactivés. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer. Effacez le contenu de la zone de recherche.
+6. Appuyez sur **F5** pour exécuter l’application. 
 
-7. Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
+7. Les deux boutons doivent être désactivés. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer. 
 
-## Tâche 4 : Finaliser le processus d’entrée et de sortie
+8. Effacez le contenu de la zone de recherche.
+
+9. Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
+
+## Tâche n°5 : Finaliser le processus d’entrée et de sortie
 
 Pour implémenter le processus d’entrée et de sortie, nous devons mettre à jour les données de visite du Common Data Service comme suit :
 
@@ -251,15 +262,15 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * `Patch(Visits, Visit, {'Actual Start': Now()});`. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
-   * `Refresh([@Visits]);`. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
-   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` Cette expression met à jour la variable *Visite* avec de nouvelles données du Common Data Service.
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * **Refresh([@Visits]);**. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Cette expression met à jour la variable *Visite* avec de nouvelles données de Common Data Service.
    
-   Lorsqu’un utilisateur clique sur ce bouton, le début réel de la visite sera défini sur la date et l’heure actuelles et les données seront actualisées.
+   > Lorsqu’un utilisateur clique sur ce bouton, le début réel de la visite sera défini sur la date et l’heure actuelles et les données seront actualisées.
 
 3. Sélectionnez le bouton **Sortie**.
 
-4. Définissez la propriété **OnSelect** de l’onglet Avancé sur l’expression suivante.
+4. Définissez la propriété **OnSelect** de l’onglet Avancé sur l’expression suivante :
 
    ```
    Patch(
@@ -276,7 +287,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Lorsqu’un utilisateur clique sur ce bouton, la fin réelle sera définie sur la date et l’heure actuelles, l’état de l’enregistrement de visite sera défini sur Inactif et les données seront actualisées.
 
-5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche **Retour** pour revenir à l’application.
 
 6. Appuyez sur **F5** ou cliquez sur le bouton Lecture pour exécuter l’application. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer.
 
@@ -298,16 +309,15 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
 10. Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
 
-Tâche 5 : Ajouter des indicateurs visuels
---------------------------------------
+## Tâche n°6 : Ajouter des indicateurs visuels
 
-La convivialité d’une application mobile s’améliore considérablement lorsque, en plus des informations textuelles, des indicateurs visuels sont fournis. Dans cette tâche, nous ajouterons une icône indiquant si un visiteur peut entrer ou sortir.
+La convivialité d’une application mobile s’améliore considérablement lorsque des indicateurs visuels sont fournis. Dans cette tâche, nous ajouterons une icône indiquant si un visiteur peut entrer ou sortir.
 
 1. Sélectionnez l’onglet **Insertion**
 
 2. Sélectionnez **Icônes \| Ajouter**. À ce stade, peu importe l’icône que nous sélectionnons car nous voulons que la valeur soit dynamique.
 
-3. Redimensionnez et placez l’icône au milieu de l’écran, sous les boutons
+3. Redimensionnez et déplacez l’icône à gauche des boutons
 
 4. Sous l’onglet Avancé de l’icône, sélectionnez propriété de l’**Icône** (dans la section Conception) et entrez l’expression suivante
 
@@ -320,7 +330,7 @@ La convivialité d’une application mobile s’améliore considérablement lors
    )
    ```
 
-5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche **Retour** pour revenir à l’application.
 
 6. Appuyez sur **F5** pour exécuter l’application. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Vérifiez que l’icône affiche un emoji aux sourcils froncés.
 
@@ -328,13 +338,13 @@ La convivialité d’une application mobile s’améliore considérablement lors
 
     > Vous pouvez accéder à l’onglet précédent pour copier un autre code à partir de l’une des visites que vous avez créées. Vous pouvez également exécuter votre application **Personnel du campus**, créée précédemment, pour créer de nouveaux enregistrements de visites. Vérifiez que l’icône affiche un emoji souriant pour ce code.
 
-   Votre application en cours d’exécution doit ressembler à ceci :
+Votre application en cours d’exécution doit ressembler à ceci :
 
-![Application de sécurité exécutant un canevas](media/3-canvas-running.png)
+![Application de sécurité exécutant un canevas](media/3-canvas-app-running.png)
 
 8. Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
 
-## Tâche 6 : Publier l’application
+## Tâche 7 : Publier l’application
 
 1. Vous devriez toujours garder l’application Sécurité du campus ouverte dans votre navigateur. Si non, sélectionnez l’application **Sécurité du campus**, puis cliquez sur **Modifier**
 

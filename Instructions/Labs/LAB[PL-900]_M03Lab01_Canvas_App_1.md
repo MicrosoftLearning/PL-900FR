@@ -6,7 +6,7 @@ lab:
 
 # Module 3 : Premiers pas avec Power Apps
 
-## Labo : Comment créer une application canevas, partie 1
+## Labo : Comment créer une application canevas, partie 1
 
 # Scénario
 
@@ -28,7 +28,7 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 -   Configurez un contrôle de galerie pour afficher les visites
 -   Ajouter un filtrage sur la source de données de la galerie pour n’afficher que les futures visites
 
-## Conditions préalables
+## Prérequis
 
 * Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
 * Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
@@ -40,12 +40,11 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 -   Comment réduire les enregistrements sélectionnés pour améliorer les niveaux de performance de l’application et l’adoption par les utilisateurs
 
 
-Exercice \#1 : Créer une application de canevas du personnel
-===============================
+# Exercice \#1 : Créer une application de canevas du personnel
 
 **Objectif :** Dans cet exercice, vous allez créer une application canevas à partir d’un modèle, puis la modifier pour y inclure les données requises
 
-## Tâche \n°1 : Créer une application de canevas
+## Tâche n°1 : Créer une application de canevas
 
 Dans cette tâche, vous allez créer une application canevas à l’aide du modèle de disposition du téléphone, basé sur Common Data Service. En utilisant Visites comme entité sélectionnée depuis Common Data Service, le modèle va générer l’application Galerie - Afficher - Modifier pour gérer les visites sur le campus.
 
@@ -54,7 +53,7 @@ Dans cette tâche, vous allez créer une application canevas à l’aide du mod�
     -   Connectez-vous à <https://make.powerapps.com>
 
     -   Sélectionnez votre **environnement** en haut à droite, s’il n’est pas déjà défini sur
-        votre environnement de Bellows College.
+        votre environnement Exercices pratiques.
 
     -   Sélectionnez **Applications**.
 
@@ -66,13 +65,13 @@ Dans cette tâche, vous allez créer une application canevas à l’aide du mod�
 
 3.  Sélectionnez la connexion **Common Data Service** puis cliquez sur **Créer**.
 
-    -   Sélectionnez la table **Visites**
+4.  Sélectionnez la table **Visites**
 
-    -   Cliquez sur **Se connecter**
+5.  Cliquez sur **Se connecter**
 
-    -   Il est possible que la fenêtre **Bienvenue dans Power Apps Studio** apparaisse. Cliquez sur **Ignorer**.
+6.  Il est possible que la fenêtre **Bienvenue dans Power Apps Studio** apparaisse. Cliquez sur **Ignorer**.
 
-4.  Enregistrer l’application
+7.  Enregistrer l’application
 
     -   Cliquez sur **Fichier \> Enregistrer**.
 
@@ -84,7 +83,7 @@ Dans cette tâche, vous allez créer une application canevas à l’aide du mod�
 
 Dans cette tâche, vous allez configurer le formulaire de détails pour afficher les informations sur les enregistrements de visite individuelle.
 
-1.  Sélectionnez la flèche Retour, en haut à gauche, pour revenir à la définition de l’application.
+1.  Sélectionnez la flèche **Retour**, en haut à gauche, pour revenir à la définition de l’application.
 
 2. Développez **DetailScreen1** sous **Arborescence**
 
@@ -117,7 +116,7 @@ Dans cette tâche, vous allez configurer le formulaire de détails pour afficher
     
 9.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-## Tâche n° 3 : Configurer le formulaire de modification des visites 
+## Tâche n°3 : Configurer le formulaire de modification des visites 
 
 Dans cette tâche, vous allez configurer un formulaire pour modifier les informations sur les enregistrements de visite individuelle.
 
@@ -153,7 +152,7 @@ Dans cette tâche, vous allez configurer un formulaire pour modifier les informa
 
 9.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-## Tâche \n° 4 : Configurer la galerie de visites
+## Tâche n°4 : Configurer la galerie de visites
 
 Dans cette tâche, vous allez configurer la galerie pré-générée pour afficher le titre et les dates de début et de fin de la visite. 
 
@@ -161,31 +160,31 @@ Dans cette tâche, vous allez configurer la galerie pré-générée pour affiche
 
 2.  Sélectionnez **BrowseGallery1**
 
-3.  Sélectionnez la propriété **TemplateSize** du panneau Propriétés
+3.  Sélectionnez la propriété **TemplateSize** dans le volet droit du panneau Propriétés
 
-4.  Remplacez l’expression par la suivante ` Min(150, BrowseGallery1.Height - 60)`. Cette action garantit un espace suffisant pour des informations supplémentaires.
+4.  Remplacez l’expression par la suivante `Min(150, BrowseGallery1.Height - 60)`. Cette action garantit un espace suffisant pour des informations supplémentaires.
 
 5.  Modifiez la galerie en appuyant sur l’icône en forme de crayon dans le coin supérieur gauche de la galerie (survolez l’aperçu de l’application et cliquez sur l’icône en forme de crayon).
 
 6.  Sélectionnez le champ Date et heure.
 
-7.  Dans la barre de formule en haut, remplacez `ThisItem.'Created On'` par `ThisItem.'Scheduled Start'`.
+7.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Created On'** par `ThisItem.'Scheduled Start'`.
 
 8.  Sélectionnez à nouveau le champ
 
-9.  Appuyez sur `CTRL-C`, puis sur `CTRL-V` pour créer une copie du champ.
+9.  Appuyez sur **CTRL+C**, puis sur **CTRL+V** pour créer une copie du champ.
 
 10.  À l’aide de la souris ou du clavier, déplacez le contrôle copié vers le bas et alignez-le avec les autres contrôles dans la galerie, sous le champ Date et heure.
 
-11.  Dans la barre de formule en haut, remplacez `ThisItem.'Scheduled Start'` par `ThisItem.'Scheduled End'`.
+11.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Scheduled Start'** par `ThisItem.'Scheduled End'`.
 
 12.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-## Tâche n° 5 : Ajouter un filtre de date
+## Tâche 5 : Ajouter un filtre de date
 
 Étant donné que le nombre de visites augmente continuellement, les utilisateurs ont besoin d’une fonctionnalité pour filtrer la galerie de visites. Par exemple, l’utilisateur peut souhaiter consulter uniquement les visites futures. Dans cette tâche, vous ajoutez la possibilité d’afficher uniquement les visites ultérieures à une date sélectionnée par l’utilisateur.
 
-1. Sélectionnez **BrowseScreen1** pour vous assurer que BrowseGallery1 est désélectionné
+1. Sélectionnez **BrowseScreen1**
 
 2. Sélectionnez le menu **Insérer** en haut.
 
@@ -197,11 +196,11 @@ Dans cette tâche, vous allez configurer la galerie pré-générée pour affiche
 
 6. Redimensionnez et déplacez le contrôle de galerie pour qu’il se trouve sous le sélecteur de date et recouvre l’écran. Pour ce faire, cliquez sur l’icône de redimensionnement en haut au centre du contrôle de galerie et en redimensionnez le contrôle pour qu’il commence après le sélecteur de date.
 
-7. Tout en sélectionnant **BrowseGallery1**, cliquez sur l’onglet **Avancé** dans le volet Propriétés.
+7. Tout en maintenant **BrowseGallery1** sélectionné, cliquez sur l’onglet **Avancé** dans le volet Propriétés.
 
 8. Localisez la propriété **Articles** et cliquez dans la zone de texte.
 
-8. Dans l’expression, recherchez `[@Visits]` et remplacez-le par `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L’expression complète devrait ressembler à ce qui suit :
+9. Dans l’expression, recherchez **[@Visits]** et remplacez cette valeur par `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L’expression complète doit ressembler à ce qui suit :
 
    ```
    SortByColumns(
@@ -218,22 +217,21 @@ Dans cette tâche, vous allez configurer la galerie pré-générée pour affiche
    )
    ```
    
-   Votre écran doit plus ou moins ressembler à ceci :
+Votre écran doit plus ou moins ressembler à ceci :
 
 ![Galerie de filtrage de canevas](media/2-canvas-browse.png)
 
-9. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+10. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
 # Exercice n°2 : Finaliser l’application
 
 Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comme prévu, vous l’ajoutez ensuite à votre solution.
 
-Tâche \#1 : Tester l’application
---------------------------
+## Tâche n°1 : Tester l’application
 
 1.  Démarrer l’application
 
-    -   Sélectionnez **BrowseScreen1** et appuyez sur **F5**, ou cliquez sur l’icône Lecture dans le coin supérieur droit pour afficher un aperçu de l’application.
+    -   Sélectionnez **BrowseScreen1** et appuyez sur la touche **F5**, ou cliquez sur l’icône **Lire** dans le coin supérieur droit pour afficher un aperçu de l’application.
     
     -   L’application doit se charger et afficher la liste des visites. 
     
@@ -241,7 +239,7 @@ Tâche \#1 : Tester l’application
     
     -   Sélectionnez une visite et vérifiez que le formulaire d’affichage fonctionne correctement
     
-    -   Retournez dans la galerie et appuyez sur + pour créer une nouvelle visite. Vérifiez que le formulaire de modification contient les champs obligatoires, y compris le visiteur, le bâtiment et les dates de début et de fin planifiées.
+    -   Retournez dans la galerie et appuyez sur **+** pour créer une nouvelle visite. Vérifiez que le formulaire de modification contient les champs obligatoires, y compris le visiteur, le bâtiment et les dates de début et de fin planifiées.
     
     -   Renseignez les informations avant l’envoi. Vérifiez que le nouvel enregistrement apparaît dans la galerie.
     
@@ -257,14 +255,13 @@ Tâche \#1 : Tester l’application
 
     -   Cliquez sur **Publiez cette version**.
 
-    -   Cliquez sur la flèche retour pour revenir à l’application.
+    -   Cliquez sur la flèche **Retour** pour revenir à l’application.
 
     -   Fermez l’onglet ou la fenêtre du navigateur du **Concepteur**.
 
     -   Cliquez sur **Quitter** si vous y êtes invité lorsque vous essayez de fermer la fenêtre du navigateur.
 
-
-## Tâche n° 2 : Ajouter une application à la solution et publier 
+## Tâche 2 : Ajouter une application à la solution et publier 
 
 1. Ouvrez la solution Gestion du campus.
 
@@ -282,7 +279,7 @@ Tâche \#1 : Tester l’application
 
 4. Sélectionnez votre application **Personnel du campus** puis cliquez sur **Ajouter**.
 
-5. Sélectionnez **Publier toutes les personnalisations.**
+5. Sélectionnez **Publier toutes les personnalisations**.
 
 # Défis
 

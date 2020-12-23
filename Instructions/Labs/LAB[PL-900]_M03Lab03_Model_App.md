@@ -4,11 +4,10 @@ lab:
     module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
+# Module 3 : Premiers pas avec Power Apps
 ## Labo 3 : Comment créer une application pilotée par modèle
 
-Scénario
-========
+# Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -18,8 +17,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous allez créer une application Power Apps pilotée par modèle pour permettre au personnel de bureau du campus de gérer les enregistrements de visites sur l’ensemble du campus.
 
-Étapes de labo de haut niveau
-======================
+# Étapes de labo de haut niveau
 
 Dans le cadre de la création de l’application basée sur un modèle, vous effectuerez les opérations suivantes :
 
@@ -38,13 +36,12 @@ d’un tableau.
 
 Les deux seront intégrés à l’application basée sur un modèle pour une meilleure expérience utilisateur.
 
-## Conditions préalables
+## Prérequis
 
 * Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
 * Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
 
-Éléments à considérer avant de commencer
------------------------------------
+## Éléments à considérer avant de commencer
 
 -   Quels changements devons-nous apporter pour améliorer l’expérience utilisateur ?
 
@@ -53,13 +50,11 @@ Les deux seront intégrés à l’application basée sur un modèle pour une mei
 -   Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
 
-Exercice \#1 : Personnaliser les vues et les formulaires
-=======================================
+# Exercice \#1 : Personnaliser les vues et les formulaires
 
 **Objectif :** Dans cet exercice, vous allez personnaliser les vues et les formulaires des entités personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-Tâche \#1 : Modifier le formulaire de visite
------------------------------------
+## Tâche n°1 : Modifier le formulaire de visite
 
 1.  Connectez-vous à <https://make.powerapps.com> si ce n’est pas encore fait.
 
@@ -73,7 +68,7 @@ Tâche \#1 : Modifier le formulaire de visite
 
 6.  Cliquez sur l’onglet **Formulaires** et sélectionnez le type de formulaire **Principal**. 
 
-    -   Le formulaire comporte deux champs par défaut, Nom (Champ principal) et Propriétaire.
+    > Par défaut, le formulaire comporte deux champs : Nom (champ principal) et Propriétaire.
     
 7.  Ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les champs vers le formulaire ou en cliquant simplement sur les noms des champs :
 
@@ -84,9 +79,11 @@ Tâche \#1 : Modifier le formulaire de visite
     * **Début réel**
     * **Fin réelle** 
     
-8.  Faites glisser le champ **Code** et déposez-le dans l’en-tête du formulaire. (Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.)
+8.  Faites glisser le champ **Code** et déposez-le dans l’en-tête du formulaire. 
 
-9.  Tout en gardant la sélection sur le champ Code, cochez la case du **champ Lecture seule** dans le panneau Propriétés.
+    > L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.
+
+9.  En gardant le champ **Code** sélectionné, activez la case à cocher affichée en regard du champ ** Lecture seule** du panneau Propriétés.
 
 10.  Sélectionnez le champ **Propriétaire**. Sélectionnez le champ Propriétaire puis définissez le **champ Étiquette** sur **Hôte**
 
@@ -97,7 +94,7 @@ Tâche \#1 : Modifier le formulaire de visite
 13.  Cliquez sur **Retour** en haut à gauche de l’écran. Vous devriez maintenant revenir au niveau
      de l’onglet Formulaires de l’entité Visite.
 
-## Tâche \#2 : Modifier les vues de visite
+## Tâche \n°2 : Modifier les vues de visite
 
 Dans cette tâche, nous allons modifier la vue des visites actives par défaut et créer une nouvelle vue pour les visites d’aujourd’hui.
 
@@ -123,57 +120,52 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 
 8.  Cliquez sur **Publier** et attendez la fin de la publication.
 
-9.  Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui.
+Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites d’aujourd’hui.
 
-10.  Appuyez sur la flèche déroulante à côté du bouton **Enregistrer** (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
+9.  Appuyez sur le lien **Modifier les filtres** dans le panneau Propriétés.
 
-11.  Changez le nom en **Visites du jour** et appuyez sur **Enregistrer**.
+10.  Cliquez sur **Ajouter**, puis sélectionnez **Ajouter une ligne**.
 
-12.  Appuyez sur le lien **Modifier les filtres** dans le panneau Propriétés.
+11.  Sélectionnez le champ **Début programmé**, puis sélectionnez la condition **Aujourd’hui** dans la liste déroulante. 
 
-13.  Cliquez sur **Ajouter**, puis sélectionnez **Ajouter une ligne**.
+12.  Cliquez sur **...** à la ligne **Statut** et cliquez sur **Supprimer**. 
 
-14.  Sélectionnez le champ **Début programmé**, puis sélectionnez la condition **Aujourd’hui**. 
+13.  Appuyez sur **OK** pour enregistrer la condition. La vue est désormais filtrée pour n’afficher que les enregistrements dont la date de début programmé est aujourd’hui.
 
-15.  Cliquez sur **...** à la ligne **Statut** et cliquez sur **Supprimer**. 
+14.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. 
 
-16.  La vue est désormais filtrée pour n’afficher que les enregistrements dont la date de début programmé est aujourd’hui. Appuyez sur **OK** pour enregistrer la condition.
+    > **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 
-15.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. 
+15.  Cliquez sur la **flèche déroulante** affichée en regard du bouton Enregistrer (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 
-        > **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
-
-16.  Cliquez sur **Enregistrer** et attendez la fin de l’enregistrement.
+16.  Changez le nom en **Visites du jour** et appuyez sur **Enregistrer**.
 
 17.  Cliquez sur **Publier** et attendez la fin de la publication.
 
-
-Exercice \#2 : Créer une application pilotée par modèle
-=============================================
+# Exercice \#2 : Créer une application pilotée par modèle
 
 **Objectif :** Au cours de cet exercice, vous allez créer l’application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 > Vous verrez plusieurs champs non traités lors de la création de votre application, en particulier sur les étapes du plan du site. Nous avons pris quelques raccourcis dans le cadre de la réalisation des labos. Dans une implémentation réelle, vous donneriez à ces éléments des noms logiques.
 
-Tâche \n°1 : Création d’une application
-----------------------------
+## Tâche n°1 : Création d’une application
 
 1.  Ouvrez votre solution Gestion du campus si vous n’y êtes pas déjà.
 
     -   Connectez-vous à <https://make.powerapps.com>
 
-    -   Dans votre environnement, cliquez pour ouvrir votre solution **Gestion du campus**
-        .
+    -   Dans votre environnement, cliquez pour ouvrir votre solution **Gestion du campus**.
+    
     
 2.  Créer une application pilotée par modèle
 
     -   Cliquez sur **Nouveau** et sélectionnez **App**, puis **Application pilotée par modèle**. Cela va ouvrir un nouvel onglet.
     
+    -   Entrez ***Votre nom de famille* Gestion du campus** dans le champ Nom et cliquez sur **Suivant**.
+    
     -   Activez la case à cocher **Utiliser la solution existante pour créer l’application**
     
-    -   Saisissez **[Votre nom de famille] Gestion du campus** dans le champ Nom et cliquez sur **Suivant**.
-    
-    -   Sélectionnez votre solution Gestion du campus
+    -   Sélectionnez votre solution **Gestion du campus**.
     
     -   Cliquez sur **Terminé**
     
@@ -217,7 +209,7 @@ Tâche \n°1 : Création d’une application
     
     -   Saisissez **Réglages** pour **Titre** dans le volet **Propriétés**.
     
-    -   Tout en gardant la sélection sur la zone **Paramètres**, cliquez sur **Ajouter**.
+    -   Tout en gardant la zone **Paramètres** sélectionnée, cliquez sur **Ajouter**.
     
     -   Sélectionnez **Sous-zone**.
     
@@ -229,30 +221,23 @@ Tâche \n°1 : Création d’une application
 
 9.  Cliquez sur **Publier** pour publier le plan du site et attendez la fin de la publication.
 
-10.  Cliquez sur **Enregistrer et fermer** pour fermer l’éditeur du plan du site.
+10.  Cliquez sur **Enregistrer et fermer** pour fermer l’éditeur du plan du site. 
 
-11.  Vous verrez que les éléments des entités qui ont été ajoutés au plan du site sont
-     maintenant tous dans l’application.
+    > Vous verrez que les éléments des entités qui ont été ajoutés au plan du site sont désormais présents dans l’application.
      
-12.  Cliquez sur **Enregistrer** pour enregistrer l’application.
+11.  Cliquez sur **Valider** pour valider les modifications effectuées dans l’application. 
 
-13.  Cliquez sur **Valider** pour valider les modifications effectuées dans l’application. 
-
-        > Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
-
-14.  Cliquez sur **Publier** pour publier l’application et attendre la fin de la
-     publication.
+    >  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
      
-15.  Cliquez sur **Enregistrer et fermer** pour fermer le concepteur d’application.
+14.  Cliquez sur **Enregistrer et fermer** pour fermer le concepteur d’application.
 
-16.  Cliquez sur **Terminé**.
+15.  Cliquez sur **Terminé**.
 
-17.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
+16.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
 
-18.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
+17.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
 
-Tâche \#2 : Application de test
---------------------------
+## Tâche \n°2 : Application de test
 
 1.  Démarrer l’application
 
@@ -302,7 +287,7 @@ Tâche \#2 : Application de test
     -   Cliquez sur **Enregistrer et fermer**. L’enregistrement est ainsi créé. Vous devriez pouvoir le voir dans la
         Vue Visites actives.
         
-    -   Changez la vue en **Visites du jour**. Vous devriez voir la nouvelle visite dans la vue.
+    -   Changez la vue en **Visites du jour**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
     
 5. Vous pouvez ajouter d’autres enregistrements test.
 

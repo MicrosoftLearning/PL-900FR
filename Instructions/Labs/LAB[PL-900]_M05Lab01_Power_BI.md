@@ -1,14 +1,13 @@
 ---
 lab:
-     title: 'Labo 7 : Comment créer un tableau de bord simple'
-     module: ' Module 5 : Premiers pas avec Power BI'
+    title: 'Labo 7 : Comment créer un tableau de bord simple'
+    module: ' Module 5 : Premiers pas avec Power BI'
 ---
 
 # Module 5 : Premiers pas avec Power BI
 ## Labo : Comment créer un tableau de bord simple
 
-Scénario
-========
+# Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -18,8 +17,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous allez créer un tableau de bord Power BI qui visualise les données sur les visites sur le campus.
 
-Étapes de labo de haut niveau
-======================
+# Étapes de labo de haut niveau
 
 Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de bord Power BI :
 
@@ -35,63 +33,72 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
 * Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
 * Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
 
-Éléments à considérer avant de commencer
------------------------------------
+## Éléments à considérer avant de commencer
 
 -   À quel public ce rapport est-il destiné ?
 -   Comment les participants utiliseront-t-il le rapport ? Appareil courant ? Emplacement ?
 -   Avez-vous suffisamment de données à visualiser ?
 -   Quelles sont les caractéristiques qu’il est possible d’utiliser pour analyser les données sur les visites ?
 
-Exercice \#1 : Créer des rapports Power BI 
-===============================
+# Exercice \#1 : Créer des rapports Power BI 
 
 **Objectif :** Dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la base de données Common Data Service.
 
-Tâche \#1 : Installer Power BI Desktop/Préparer Power BI service
----------------------------
+## Tâche n°1 : Installer Power BI Desktop/Préparer Power BI service
 
-1.  Si vous n’avez pas encore installé Power BI Desktop, accédez à [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) pour télécharger et installer l’application Power BI.
+1. Suivez les instructions ci-dessous pour configurer Power BI : 
 
-> [!IMPORTANT]
-> Si vous rencontrez des problèmes lors de l’installation de Power BI Desktop en utilisant le Microsoft Store, essayez le programme d’installation autonome pouvant être téléchargé à l’adresse [https://aka.ms/pbiSingleInstaller-fra](https://aka.ms/pbiSingleInstaller-fra).
+    - Si Power BI Desktop est **déjà** installé, passez directement à la [Tâche n°2](#task-2-prepare-data).
+    
+    - Si vous n’avez pas installé Power BI Desktop, passez à l’**Étape n°2**.
+    
+    - Si vous ne disposez pas des autorisations requises ou si vous rencontrez des problèmes lors de l’exécution de Power BI Desktop, passez à l’**Étape n°4**.
 
-2. **Si vous avez correctement installé Power BI Desktop, veuillez passer à la [Tâche \n° 2](#task-2-prepare-data)**. Si vous ne disposez pas des autorisations requises pour installer des applications de bureau ou que vous rencontrez des difficultés lors de l’exécution ou de la configuration de Power BI Desktop, suivez les étapes ci-dessous, puis passez à la [tâche \n° 3](#task-3-create-chart-and-time-visualizations), mais au lieu de Power BI Desktop, utilisez le Power BI service en ligne à l’adresse [https://app.powerbi.com](https://app.powerbi.com) pendant toute la durée du labo. 
+2. Accédez à [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) pour télécharger et installer Power BI Desktop.
 
-3. Téléchargez [visites.pbix](../../Allfiles/visits.pbix) et enregistrez sur votre ordinateur.
+    > [!IMPORTANT]
+    > Si vous rencontrez des problèmes lors de l’installation de Power BI Desktop en utilisant le Microsoft Store, essayez le programme d’installation autonome pouvant être téléchargé à l’adresse [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
-4. Accédez à [https://app.powerbi.com/](https://app.powerbi.com/) et cliquez sur **Se connecter**. 
+3. Si vous avez correctement installé Power BI Desktop, vous pouvez passer directement à la [Tâche n°2](#task-2-prepare-data). Dans le cas contraire, passez à l’étape suivante.
 
-5. Cliquez sur **Mon espace de travail**. 
+    > Si vous ne disposez pas des autorisations requises pour installer des applications de bureau ou si vous rencontrez des difficultés lors de l’exécution ou de la configuration de Power BI Desktop, procédez comme suit.
 
-6. Si la page **Obtenir les données** s’affiche, cliquez sur **Ignorer**. 
+4. Téléchargez [visites.pbix](../../Allfiles/visits.pbix) et enregistrez sur votre ordinateur.
 
-6. Développez **+Nouveau** et sélectionnez **Charger un fichier**.
+5. Accédez à [https://app.powerbi.com/](https://app.powerbi.com/) et cliquez sur **Se connecter**. 
 
-7. Sélectionnez **Fichier local**.
+6. Cliquez sur **Mon espace de travail**. 
 
-8. Localisez et sélectionnez le fichier **visits.pbix** que vous avez téléchargé précédemment.
+7. Si la page **Obtenir les données** s’affiche, cliquez sur **Ignorer**. 
 
-9. Une fois le chargement des données terminé, sélectionnez le rapport **visites** (notez que le Type est défini sur **Rapport**).
+8. Développez **+Nouveau** et sélectionnez **Charger un fichier**.
 
-10. Cliquez sur **Modifier**. Si l’élément de menu**Modifier** n’est pas visible cliquez sur **...**, puis sélectionnez **Modifier**.
+    > [!IMPORTANT]
+    > Si vous ne voyez pas **+Nouveau**, vous devrez peut-être activer la nouvelle version de Power BI. Assurez-vous que la **Nouvelle apparence** soit définie sur **Activée** en haut de votre écran.
 
-11. Continuez vers la [Tâche \n° 3](#task-3-create-chart-and-time-visualizations).
+9. Sélectionnez **Fichier local**.
 
-Tâche \n°2 : Préparez les données
----------------------------
+10. Localisez et sélectionnez le fichier **visits.pbix** que vous avez téléchargé précédemment.
+
+11. Une fois le chargement des données terminé, sélectionnez le rapport **visites** (notez que le Type est défini sur **Rapport**).
+
+12. Cliquez sur **Modifier**. Si l’élément de menu**Modifier** n’est pas visible cliquez sur **...**, puis sélectionnez **Modifier**.
+
+13. Vous avez terminé la configuration du service Power BI que vous utiliserez pour vos labos. Passez à la [Tâche n°3](#task-3-create-chart-and-time-visualizations), puis, durant toute la durée du labo, utilisez le service Power BI en ligne à l’adresse [https://app.powerbi.com](https://app.powerbi.com) au lieu de Power BI Desktop.
+
+## Tâche \n°2 : Préparez les données
 
 1.  Découvrez l’URL de votre organisation
 
-    * Sous un nouvel onglet, accédez au Centre d’administration Power Platform à l’adresse https://admin.powerplatform.com
+    * Sous un nouvel onglet, accédez au Centre d’administration Power Platform à l’adresse <https://admin.powerplatform.com>
     
     * Dans le volet de navigation de gauche, sélectionnez Environnements, puis ouvrez votre environnement d’entraînement.
     
     * Faites un clic droit sur l’**URL de l’environnement** sur le panneau **Détails**, puis sélectionnez **Copier le lien**.
     
-2.  Ouvrez Power BI Desktop et connectez-vous si vous y êtes invité.
+2. Ouvrez Power BI Desktop. Puis, si vous y êtes invité, connectez-vous avec vos informations d’identification.
 
-3. Sélectionnez **Obtenir les données**.
+3. Sélectionnez ** Obtenir les données**.
 
 4. Sélectionnez **Power Platform** sur la gauche, puis **Common Data Service** et appuyez sur **Connecter**.
 
@@ -109,7 +116,7 @@ Tâche \n°2 : Préparez les données
 
 11. Cliquez sur **...** en regard de **bc_Visit** et sélectionnez **Nouvelle colonne**.
 
-12. Terminez la formule comme suit
+12. Complétez la formule comme suit :
 
     ```
     Column = RELATED(bc_Building[bc_name])
@@ -125,7 +132,7 @@ Tâche \n°2 : Préparez les données
 
 16. Enregistrez le travail en cours en appuyant sur **Fichier \| Enregistrez** en saisissant le nom de fichier de votre choix.
 
-## Tâche n° 3 : Créer un graphique et des visualisations temporelles
+## Tâche n°3 : Créer un graphique et des visualisations temporelles
 
 1. Appuyez sur l’icône de graphique en secteurs dans le panneau **Visualisations** pour insérer un graphique.
 
@@ -151,14 +158,13 @@ Tâche \n°2 : Préparez les données
     
     * Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie**, puis appuyez sur la colonne pour descendre au niveau suivant (mois). Vous pouvez également cliquer sur **Données/Descendre \| Développer le niveau suivant** sur le ruban.
     
-    * Sélectionnez diverses barres sur l’histogramme empilé de temps et observez les changements sur le graphique en secteurs.
+    * Explorez en remontant ou en descendant d’un niveau et sélectionnez diverses barres sur l’histogramme du temps pour observer les changements sur le graphique en secteurs.
     
 11. Enregistrez le travail en cours en appuyant sur **Fichier \| Enregistrez**.
 
-Exercice n°2 : Créer un tableau de bord Power BI
-================================
+# Exercice n°2 : Créer un tableau de bord Power BI
 
-## Tâche #1 : Publier un rapport Power BI
+## Tâche 1 : Publier un rapport Power BI
 
 1. Appuyez sur le bouton **Publier** sous l’onglet Accueil du ruban.
 
@@ -166,7 +172,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 3. Attendez la fin de la publication et cliquez sur **Ouvrez \<nom de votre rapport \>.pbix dans Power BI**.
 
-## Tâche n° 2 : Créer un tableau de bord Power BI
+## Tâche 2 : Créer un tableau de bord Power BI
 
 1. Vous pouvez accéder au rapport ouvert depuis la tâche précédente.
 
@@ -174,9 +180,9 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 3. Sélectionnez **Nouveau tableau de bord** sur l’invite **Épingler au tableau de bord**.
 
-4. Entrez **[Votre nom] Gestion du campus** comme **Nom du tableau de bord** puis appuyez sur **Épingler en direct**.
+4. Entrez ***Votre nom* Gestion du campus** comme **Nom du tableau de bord** puis appuyez sur **Épingler en direct**.
 
-5. Sélectionnez **Mon espace de travail** en haut, puis le tableau de bord **[Votre nom] Gestion du campus**.
+5. Sélectionnez **Mon espace de travail** dans la partie supérieure, puis le tableau de bord ***Votre nom* Gestion du campus**.
 
 6. Testez l’interactivité des graphiques en secteurs et à barres affichés.
 
@@ -188,13 +194,15 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 3. Sélectionnez **Épingler un élément visuel**.
 
-4. Sélectionnez **Tableau de bord existant**, puis votre tableau de bord **[Votre nom] Gestion du campus** et appuyez sur **Épingler**.
+4. Sélectionnez **Tableau de bord existant**, puis votre tableau de bord ***Votre nom* Gestion du campus** et appuyez sur **Épingler**.
 
 5. Cliquez sur **Quitter les Q/R**.
 
-6. Accédez au tableau de bord **[Votre nom] Gestion du campus**. Il doit ressembler à ce qui suit :
+Votre tableau de bord ***Votre nom de famille* Gestion du campus** doit être affiché. Vous devrez peut-être faire défiler vers le bas pour voir le nouveau visuel de questions et réponses. 
 
-    ![Tableau de bord Power BI](media/5-powerbi-result.png)
+Votre tableau de bord doit ressembler à ce qui suit :
+
+![Tableau de bord Power BI](media/5-powerbi-result.png)
 
 ## Tâche 4 : Créer une vue de téléphone mobile et partager un rapport avec un code QR
 
@@ -208,9 +216,7 @@ Exercice n°2 : Créer un tableau de bord Power BI
 
 5. Sélectionnez **Modifier** puis sélectionnez **... \| Générer un code QR**.
 
-6. Si vous avez un appareil mobile, scannez le code à l’aide d’une application de scan QR disponible sur les plates-formes iOS et Android, ou l’application caméra si votre téléphone le permet. Connectez-vous à votre compte si vous y êtes invité.
-
-7. Parcourez et découvrez le rapport sur un appareil mobile.
+6. *Facultatif :* Si vous avez un appareil mobile, scannez le code à l’aide d’une application de scan QR disponible sur les plates-formes iOS et Android, ou l’application caméra si votre téléphone le permet. Connectez-vous à votre compte si vous y êtes invité. Parcourez et découvrez le rapport sur un appareil mobile.
 
 # Défis
 

@@ -4,7 +4,7 @@ lab:
     module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
+# Module 3 : Premiers pas avec Power Apps
 
 ## Labo 4 : Comment créer un portail Power Apps
 
@@ -31,83 +31,51 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
 ## Éléments à considérer avant de commencer
 
-* Les applications Portails Power Apps sont toujours lancées à partir d’un modèle et non d’une application vide. Une fois que vous avez configuré un portail, il est déjà doté de pages, de menus et d’un thème par défaut.
+* Les applications Portails Power Apps sont toujours lancées à partir d’un modèle et non d’une application vide. Votre portail doit avoir été créé dans le labo 0 du module 0. Une fois que vous avez configuré un portail, il est déjà doté de pages, de menus et d’un thème par défaut. 
 
-# Exercice \#1 : Configurer un portail Power Apps
-
-**Objectif :** Dans cet exercice, vous allez configurer un portail Power Apps dans votre environnement, qui sera accessible depuis n’importe quel emplacement du Web.
-
-## Tâche \n°1 : Configurez un portail Power Apps
-
-1.  Créez une nouvelle application de portail.
-
-    -   Connectez-vous à <https://make.powerapps.com>
-
-    -   Si l’**Environnement** affiché en haut à droite n’est pas votre environnement de pratique, sélectionnez votre environnement.
-
-    -   Cliquez sur le panneau **Portail à partir de zéro** sous **Créer votre propre application**
-
-2.  Fournissez de nouveaux détails sur le portail
-
-    -   Saisissez **Visiteurs du Bellows College** comme **Nom** du portail
-
-    -   Fournissez une URL unique : **quelque chose**.powerappsportals.com (si le nom est déjà pris, choisissez-en un autre)
-
-    -   Sélectionnez un **Langage** pour le portail de base
-
-    -   Cliquez sur **Créer**
-
-3. Le processus d’approvisionnement du portail durera de 30 à 45 minutes.  Veuillez être patient.
-
-Tâche \n°2 : Accédez au portail
---------------------------------
-
-1.  Vous recevrez une notification dans <https://make.powerapps.com> lorsque le portail aura été approvisionné
-
-2.  Ouvrez le nouveau portail
-
-    -   Cliquez sur **Application**
-
-    -   Localisez l’application qui possède le **Type** **Portail**
-
-    -   Cliquez sur le nom de l’application
-
-3.  Vous serez redirigé vers un site web de portail et sur la page d’arrivée, avec un message de bienvenue
-
-Exercice \#2 : Créez une page web de portail
-===============================
+# Exercice \#1 : Créez une page web de portail
 
 **Objectif :** Dans cet exercice, vous allez créer une nouvelle page web qui affichera du contenu statique, ainsi qu’une liste des bâtiments du Common Data Service.
 
-Tâche n°1 : Créer une page web
---------------------------------
+## Tâche n°1 : Accédez au portail
+
+1.  Allez à <https://make.powerapps.com>.
+
+2.  Cliquez sur **Application**
+
+3.  Localisez l’application qui possède le **Type** **Portail**
+
+4.  Cliquez sur le nom de l’application pour ouvrir le portail
+
+    > Vous serez ensuite redirigé sur la page d’arrivée du site web de votre portail, avec un message de bienvenue
+
+## Tâche \n°2 : Créer une page web
 
 1.  Ouvrez Portails Power Apps Studio
 
     -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets)
 
+    -   Sélectionnez **Applications**.
+    
     -   Localisez l’application qui possède le **Type** **Portail**
 
-    -   Cliquez sur les ellipses (**...**) et choisissez **Éditer**
+    -   Cliquez sur les ellipses (**...**) à droite du nom de l’application des portails et choisissez **Modifier**
 
-2.  Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
+Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
 
-3.  Créer une nouvelle page
+2.  Créer une nouvelle page
 
     -   Dans la barre de commandes, sélectionnez **Nouvelle page**
 
     -   Passez la souris sur **Dispositions fixes** et choisissez **Page avec titre**
 
-4.  Modifiez les propriétés de la page
+3.  Dans le panneau Propriétés, sous **Afficher**, remplacez le **Nom** **Nouvelle page (1)** par `Répertoire des bâtiments`
 
-    -   Dans le volet des propriétés, sous **Afficher**, changez le **Nom** de **Nouvelle page (1)** à **Répertoire du bâtiment**, appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
+4.  Dans l’**URL partielle**, remplacez la valeur existante par `Répertoire des bâtiments`, appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
 
-    -   Le titre de la page doit maintenant indiquer **Répertoire du bâtiment**
-
-    -   Dans l’**URL partielle**, changez la valeur en **répertoire de bâtiment**, appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
-
-Tâche n° 2 : Ajouter du contenu statique
---------------------------------
+    > Le titre de la page doit maintenant indiquer **Répertoire du bâtiment**
+    
+## Tâche n°3 : Ajouter du contenu statique
 
 1.  Ajouter une section à la page web
 
@@ -141,14 +109,15 @@ Tâche n° 2 : Ajouter du contenu statique
 
     -   Dans le volet des propriétés, cliquez sur **Sélectionnez une image**. Localisez et sélectionnez **Produit A.png**
     
-    -   Dans le volet des propriétés, cliquez sur la liste déroulante de la section Mise en forme et modifiez la **Largeur** à 70 % (assurez-vous de saisir le %). Vous pouvez jouer avec la taille de l’image jusqu’à ce qu’elle soit comme vous le souhaitez.
+    -   Dans le volet des propriétés, cliquez sur la liste déroulante de la section **Mise en forme** et remplacez la valeur de la zone **Largeur** par 70 % (assurez-vous de saisir le %). Vous pouvez jouer avec la taille de l’image jusqu’à ce qu’elle soit comme vous le souhaitez.
 
-4.  Cliquez sur **Parcourir le site web** pour afficher la page jusqu’à présent.  Notez la présence de l’option **Répertoire du bâtiment** dans le menu principal.
+4.  Cliquez sur **Parcourir le site web** pour afficher la page jusqu’à présent.  Notez la présence de l’option **Répertoire des bâtiments** dans le menu principal.
 
-Tâche n° 3 : Ajoutez un composant de liste
---------------------------------
+    > Vous devrez peut-être configurer votre navigateur pour autoriser les fenêtres contextuelles.
 
-1.  Ouvrez Portails Power Apps Studio
+## Tâche n°4 : Ajoutez un composant de liste
+
+1.  Accédez à l’onglet précédent et passez à l’Étape n°2. S’il n’est pas disponible, procédez comme suit pour revenir à cet emplacement.
 
     -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets)
 
@@ -156,13 +125,11 @@ Tâche n° 3 : Ajoutez un composant de liste
 
     -   Cliquez sur les ellipses (**...**) et choisissez **Éditer**
     
-2.  Modifiez la page existante que vous avez créée précédemment
-
     -   Dans la ceinture porte-outils (côté gauche), choisissez l’option **Pages** 
 
     -   Localisez et sélectionnez la page **Répertoire du bâtiment** que vous avez créée précédemment
     
-3.  Ajoutez un composant de liste
+2.  Ajoutez un composant de liste à la page Répertoire des bâtiments
 
     -   Sur la ceinture porte-outils (côté gauche), sélectionnez l’icône **Composants**
 
@@ -174,29 +141,29 @@ Tâche n° 3 : Ajoutez un composant de liste
 
     -   Choisissez **Liste** dans la zone des **Composants du portail** (un composant de liste apparaîtra dans la nouvelle section)
     
-4.  Configurer le composant de liste
+3.  Configurer le composant de liste
 
     -   Sélectionnez le composant de liste sur le canevas
 
-    -   Dans le volet des propriétés (côté droit), saisissez **Liste des bâtiments** dans le champ **Nom**
+    -   Dans le volet droit du panneau Propriétés, saisissez `Liste des bâtiments` dans le champ **Nom**
 
-    -   Dans le champ **Entité**, sélectionnez **Bâtiments** dans la liste déroulante.
+    -   Dans le champ **Entité**, sélectionnez **Bâtiment (bc_building)** dans la liste déroulante.
 
     -   Dans les **Vues**, choisissez **Bâtiments actifs**
 
     -   Laissez les paramètres par défaut restants
     
-5.  Cliquez sur **Parcourir le site web** pour afficher la page. Vous devriez voir la liste des Bâtiments du Common Data Service apparaître sur la page web.
+4.  Cliquez sur **Parcourir le site web** pour afficher la page. 
 
-Exercice \#3 : Modifier le thème du portail
-===============================
+    > Vous devriez voir la liste des Bâtiments du Common Data Service apparaître sur la page web.
+
+# Exercice \#2 : Modifier le thème du portail
 
 **Objectif :** Dans cet exercice, vous allez créer un nouveau thème qui modifiera le modèle de couleurs de votre portail. 
 
-Tâche n°1 : Appliquer et modifier un thème
---------------------------------
+## Tâche 1 : Appliquer et modifier un thème
 
-1.  Ouvrez Portails Power Apps Studio
+1.  Accédez à l’onglet précédent et passez à l’Étape n°2. S’il n’est pas disponible, procédez comme suit pour revenir à cet emplacement.
 
     -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets)
 
@@ -206,7 +173,7 @@ Tâche n°1 : Appliquer et modifier un thème
     
 2.  Appliquer et personnaliser un thème de base
 
-    -   Sur la ceinture porte-outils (côté gauche), sélectionnez l’icône **Composants**
+    -   Sur la ceinture porte-outils (volet gauche), sélectionnez l’icône **Thèmes**
     
     -   Basculez le bouton sur **Activer le thème de base** pour activer cette caractéristique.
     
@@ -218,10 +185,7 @@ Tâche n°1 : Appliquer et modifier un thème
     
     -   Renommez votre thème
     
-3.  Enregistrer vos modifications
-
-    -   Dans la barre de commandes, cliquez sur **Configuration de la synchronisation**
-
+3.  Dans la barre de commandes, cliquez sur **Configuration de la synchronisation**
 
 La disposition de votre application doit ressembler à la structure suivante :
 

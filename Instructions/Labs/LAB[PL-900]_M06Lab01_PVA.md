@@ -57,7 +57,7 @@ Dans cet exercice, vous vous inscrirez à la version d’essai de Power Virtual 
 
 5. Entrez **Bot de crise** comme **Nom** et sélectionnez une langue.
 
-6. Sélectionnez votre environnement de pratique pour créer le bot et cliquez sur **Créer**. Attendez que le bot soit créé.
+6. Sélectionnez votre environnement de pratique pour créer le bot et cliquez sur **Créer**. Attendez que le bot soit créé. Cliquez sur **Explorer le robot** si vous y êtes invité.
 
 7. Testez le bot. Tapez **« Bonjour »** dans la boîte de message et cliquez sur **Envoyer**. Le bot va ensuite vous saluer et vous dire ce qu’il peut faire.
 
@@ -65,7 +65,7 @@ Dans cet exercice, vous vous inscrirez à la version d’essai de Power Virtual 
 
 9. Sélectionnez des **sujets**. Le bot présente des échantillons de sujets utilisateur et des sujets système. Le message d’accueil par défaut provenait des rubriques système.
 
-10. Dans l’exercice suivant, vous générerez vos propres sujets à partir du site de FAQ du CDC. Ne quittez pas cette fenêtre de navigateur.
+> Dans l’exercice suivant, vous générerez vos propres sujets à partir du site de FAQ du CDC. Ne quittez pas cette fenêtre de navigateur.
 
 # Exercice \#2 : Créer des sujets
 
@@ -85,35 +85,37 @@ Au cours de cet exercice, vous allez générer des sujets à partir du site FAQ 
 
 7.  Cliquez sur **Démarrer** et attendez. Cela peut prendre quelques minutes.
 
-8.  Vous accédez ensuite à des suggestions de sujets créés pour vous.
+8.  Vous accédez ensuite à des suggestions de sujets créés pour vous. Cliquez pour ouvrir l’un des sujets suggérés.
 
-9.  Cliquez pour ouvrir l’un des sujets suggérés.
-
-10. La phrase de déclenchement et la réponse du bot s’affichent. **Cliquez sur Ajouter aux sujets.**
+9. La phrase de déclenchement et la réponse du bot s’affichent. **Cliquez sur Ajouter aux sujets.**
     
-11. Le sujet suggéré s’ajoute à vos sujets. Sélectionnez tous les sujets suggérés et cliquez sur **Ajouter aux sujets** (vous pouvez tout sélectionner en utilisant l’icône affiché à gauche de la colonne Nom). Si vous recevez un message d’erreur, veuillez réessayer.
+10. Le sujet suggéré s’ajoute à vos sujets. Sélectionnez tous les sujets suggérés et cliquez sur **Ajouter aux sujets** 
 
-12. Une fois les sujets suggérés ajoutés, sélectionnez l’onglet **Existant**. Le statut des nouveaux sujets passe ensuite à Désactivé.
+    > Vous pouvez sélectionner tous les sujets en utilisant l’icône affichée sur la gauche de la colonne Nom. Si vous recevez un message d’erreur, veuillez réessayer.
 
-13. Cliquez sur le bouton bascule de la colonne **Statut** pour les remplacer par **Activé**. Si vous manquez de temps, vous pouvez activer les dix premiers, mais assurez-vous d’avoir transformé «**Dois-je porter un masque ?**» sur **Activé**.
+11. Une fois les sujets suggérés ajoutés, sélectionnez l’onglet **Existant**. Le statut des nouveaux sujets passe ensuite à Désactivé.
 
-14. Ne quittez pas cette fenêtre de navigateur.
+12. Utilisez le bouton bascule de la colonne **Statut** pour définir certains sujets sur **Activé**. 
+
+13. Notez la phrase de déclenchement de l’un des sujets que vous avez activés afin de pouvoir le tester plus tard.
+
+> Ne quittez pas cette fenêtre de navigateur.
 
 # Exercice \#3 : Tester les sujets
 
 Dans cette tâche, nous allons tester les sujets que vous avez ajoutés.
 
-1.  Cliquez sur **Testez votre bot.**
+1.  Cliquez sur **Tester votre robot** en bas à gauche.
 
 2.  Cliquez sur **Réinitialiser**.
 
-3.  Tapez **Dois-je porter un masque ?** et cliquez sur **Envoyer**.
+3.  Saisissez la phrase de déclenchement que vous avez enregistrée à partir de la tâche précédente et cliquez sur **Envoyer**.
 
 4.  Le bot doit vous donner les informations correctes et vous demander s’il a répondu à votre question. Cliquez sur **Oui**.
 
 5.  Le bot vous demandera ensuite une note sur sa façon de faire. Donnez-lui une excellente note.
 
-6.  Le bot vous demande ensuite s’il peut vous aider pour autre chose. Cliquez sur **Non**.
+6.  Le bot vous demande ensuite s’il peut vous aider pour autre chose. Cliquez sur **Non merci**.
 
 7.  Le bot termine ensuite la session de conversation.
 
@@ -129,11 +131,11 @@ Dans cette tâche, vous allez modifier le message d’accueil spécifique à la 
 
 2.  Réduisez la section **Sujets utilisateur**.
 
-3.  Cliquez pour ouvrir le sujet **Message d’accueil** des sujets système.
+3.  Cliquez pour ouvrir le sujet **Message d’accueil** des sujets système. Vous pouvez également utiliser la zone de recherche pour **Rechercher des sujets existants**.
 
 4.  Le sujet de message d’accueil contient 52 phrases de déclenchement. Cliquez sur **Accéder au canevas de création**.
 
-5.  Accédez au premier message et remplacez-le par **Bonjour, je suis un agent virtuel. Je peux vous expliquer comment le COVID-19 se propage, comment vous protéger, préparer votre maison et votre famille au COVID-19, les symptômes, les tests, etc.**
+5.  Accédez au premier message et remplacez-le par `Bonjour, je suis un agent virtuel. Je peux vous expliquer comment la COVID-19 se propage, comment vous protéger, préparer votre maison et votre famille au COVID-19, les symptômes, les tests, etc.`
 
 6.  Cliquez sur **Enregistrer**.
 
@@ -157,19 +159,28 @@ Dans cet exercice, vous allez apprendre à publier le bot.
 
 5.  Vous accédez à la liste des canaux disponibles sur lesquels vous pouvez publier votre bot. Sélectionnez **Version de démonstration du site web**.
 
-6.  Remplacez le message de bienvenue par **Essayez mon bot FAQ sur la COVID-19.**
+6.  Remplacez le message de bienvenue par `Testez ma  FAQ bot sur la COVID-19.`
 
-7.  Tapez « Qui est le plus à risque de maladie grave due à la COVID-19 », « Que signifie une maladie plus grave » et « Que fait le CDC au sujet de la COVID-19 » pour lancer la conversation, puis cliquez sur **Enregistrer**.
+7.  Entrez ce qui suit dans la zone **Démarreurs de conversation** :
+    ```
+     « Qui risque de développer une forme grave de la COVID-19 »
+     « Que signifie une forme plus grave »
+     « Que fait le CDC face à la COVID-19 »
+    ```
+    
+8.  Cliquez sur **Enregistrer**.
 
-8.  Copiez l’**URL**.
+9.  Copiez l’**URL**.
 
-9.  Vous pouvez partager l’URL avec vos collègues et obtenir leurs commentaires. Ouvrez une nouvelle fenêtre ou un nouvel onglet de navigateur et accédez à l’URL que vous avez copiée. Le site web de démonstration doit ressembler à l’image ci-dessous.
+> Vous pouvez partager l’URL avec vos collègues et obtenir leurs commentaires. 
 
-10. Commencez à discuter avec le bot.  
+10.  Ouvrez une nouvelle fenêtre ou un nouvel onglet de navigateur et accédez à l’URL que vous avez copiée. Le site web de démonstration doit ressembler à l’image ci-dessous.
+
+11. Commencez à discuter avec le bot.  
     
 Une fois terminé, votre bot publié doit ressembler à ceci :
 
 ![Site web de démonstration de robot - Capture d’écran](./media/8-image1.png)
 
 # Défis 
-* Intégrez votre chatbot sur votre portail des visiteurs du Bellows College (vous trouverez plus d’informations sur la façon de procéder sous la rubrique **Ajouter un robot à Power Apps** [ici](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).)
+* Intégrez votre chatbot sur votre portail des visiteurs du Bellows College (vous trouverez plus d’informations sur la façon de procéder sous la rubrique **Ajouter un robot à Power Apps** [ici](https://docs.microsoft.com/fr-fr/power-virtual-agents/publication-connect-bot-to-web-channels).)

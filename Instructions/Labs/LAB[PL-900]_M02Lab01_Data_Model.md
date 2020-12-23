@@ -4,7 +4,7 @@ lab:
     module: 'Module 2 : Introduction à Common Data Service'
 ---
 
-# Module 2 : Introduction à Common Data Service
+# Module 2 : Introduction à Common Data Service
 ## Labo : Modélisation de données
 
 
@@ -51,7 +51,7 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 
 # Exercice \#1 : Créer une solution
 
-## Tâche \n°1 : Créer une solution et un éditeur
+## Tâche n°1 : Créer une solution et un éditeur
 
 1.  Créer une solution
 
@@ -61,15 +61,17 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 
     -   Sélectionnez **Solutions** dans le menu de gauche, puis cliquez sur **Nouvelle solution**.
 
-    -   Entrez **« [Votre nom] Gestion du campus »** en tant que **Nom d’affichage**.
+    -   Entrez **[Your Last Name] Gestion du campus** en tant que **Nom d’affichage**.
 
 2.  Créer un éditeur
 
     -   Cliquez sur le menu déroulant **Éditeur**, puis sélectionnez **Éditeur**.
 
-    -   Dans la fenêtre qui apparaît, entrez **Bellows College** dans la zone **Nom d’affichage** et **bc** dans la zone **Préfixe**
+    -   Dans la fenêtre qui apparaît, entrez **Bellows College** dans la zone **Nom d’affichage** 
+    
+    -   Entrez **bc** dans la zone **Préfixe**
 
-    -   Cliquez sur **Enregistrer et fermer**. 
+    -   Cliquez sur **Enregistrer et fermer**
     
     -   Cliquez sur **Terminé** dans la fenêtre contextuelle.
 
@@ -114,7 +116,7 @@ Votre solution contiendra plusieurs entités une fois toutes les personnalisatio
 **Objectif :** Dans cet exercice, vous allez créer des entités, puis ajouter des relations
 entre les entités.
 
-## Tâche #1 : Créer une entité et des champs de bâtiment
+## Tâche 1 : Créer une entité et des champs de bâtiment
 
 1.  Gardez toujours votre navigateur ouvert sur votre solution Gestion du campus. Dans le cas contraire, ouvrez la solution Gestion du campus en procédant comme suit :
 
@@ -131,7 +133,7 @@ entre les entités.
     
     -   Cliquez sur **Terminé**. Cette action débute l’approvisionnement de l’entité en arrière-plan, tandis que vous pouvez commencer à ajouter d’autres entités et d’autres champs.
 
-## Tâche n° 2 : Créer une entité et des champs de visite
+## Tâche 2 : Créer une entité et des champs de visite
 
 L’entité **Visite** contient des informations sur les visites du campus, y compris le bâtiment, le visiteur, l’heure prévue et l’heure réelle de chaque visite. 
 
@@ -227,7 +229,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
 8.  Cliquez sur **Enregistrer l’entité**
 
-## Tâche n°3 : Créer des relations
+## Tâche n°3 : Créer des relations
 
 1.  Assurez-vous que vous consultez toujours l’entité **Visite** de votre solution **Gestion du campus**. Si ce n’est pas le cas, accédez à cette entité.
 
@@ -259,7 +261,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 **Objectif :** Dans cet exercice, vous allez importer des exemples de données dans la base de données Common Data Service.
 
-## Tâche #1 : Importer une solution
+## Tâche 1 : Importer une solution
 
 Dans cette tâche, vous importerez une solution contenant le flux Power Automate requis pour terminer l’importation des données.
 
@@ -267,7 +269,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 2. Connectez-vous à <https://make.powerapps.com>.
 
-3. Sélectionnez votre environnement de **pratique [mes initiales]** en haut à droite, si ce n’est déjà fait.
+3. Sélectionnez votre environnement * Exercices pratiques** ***mes initiales en haut à droite, si ce n’est déjà fait.
 
 4. Sélectionnez **Solutions** dans le panneau de navigation de gauche.
 
@@ -283,7 +285,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 6. Appuyez sur **Suivant**. Vous êtes ensuite invité à rétablir les connexions. 
 
-7. Développez le menu déroulant **Sélectionner une connexion**, puis sélectionnez **+ Nouvelle connexion**.
+7. Développez le menu déroulant **Sélectionner une connexion**, puis sélectionnez **Nouvelle connexion**.
 
 8. Une nouvelle fenêtre ou un nouvel onglet de navigation s’ouvre. Sélectionnez **Créer** lorsque vous êtes invité à créer une connexion Common Data Service. Connectez-vous si nécessaire pour terminer la création de la connexion.
 
@@ -297,37 +299,47 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 13. Attendez que l’importation soit terminée.
 
-## Tâche n° 2 : Importer des données  
+## Tâche 2 : Importer des données  
 
 1. Ouvrez la solution **Importation de données**.
 
 2. Vérifiez l’**état** du flux **Importation de données**.
 
-3. Si l’**état** est **Inactif**, sélectionnez **...** en regard du champ **Importation des données**, puis sélectionnez **Activer**.
+3. Si la valeur du champ **Statut** est définie sur **Inactif**, sélectionnez  **...** en regard du champ **Importer des données**, puis sélectionnez **Activer**.
 
    > **Important :** Si vous recevez un message d’erreur, vérifiez que les entités et les champs que vous avez créés suivent les instructions énoncées ci-dessus.
 
-4. Sélectionnez le composant **Importation des données**. Power Automate s’ouvre dans un nouvel onglet. Cliquez sur **Commencer** s’il est présenté avec une fenêtre contextuelle. 
+4. Ouvrez le composant **Importer des données**. Power Automate s’ouvre dans un nouvel onglet. 
 
-5. Cliquez sur **Exécuter** puis cliquez **Exécuter le flux** lorsque vous y êtes invité.
+5. Cliquez sur **Commencer** s’il est présenté avec une fenêtre contextuelle. 
 
-6. Cliquez sur **Terminé**.
+6. Cliquez sur **Exécuter** puis cliquez **Exécuter le flux** lorsque vous y êtes invité.
 
-7. Attendez que l’instance de flux termine son exécution. Vous pouvez actualiser la table de l’**historique des exécutions de 28 jours** pour voir quand le flux s’est exécuté. Le but de ce flux était de générer des exemples de données pour les laboratoires à venir. Dans la tâche suivante, vous vérifierez que l’importation des données a réussi. 
+7. Cliquez sur **Terminé**.
 
-## Tâche n° 3 : Vérifier une importation de données
+8. Attendez que l’instance de flux termine son exécution. Vous pouvez actualiser la table de l’**historique des exécutions de 28 jours** pour voir quand le flux s’est exécuté. 
+
+    > Le but de ce flux était de générer des exemples de données pour les laboratoires à venir. Dans la tâche suivante, vous vérifierez que l’importation des données a réussi. 
+
+## Tâche n°3 : Vérifier une importation de données
 
 1. Revenez à l’onglet Power Apps précédent. Cliquez sur **Terminé** sur la fenêtre contextuelle. Sélectionnez **Solutions** dans la barre de navigation de gauche et ouvrez votre solution de **Gestion du campus**.
 
 2. Cliquez pour ouvrir l’entité **Visite**, puis sélectionnez l’onglet **Données**.
 
-3. Cliquez sur **Visites actives** dans le coin supérieur droit pour afficher le sélecteur de mode, puis sélectionnez **Tous les champs**. Cela modifiera le mode utilisé pour afficher les données de visite.
+3. Cliquez sur **Visites actives** dans le coin supérieur droit pour afficher le sélecteur de mode, puis sélectionnez **Tous les champs**. Cela modifiera le mode utilisé pour afficher les données de visite. 
+
+    > Si vous ne voyez pas **Visites actives** en raison d’une résolution plus petite, il se peut qu’une icône en forme d’œil s’affiche au même emplacement.
 
     > Si l’importation a réussi, une liste des entrées de visite s’affiche.
 
-4. Cliquez sur une valeur dans la colonne **Bâtiment** et confirmez que le formulaire de bâtiment s’ouvre dans une fenêtre distincte. Fermez cette fenêtre.
+4. Cliquez sur une valeur dans la colonne **Bâtiment** et confirmez que le formulaire de bâtiment s’ouvre dans une fenêtre distincte. 
 
-5. Cliquez sur une valeur dans la colonne **Visiteur** (vous devrez peut-être faire défiler la vue vers la droite) et vérifiez si le formulaire de contact s’ouvre dans une fenêtre distincte. Fermez cette fenêtre.
+5. Fermez la fenêtre récemment ouverte.
+
+6. Cliquez sur une valeur dans la colonne **Visiteur** (vous devrez peut-être faire défiler la vue vers la droite) et vérifiez si le formulaire de contact s’ouvre dans une fenêtre distincte.
+
+7. Fermez la fenêtre récemment ouverte.
 
 # Défis
 

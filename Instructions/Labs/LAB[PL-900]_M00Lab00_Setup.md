@@ -18,10 +18,11 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le centre d’administration, nous créerons un environnement individuel pour la configuration pendant le cours.
+Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer votre environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
 
-Exercice 1 - Acquérir votre locataire d’essai Power Platform 
-------------------------------------------
+## Exercice n°1 - Configuration
+
+### Tâche n°1 - Acquérir votre locataire d’essai Power Platform
 
 1. Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé.
 
@@ -35,15 +36,9 @@ Exercice 1 - Acquérir votre locataire d’essai Power Platform
 
 6. Sélectionnez **Oui** pour rester connecté.
 
+### Tâche n°2 : Créer un environnement
 
-Exercice 2 - Créez votre environnement 
-------------------------------------------
-
-Dans cet exercice, vous allez créer votre environnement **Exercice pratique** dans lequel vous effectuerez la majorité de votre travail de labo.
-
-### Tâche 1 : Créer un environnement
-
-1.  Accédez à <https://admin.Powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes à nouveau invité.
+1.  Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes à nouveau invité.
 
 2. Sélectionnez **Environnements** et cliquez sur **+Nouveau.**
 
@@ -59,6 +54,30 @@ Dans cet exercice, vous allez créer votre environnement **Exercice pratique** d
 
 3. Votre environnement **Exercice pratique** doit maintenant apparaître dans la liste des environnements. 
 
-4. L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire. Lorsque votre environnement est préparé, sélectionnez votre environnement **Exercice pratique** en cliquant sur les ellipses à côté de son nom pour développer le menu déroulant et sélectionner **Paramètres.** 
+    > L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
 
-5.  Explorez les différents domaines dans **Paramètres** qui vous intéressent, mais n’apportez pas encore de modifications. 
+# Exercice \#2 : Configurer un portail Power Apps
+
+**Objectif :** L’approvisionnement d’un portail Power Apps peut prendre un certain temps. Au cours de cet exercice, vous apprendrez à créer votre portail Power Apps dans votre environnement afin que le processus d’approvisionnement puisse être lancé. Vous utiliserez ce portail dans un labo ultérieur.
+
+## Tâche n°1 : Créez un portail Power Apps
+
+1.  Connectez-vous à <https://make.powerapps.com>
+
+2.  Si l’**Environnement** affiché en haut à droite n’est pas votre environnement de pratique, sélectionnez votre environnement.
+
+3.  Cliquez sur le panneau **Portail à partir de zéro ** sous **Créer votre propre application**
+
+    > Si vous ne voyez pas cette option, essayez de faire un zoom arrière.
+
+4.  Fournissez de nouveaux détails sur le portail
+
+    -   Saisissez **Visiteurs du Bellows College** comme **Nom** du portail
+
+    -   Fournissez une URL unique : **quelque chose**.powerappsportals.com (si le nom est déjà pris, choisissez-en un autre)
+
+    -   Sélectionnez un **Langage** pour le portail de base
+
+    -   Cliquez sur **Créer**
+
+    > Le processus d’approvisionnement du portail durera de 30 à 45 minutes. Vous n’avez pas à attendre, le processus se poursuit lors du passage au module suivant.

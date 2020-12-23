@@ -4,11 +4,10 @@ lab:
     module: 'Module 4 : Démarrer avec Power Automate'
 ---
 
-# Module 4 : Démarrer avec Power Automate
+# Module 4 : Premiers pas avec Power Automate
 ## Labo : Création d’une solution automatisée
 
-Scénario
-========
+## Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -18,8 +17,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Au cours de ce labo, vous allez créer des flux Power Automate pour automatiser différents aspects de la gestion du campus. 
 
-Étapes de labo de haut niveau
-======================
+# Étapes de labo de haut niveau
 
 Les éléments suivants ont été identifiés comme des exigences que vous devez implémenter pour terminer le projet :
 
@@ -33,19 +31,16 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 * Application Campus Staff créée dans le **Module 3 Lab 2 : Comment créer une application canevas, partie 2** (à des fins de test)
 * Contact John Doe créé avec une adresse courriel personnelle dans le **Module 3 - Labo 4 : Comment créer une application pilotée par modèle** (à des fins de test)
 
-Éléments à considérer avant de commencer
------------------------------------
+## Éléments à considérer avant de commencer
 
 -   Quel est le mécanisme de distribution le plus approprié pour les codes des visiteurs ?
 -   Comment mesurer les dépassements de plage horaire et appliquer des politiques strictes ?
 
-Exercice \#1 : Créer un flux de notification de visite
-===============================
+# Exercice \#1 : Créer un flux de notification de visite
 
 **Objectif :** Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. Le visiteur doit recevoir un courriel contenant le code unique attribué à la visite.
 
-Tâche \n°1 : Créer un flux
----------------------------
+## Tâche n°1 : Créer un flux
 
 1.  Ouvrez votre solution Gestion du campus.
 
@@ -69,7 +64,7 @@ Tâche \n°1 : Créer un flux
    
    * Sélectionnez **Organisation** dans la liste **Étendue**
    
-   * À l'étape de déclenchement, cliquez sur les points de suspension (**...**), puis sur **Renommer**. Renommez ce déclencheur **« Lorsqu'une visite est créée »**. Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
+   * À l’étape de déclenchement, cliquez sur les points de suspension (**...**), puis sur **Renommer**. Renommez ce déclencheur **« Lorsqu'une visite est créée »**. Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
 
 5.  Cliquez sur **Nouvelle étape**. Cette étape est nécessaire pour récupérer les informations des visiteurs, y compris les adresses courriel.
 
@@ -89,13 +84,13 @@ Tâche \n°1 : Créer un flux
 
    * Si vous êtes invité à accepter les conditions d’utilisation de cette action, cliquez sur **J’accepte**.
    
-   * Sélectionnez le champ **À** et sélectionnez **courriel** dans le volet de contenu dynamique. Cette option est disponible sous l’en-tête grisée **Obtenir le visiteur**. Cela signifie que vous sélectionnez le courriel associé au visiteur que vous avez recherché à l’étape précédente. 
+   * Sélectionnez le champ **À** et sélectionnez **courriel** dans le volet de contenu dynamique. Ils sont accessibles sous l’en-tête **Recevoir le visiteur**. Cela signifie que vous sélectionnez le courriel associé au visiteur que vous avez recherché à l’étape précédente. 
 
    * Entrez **Votre visite prévue à Bellows College** dans le champ **Sujet**.
 
    * Entrez le texte suivant dans le **Corps du courriel**.  
         
-        > Le contenu dynamique doit être placé là où les champs sont nommés entre crochets. Il est recommandé de commencer par copier et coller l’ensemble du texte, puis d’ajouter du contenu dynamique aux endroits appropriés.*
+        > Le contenu dynamique doit être placé là où les champs sont nommés entre crochets. Il est recommandé de commencer par copier et coller l’ensemble du texte, puis d’ajouter du contenu dynamique aux endroits appropriés.
    
         ```
         Cher {First Name},
@@ -110,7 +105,7 @@ Tâche \n°1 : Créer un flux
         Bellows College
         ```
    
-10.  Sélectionnez le nom du flux **Sans titre** en haut et renommez-le ` Notification de visite`.
+10.  Sélectionnez le nom du flux **Sans titre** en haut et renommez-le `Notification de visite`.
 
 11. Appuyez sur **Enregistrer**
 
@@ -118,8 +113,7 @@ Tâche \n°1 : Créer un flux
 
 ![Flux de notification des visiteurs Power Automate](media/4-power-automate-notify.png)
 
-Tâche \n°2 : Validez et testez le flux.
---------------------------------
+## Tâche \n°2 : Validez et testez le flux.
 
 1.  Ouvrez un nouvel onglet dans votre navigateur et accédez à <https://make.powerapps.com>.
 
@@ -139,7 +133,7 @@ Tâche \n°2 : Validez et testez le flux.
 
 9.  Définissez la **Date de début prévue** et la **Date de fin prévue** à des dates ultérieures.
 
-10.  Appuyez sur **Enregistrer**
+10.  Sélectionnez l’icône représentant une **coche** pour enregistrer la nouvelle visite
 
 11.  Revenez à l’onglet précédent avec le flux testé. Examinez l’exécution du flux. S’il y a des erreurs, revenez en arrière et comparez votre flux à l’exemple ci-dessus. Si l’e-mail est envoyé avec succès, vous le recevrez dans votre boîte de réception. 
 
@@ -147,13 +141,15 @@ Tâche \n°2 : Validez et testez le flux.
 
 13.  Dans la section **Détails**, remarquez que le **Statut** est défini sur **Activé**. Cela signifie que votre flux s’exécutera lors de la création de chaque nouvelle visite, jusqu’à ce que vous la désactiviez. Chaque fois que le flux s’exécute, vous le verrez ajouté à la liste de l’ **Historique des exécutions de 28 jours**.
 
-14.  Désactivez le flux en cliquant sur **Désactivé** dans la barre de commandes.
+14.  Désactivez le flux en cliquant sur **Désactivé** dans la barre de commandes. Vous devrez peut-être appuyer sur les ellipses (**...**) pour voir cette option.
+
+15.  Fermez cette fenêtre.
 
 # Exercice n°2 : Créer un flux de balayage de sécurité
 
 **Objectif :** Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. Un balayage de sécurité doit être effectué toutes les 15 minutes et la sécurité doit être avertie si l’un des visiteurs a dépassé le temps prévu.
 
-## Tâche n°1 : Créer un flux pour récupérer des enregistrements
+## Tâche 1 : Créer un flux pour récupérer des enregistrements
 
 1. Ouvrez votre solution Gestion du campus.
 
@@ -184,14 +180,14 @@ Tâche \n°2 : Validez et testez le flux.
    ```
    
    * Pour la décomposer :
-       * `statecode eq 0` filtre les visites actives (où le statut est égal à Actif)
-       * `bc_actualstart ne null` restreint la recherche aux visites où Début effectif a une valeur, c’est-à-dire que quelqu’un est arrivé.
-       * `bc_actualend eq null` limite la recherche aux visites où la personne n’est pas partie (le champ Fin réelle n’est pas renseigné) 
-       * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.  
+       * **statecode eq 0** filtre les visites actives (où le Statut est égal à Actif)
+       * **bc_actualstart ne null** restreint la recherche aux visites où l'option Début réel contient une valeur, c’est-à-dire que quelqu’un est effectivement arrivé.
+       * **bc_actualend eq null** limite la recherche aux visites où il n’y a pas eu de départ (le champ Fin réelle n’est pas renseigné) 
+       * **Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)** restreint les visites à celles qui devaient se terminer il y a plus de 15 minutes.
 
    * Dans cette action, cliquez sur les points de suspension (**...**), puis sur **Renommer**. Renommez cette action **« Répertorier les visites actives qui se sont terminées il y a plus de 15 minutes »**. Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
 
-6.  Cliquez sur **Nouvelle étape**. Recherchez **Appliquer**, sélectionnez l’action **Appliquer à chacun** 
+6.  Cliquez sur **Nouvelle étape**. Recherchez *Appliquer*, sélectionnez l’action **Appliquer à chacun** 
 
 7.  Sélectionnez une **valeur** à partir du contenu dynamique dans le champ **Sélectionnez un résultat à partir des étapes précédentes**. Ce champ est situé en dessous de l’en-tête grisée **Répertoriez les visites actives qui se sont terminées il y a plus de 15 minutes**. Cela signifie que vous sélectionnez la liste des visites que vous avez recherchées à l’étape précédente. 
 
@@ -223,35 +219,39 @@ Tâche \n°2 : Validez et testez le flux.
     
     * Cliquez sur **...** en regard du champ **Obtenez un enregistrement**, puis sélectionnez **Renommer**. Saisissez **Obtenir un visiteur** comme nom d’étape
     
-10.  Ajoutez une action **Envoyer une notification par courrier** à partir de la connexion **Courrier**, tout en laissant l’option **Appliquer à chaque boucle** activée
+11.  Envoyer une notification par courrier
 
-11.  Tapez votre adresse électronique dans **À**
+     * Cliquez sur **Ajouter une action** dans Appliquer à chaque boucle Ajoutez une action **Envoyer une notification par e-mail** à partir de la connexion **Courrier**.
 
-12.  Saisissez ce qui suit dans le champ **Sujet**. **Visiteur (Valeur)** est un contenu dynamique de l’étape **Obtenir un visiteur**.
+12.  Tapez votre adresse électronique dans **À**
 
-       ```
-         {Full Name} a dépassé la durée autorisée de sa visite
-       ```
+13.  Saisissez ce qui suit dans le champ **Sujet**. **Nom complet** est un contenu dynamique de l’étape **Recevoir un visiteur**.
+
+   ```
+   {Full Name} a dépassé la durée autorisée de sa visite
+   ```
    
-13.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
+14.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
 
-       ```
-         La durée limite de la visite a été dépassée pour {Name}
+   ```
+   La durée limite de la visite a été dépassée pour {Name}
          
-         Cordialement,
+   Cordialement,
          
-         Sécurité du campus
-       ```
+   Sécurité du campus
+   ```
 
-14.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.
+17.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.
 
-15. Appuyez sur **Enregistrer**
+18.  Appuyez sur **Enregistrer**
 
     Votre flux doit ressembler à ceci :
 
 ![Flux planifié de balayage de sécurité, partie 1](media/4-power-automate-security-sweep.png)
 
-## Tâche n° 2 : Validez et testez le flux.
+## Tâche 2 : Validez et testez le flux.
+
+Votre flux commencera à vous envoyer des e-mails (à l’adresse e-mail que vous avez précédemment spécifiée lors de la création du contact John Doe), s’il y a des visites qui répondent aux conditions énoncées dans le flux.
 
 1. Confirmez que vous avez des enregistrements de visites qui :
 
@@ -261,7 +261,7 @@ Tâche \n°2 : Validez et testez le flux.
    
    3. Le champ Début réel est renseigné.
    
-         >**Remarque** : Pour afficher ces données, accédez à <make.powerapps.com> sous un nouvel onglet. Cliquez sur Solutions dans le volet gauche pour localiser votre solution. Sélectionnez l’entité Visite, puis l’onglet Données. Cliquez sur Visites actives dans le coin supérieur droit pour afficher le sélecteur de vue, puis sélectionnez Tous les champs.
+   > **Remarque** : Pour afficher ces données, accédez à make.powerapps.com dans un nouvel onglet. Cliquez sur Solutions dans le volet gauche pour localiser votre solution. Sélectionnez l’entité Visite, puis l’onglet Données. Cliquez sur Visites actives dans le coin supérieur droit pour afficher le sélecteur de vue, puis sélectionnez Tous les champs.
    
 2. Accédez à votre solution et localisez le flux **Balayage de sécurité**. Cliquez sur **...** et cliquez sur **Éditer**.
 
@@ -275,7 +275,7 @@ Tâche \n°2 : Validez et testez le flux.
 
 7. Lorsque le flux entre en concurrence, développez **Appliquer à chacun**, puis développez l’étape **Envoyer une notification par e-mail**. Vérifiez les valeurs **Sujet** et **Corps du message électronique**.
 
-8. Accédez à la solution, cliquez sur les points de suspension **...** situés en regard du flux, puis sélectionnez **Désactiver**. Cela permet d’empêcher l’exécution du flux selon une planification du système de test.
+8. Accédez à la solution, cliquez sur les points de suspension (**...**) situés en regard du flux, puis sélectionnez **Désactiver**. Cela permet d’empêcher l’exécution du flux selon une planification du système de test.
 
 # Défis
 
