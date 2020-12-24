@@ -98,7 +98,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer le tableau de
     
 2. Ouvrez Power BI Desktop. Puis, si vous y êtes invité, connectez-vous avec vos informations d’identification.
 
-3. Sélectionnez ** Obtenir les données**.
+3. Sélectionnez **Obtenir les données**.
 
 4. Sélectionnez **Power Platform** sur la gauche, puis **Common Data Service** et appuyez sur **Connecter**.
 

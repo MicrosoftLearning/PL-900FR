@@ -262,7 +262,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
    * **Refresh([@Visits]);**. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Cette expression met à jour la variable *Visite* avec de nouvelles données de Common Data Service.
    

@@ -66,7 +66,7 @@ Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Pla
 
 2.  Si l’**Environnement** affiché en haut à droite n’est pas votre environnement de pratique, sélectionnez votre environnement.
 
-3.  Cliquez sur le panneau **Portail à partir de zéro ** sous **Créer votre propre application**
+3.  Cliquez sur le panneau **Portail à partir de zéro** sous **Créer votre propre application**
 
     > Si vous ne voyez pas cette option, essayez de faire un zoom arrière.
 

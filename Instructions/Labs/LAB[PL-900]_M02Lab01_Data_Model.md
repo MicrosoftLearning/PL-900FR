@@ -269,7 +269,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 2. Connectez-vous à <https://make.powerapps.com>.
 
-3. Sélectionnez votre environnement * Exercices pratiques** ***mes initiales en haut à droite, si ce n’est déjà fait.
+3. Sélectionnez votre environnement Exercices **pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
 4. Sélectionnez **Solutions** dans le panneau de navigation de gauche.
 
