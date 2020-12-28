@@ -82,7 +82,7 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
     
 4.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-## Tâche \n°2 : Affichez les informations sur les visiteurs
+## Tâche n°2 : Affichez les informations sur les visiteurs
 
 1.  Ajoutez une zone de recherche
 
@@ -215,7 +215,7 @@ Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite es
 
 Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
 
-3. Sélectionnez le bouton Sortie et cliquez sur la propriété **Mode d’affichage** du bouton sous l’onglet Propriétés
+3. Sélectionnez le bouton Sortie et cliquez sur la propriété **DisplayMode** du bouton sous l’onglet Propriétés
 
 4. Entrez l’expression ci-dessous dans la barre de fonctions :
 

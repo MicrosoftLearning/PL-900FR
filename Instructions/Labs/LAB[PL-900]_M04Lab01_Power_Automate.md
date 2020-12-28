@@ -93,16 +93,16 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
         > Le contenu dynamique doit être placé là où les champs sont nommés entre crochets. Il est recommandé de commencer par copier et coller l’ensemble du texte, puis d’ajouter du contenu dynamique aux endroits appropriés.
    
         ```
-        Cher {First Name},
+        Dear {First Name},
 
-        Vous avez actuellement une visite planifiée à Bellows Campus de {Scheduled Start} à {Scheduled End}.
+        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-        Votre code de sécurité est {Code}. Veuillez ne pas le partager. Vous devrez renseigner ce code lors de votre visite.
+        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
-        Cordialement,
+        Best regards,
 
-        L’administration du campus
-        Bellows College
+        Campus Administration
+        Bellows College
         ```
    
 10.  Sélectionnez le nom du flux **Sans titre** en haut et renommez-le `Notification de visite`.
@@ -228,17 +228,17 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 13.  Saisissez ce qui suit dans le champ **Sujet**. **Nom complet** est un contenu dynamique de l’étape **Recevoir un visiteur**.
 
    ```
-   {Full Name} a dépassé la durée autorisée de sa visite
+   {Full Name} overstayed their welcome
    ```
    
 14.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
 
    ```
-   La durée limite de la visite a été dépassée pour {Name}
+   There is an overstay in building {Name}
          
-   Cordialement,
+   Best,
          
-   Sécurité du campus
+   Campus Security
    ```
 
 17.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.
