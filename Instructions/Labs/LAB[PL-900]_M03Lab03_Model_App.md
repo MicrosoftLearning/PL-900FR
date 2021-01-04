@@ -227,15 +227,15 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
      
 11.  Cliquez sur **Valider** pour valider les modifications effectuées dans l’application. 
 
-    >  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
+>  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
      
-14.  Cliquez sur **Enregistrer et fermer** pour fermer le concepteur d’application.
+12.  Cliquez sur **Enregistrer et fermer** pour fermer le concepteur d’application.
 
-15.  Cliquez sur **Terminé**.
+13.  Cliquez sur **Terminé**.
 
-16.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
+14.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
 
-17.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
+15.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
 
 ## Tâche \n°2 : Application de test
 
