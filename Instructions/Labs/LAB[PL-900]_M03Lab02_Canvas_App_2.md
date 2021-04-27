@@ -1,18 +1,18 @@
 ---
 lab:
-    title: 'Labo 3 : Comment créer une application canevas, partie 2'
-    module: 'Module 3 : Premiers pas avec Power Apps'
+    title: 'Labo 3 : Comment créer une application canevas, partie 2'
+    module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
-## Labo 2 : Comment créer une application canevas, partie 2
+# Module 3 : Premiers pas avec Power Apps
+## Labo 2 : Comment créer une application canevas, partie 2
 
-### Avis important (en vigueur depuis novembre 2020) :
-Common Data Service a été renommé en Microsoft Dataverse. Une partie de la terminologie de Microsoft Dataverse a été mise à jour. Par exemple, une entité est désormais une table. Les champs et les enregistrements dans les bases de données Dataverse sont désormais appelés colonnes et lignes.
+### Avis important (à compter de novembre 2020) :
+Common Data Service a été renommé Microsoft Dataverse. Une partie de la terminologie propre à Microsoft Dataverse a été mise à jour. Par exemple, « entité» est devenu « table ». Les « champs » et « enregistrements » des bases de données Dataverse sont désormais appelés « colonnes » et « lignes ».
 
-Le processus de mise à jour de l’expérience utilisateur est en cours pour les applications, par contre il se peut que certaines références à la terminologie de Microsoft Dataverse, par exemple entité (désormais **table**), champ (désormais **colonne**) et enregistrement (désormais **ligne**), soient obsolètes. Veuillez garder ce changement à l’esprit lorsque vous effectuez les labos. Nous prévoyons que notre contenu soit très prochainement à jour dans son intégralité. 
+Les applications mettant progressivement à jour leur expérience utilisateur, les termes « entité », « champ » et « enregistrement » (respectivement **table**, **colonne** et **ligne**) peuvent s’avérer obsolètes pour Microsoft Dataverse. Gardez ces changements à l’esprit pour les labos. La mise à jour complète de notre contenu est bientôt terminée.  
 
-Pour plus d’informations et pour une liste complète des termes concernés, veuillez consulter [Présentation de Microsoft Dataverse](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates).
+Pour plus d’informations et la liste complète des conditions, consultez la section [Qu’est-ce que Microsoft Dataverse ?](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Scénario
 
@@ -22,35 +22,35 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus. 
 
-Dans la deuxième partie de ce labo, vous allez concevoir et créer une application de canevas Power Apps que le personnel de sécurité utilisera aux entrées du bâtiment pour confirmer et enregistrer rapidement les visiteurs.
+Dans la deuxième partie de ce labo, vous allez concevoir et créer une application canevas Power Apps que le personnel de sécurité utilisera aux entrées du bâtiment pour confirmer et enregistrer rapidement les visiteurs.
 
-# Étapes de labo de haut niveau
+# Principales étapes de labo
 
 Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 
 -   Créez l’application en utilisant le facteur de formulaire de téléphone
--   Se connecter à Common Data Service en tant que source de données
--   Capturez l’entrée (code visiteur) et localisez l’enregistrement visiteur
+-   Connectez Dataverse comme une source de données
+-   Capturez l’entrée (code visiteur) et localisez la ligne visiteur
 -   Configurez un contrôle de visualiseur de formulaire pour afficher les informations sur le visiteur
--   Utilisez une vue Common Data Service pour remplir la galerie
+-   Utilisez une vue Dataverse pour remplir la galerie
 -   Gérez le processus d’arrivée et de départ d’un visiteur
 
 ## Prérequis
 
-* Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
-* Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
+* Achèvement du **labo 0 du module 0 : Validation de l’environnement de laboratoire**
+* Achèvement du **labo 1 du module 2 : Présentation de Microsoft Dataverse**
 
 ## Éléments à considérer avant de commencer
 
 -   À quelles informations un agent de sécurité a-t-il besoin d’accéder rapidement ?
 -   Que doit-il se passer si le code visiteur n’est pas valide ?
--   Que se passera-t-il si le visiteur arrive en dehors des heures prévues ? 
+-   Que se passera-t-il si le visiteur arrive en dehors des heures prévues ?
 
-# Exercice \#1 : Créer une application canevas de sécurité
+# Exercice 1 : Créer une application canevas de sécurité
 
 **Objectif :** Au cours de cet exercice, vous allez créer une application canevas.
 
-## Tâche n°1 : Créer une application de canevas
+## Tâche 1 : Créer une application canevas
 
 1.  Ouvrez votre solution Gestion du campus.
 
@@ -60,14 +60,14 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 
     -   Sélectionnez **Solutions**.
 
-    -   Cliquez pour ouvrir la solution de **Gestion du campus**.
+    -   Cliquez pour ouvrir votre solution de **Gestion du campus**.
     
-2.  Créer une nouvelle application canevas
+2.  Créez une application canevas
 
     -   Cliquez sur **Nouveau** et sélectionnez **Application \| Application canevas \| Facteur de formulaire de téléphone**.
         Cela ouvrira l’éditeur d’application dans une nouvelle fenêtre.
         
-    -   Cliquez sur **Ignorer** si la boîte de dialogue Bienvenue dans Power Apps Studio apparaît.
+    -   Cliquez sur **Ignorer** si la boîte de dialogue Bienvenue dans Power Apps Studio apparaît.
     
 3.  Enregistrez l’application canevas
 
@@ -77,21 +77,23 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
     
     -   Entrez **[Your Last Name] Sécurité du campus** comme Nom et cliquez sur **Enregistrer**.
         
-    -   Cliquez sur la flèche **Précédent**, en haut à gauche (sous Power Apps) pour revenir à l’application.
+    -   Cliquez sur la flèche **Précédent**, en haut à gauche (sous Power Apps) pour revenir à l’application.
 
 3.  Se connecter à la source de données (visites)
 
     -   Cliquez sur **Afficher \| Sources de données**
     
-    -   Cliquez sur **Voir toutes les entités**
+    -   Cliquez sur **+ Ajouter des données**
+
+    -   Cliquez sur **Voir toutes les entités** (ou tables)
     
-    -   Sélectionnez **Visites** et attendez que l’entité Visite s’affiche sous la section Données **Dans votre application**.
+    -   Sélectionnez **Visites** et attendez que la table Visite s’affiche dans l’onglet Données.
     
 4.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-## Tâche n°2 : Affichez les informations sur les visiteurs
+## Tâche 2 : Afficher les informations sur les visiteurs
 
-1.  Ajoutez une zone de recherche
+1.  Ajouter une zone de recherche
 
     -   Sélectionnez l’onglet **Arborescence** sur la barre de navigation de gauche.
     
@@ -101,35 +103,35 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
     
     -   Cliquez sur **Texte** et sélectionnez **Saisie de texte**.
     
-2.  Modifiez l’objet d’entrée de texte
+2.  Modifier l’objet d’entrée de texte
 
     -   Tout en gardant l’objet d’entrée de texte sélectionné, sélectionnez le texte dans la propriété **Par défaut** et effacez la valeur.
     
-    -   Sélectionnez la propriété **Texte d’information** et saisissez `Saisir le code visiteur` en tant que valeur (y compris les guillemets)
+    -   Sélectionnez la propriété **Texte d’information** et saisissez `Saisir le code visiteur` en tant que valeur (y compris les guillemets).
     
-    -   Cliquez sur **...**, à côté du nom du contrôle dans la vue d’arborescence (TextInput1), sélectionnez **Renommer** et remplacez le nom par `textCode`
+    -   Cliquez sur **...**, à côté du nom du contrôle dans la vue d’arborescence (TextInput1), sélectionnez **Renommer** et remplacez le nom par `textCode`.
     
-3.  Ajoutez une vue formulaire
+3.  Ajouter une vue Formulaire
 
-    -   Sur l’onglet **Insérer**, cliquez sur **Formulaires** puis sélectionnez **Afficher**
+    -   Dans l’onglet **Insertion**, cliquez sur **Formulaires**, puis sélectionnez **Afficher** (vous devrez peut-être cliquer sur la flèche du bas à droite du ruban pour afficher les formulaires).
    
-    -   À l’aide des poignées de taille, placez le formulaire sous la zone de texte de recherche
+    -   Faites glisser le formulaire pour l’aligner avec le bas de l’écran.
    
-    -   Sélectionnez la propriété **DataSource** et sélectionnez **Visites**
+    -   Tout en sélectionnant le nouveau formulaire, sélectionnez la propriété **DataSource** et sélectionnez **Visites**.
    
-    -   Dans le volet des propriétés, sélectionnez **Horizontale** comme **Disposition**
+    -   Dans le volet des propriétés, sélectionnez **Horizontale** comme **Disposition**.
 
-4.  Modifiez la vue formulaire
+4.  Modifier la vue Formulaire
 
-    -   Cliquez sur **Modifier les champs**
-   
+    -   Tout en sélectionnant le nouveau formulaire, cliquez sur **Modifier les champs**.
+
+    -   Supprimez les deux champs **Nom** et **Créé le**.
+
     -   Cliquez sur **Ajouter un champ** et sélectionnez les champs suivants : **Fin réelle**, **Début réel**, **Bâtiment**, **Fin prévue**, **Début prévu**, **Visiteur**
    
     -   Appuyez sur **Ajouter**.
    
-    -   Supprimez les deux champs **Nom** et **Créé le** 
-   
-    -   Modifiez l’ordre des champs sélectionnés en faisant glisser les cartes de champ dans la liste. L’ordre recommandé est le suivant : Visiteur, Bâtiment, Début planifié, Fin planifiée, Début réel, Fin réelle
+    -   Modifiez l’ordre des champs sélectionnés en faisant glisser les cartes de champ dans la liste. L’ordre recommandé est le suivant : Visiteur, Bâtiment, Début planifié, Fin planifiée, Début réel, Fin réelle (vous pouvez réduire les champs pour faciliter le glisser-déposer)
    
     -   Cliquez sur le **X** pour fermer le volet Champs
    
@@ -137,19 +139,21 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 
 6.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
-7.  Préparez-vous à tester l’application
+7.  Préparez-vous à tester l’application.
 
-    -   Passez à l’onglet du navigateur contenant la solution
+    -   Passez à l’onglet du navigateur contenant la solution.
+
+    -   Cliquez sur **Terminé** dans la fenêtre contextuelle.
    
-    -   Sélectionnez l’entité **Visite**
+    -   Sélectionnez la table **Visite**.
    
-    -   Sélectionnez l’onglet **Données**
+    -   Sélectionnez l’onglet **Données**.
    
     -   Ouvrez le sélecteur de vue en haut à droite en cliquant sur le nom de la vue actuelle, **Visites actives**
    
-    -   Remplacez la valeur de la vue par **Tous les champs**
+    -   Remplacez la valeur de la vue par **Toutes les colonnes**
    
-    -   Recherchez un enregistrement Visite ne possédant pas la valeur Début réel ou Fin réelle. Sélectionnez et copiez le **Code** pour cette visite.
+    -   Recherchez une ligne Visite qui n’a pas de valeur dans les champs Début réel et Fin réelle (les deux colonnes sont vides). Sélectionnez et copiez le **Code** pour cette visite.
 
 8.  Testez l’application
 
@@ -161,7 +165,7 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
    
 10.  Appuyez sur **ÉCHAP** pour quitter l’application en cours d’exécution.
 
-## Tâche n°3 : Ajouter des boutons d’entrée et de sortie
+## Tâche 3 : Ajouter des boutons d’entrée et de sortie
 
 Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’enregistrer l’heure d’arrivée et de départ de sa visite. 
 
@@ -175,7 +179,7 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
     
     > Cela enregistrera la visite dans une variable globale lorsqu’un utilisateur effectuera une recherche dans la zone de recherche textCode. Cela nous permet d’utiliser la variable *Visite* dans toute l’application, sans avoir à ressaisir l’expression de recherche entière.
 
-2. Ajoutez le bouton « Check In ».
+2. Ajoutez le bouton « Check In ».
 
    * Sélectionnez l’onglet **Insertion**
    
@@ -191,15 +195,15 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
    
    * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par `Check Out` (vous pouvez la taper entre les guillemets existants)
    
-   * Renommez le bouton `BoutonSortie`
+   * Renommez le bouton `CheckOutButton`
    
    * Positionnez les boutons sous le champ de recherche, en laissant **Check In** au-dessus de **Check Out** 
    
-## Tâche n°4 : Activez et désactivez les boutons en fonction des données de visite
+## Tâche 4 : Activez et désactivez les boutons en fonction des données de visite
 
-Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite est localisé (non vide), si l’état de l’enregistrement est actif et si la visite n’a pas encore commencé, c’est-à-dire si la valeur du champ Début réel n’est pas renseignée.
+Une fois que les utilisateurs ont trouvé la visite qui convient, nous aimerions qu’ils utilisent le bouton d’inscription Check In. Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite est localisé (non vide), si l’état de l’enregistrement est actif et si la visite n’a pas encore commencé, c’est-à-dire si la valeur du champ Début réel n’est pas renseignée.
 
-1. Sélectionnez le **bouton Check In** et cliquez sur la propriété **DisplayMode** du bouton dans l’onglet Propriétés
+1. Sélectionnez le **bouton Check In** et cliquez sur la propriété **Display Mode** du bouton dans l’onglet Propriétés.
 
 2. Entrez l’expression ci-dessous dans la barre de fonctions :
 
@@ -214,15 +218,15 @@ Nous aimerions activer le bouton **Archiver** si l’enregistrement de visite es
 
    L’expression peut être décomposée comme suit :
 
-   * **IsBlank(Visit)** -  : un enregistrement de visite a été trouvé
-   * **&&** : opérateur logique ET
+   * **!IsBlank(Visit)** - Un enregistrement de visite a été trouvé
+   * **&&** - Opérateur AND logique
    * **Visit.Status = 'Status (Visits)'.Active** : le statut de l’enregistrement est *Actif*
-   * **IsBlank(Visit.'Actual Start')** - le champ Début effectif ne contient aucune donnée
+   * **IsBlank(Visit.'Actual Start')** -  : le champ Début effectif ne contient aucune donnée
    * **DisplayMode.Edit, DisplayMode.Disabled** -  Si les conditions ci-dessus sont remplies, le bouton deviendra modifiable. Sinon, le bouton restera désactivé.
 
 Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
 
-3. Sélectionnez le bouton Sortie et cliquez sur la propriété **DisplayMode** du bouton sous l’onglet Propriétés
+3. Sélectionnez le bouton Check Out et cliquez sur la propriété **Display Mode** du bouton dans l’onglet Propriétés.
 
 4. Entrez l’expression ci-dessous dans la barre de fonctions :
 
@@ -239,7 +243,7 @@ Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite
 
 6. Appuyez sur **F5** pour exécuter l’application. 
 
-7. Les deux boutons doivent être désactivés. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte. Le bouton **Entrée** doit ensuite s’activer. 
+7. Les deux boutons doivent être désactivés. Entrez la valeur de code que vous avez copiée précédemment et appuyez sur **Onglet** pour éloigner le focus de la zone de texte (ou cliquez en dehors de la zone de texte). Le bouton **Entrée** doit ensuite s’activer. 
 
 8. Effacez le contenu de la zone de recherche.
 
@@ -247,7 +251,7 @@ Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite
 
 ## Tâche n°5 : Finaliser le processus d’entrée et de sortie
 
-Pour implémenter le processus d’entrée et de sortie, nous devons mettre à jour les données de visite du Common Data Service comme suit :
+Pour implémenter le processus d’entrée et de sortie, nous devons mettre à jour les données de visite de Dataverse comme suit :
 
 * Lorsque le visiteur entre, définissez le champ *Début réel* à la date et à l’heure actuelles
 * Lorsque le visiteur sort, définissez la valeur du champ *Fin réelle* sur la date et à l’heure actuelles. 
@@ -269,9 +273,9 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour l’entité **Visites**, l’enregistrement identifié par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur du champ *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
-   * **Refresh([@Visits]);**. Cette expression actualise les enregistrements de visite à mesure que les valeurs sous-jacentes changent
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Cette expression met à jour la variable *Visite* avec de nouvelles données de Common Data Service.
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour la table **Visites**, la ligne identifiée par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur de la colonne *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * **Refresh([@Visits]);**. Cette expression actualise les lignes de visite à mesure que les valeurs sous-jacentes changent
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Cette expression met à jour la variable *Visite* avec de nouvelles données de Dataverse.
    
    > Lorsqu’un utilisateur clique sur ce bouton, le début réel de la visite sera défini sur la date et l’heure actuelles et les données seront actualisées.
 
@@ -292,7 +296,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   Lorsqu’un utilisateur clique sur ce bouton, la fin réelle sera définie sur la date et l’heure actuelles, l’état de l’enregistrement de visite sera défini sur Inactif et les données seront actualisées.
+   Lorsqu’un utilisateur clique sur ce bouton, la fin réelle sera définie sur la date et l’heure actuelles, l’état de Visite sera défini sur Inactif et les données seront actualisées.
 
 5. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche **Retour** pour revenir à l’application.
 
@@ -322,7 +326,7 @@ La convivialité d’une application mobile s’améliore considérablement lors
 
 1. Sélectionnez l’onglet **Insertion**
 
-2. Sélectionnez **Icônes \| Ajouter**. À ce stade, peu importe l’icône que nous sélectionnons car nous voulons que la valeur soit dynamique.
+2. Sélectionnez **Icônes \| Ajouter**. Sélectionnez une icône. À ce stade, peu importe l’icône que nous sélectionnons car nous voulons que la valeur soit dynamique.
 
 3. Redimensionnez et déplacez l’icône à gauche des boutons
 

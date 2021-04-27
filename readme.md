@@ -1,14 +1,14 @@
-# PL-900 : Power Platform - Notions fondamentales
+# PL-900 : Principes fondamentaux de Power Platform
 
-- **[Télécharger le dernier manuel de l’étudiant et le contenu de tous les fichiers](../../releases/latest)**
+- **[Télécharger le dernier manuel du participant et le contenu de tous les fichiers](../../releases/latest)**
 - **Êtes-vous un MCT ?** -  Jetez un œil à notre [Guide de l’utilisateur GitHub pour MCT](https://microsoftlearning.github.io/MCT-User-Guide-FR/)
-- **Vous devez créer manuellement les instructions des ateliers ?** - Les instructions sont disponibles dans le référentiel [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build).
+- **Vous devez créer manuellement les instructions des laboratoires ?** - Les instructions sont disponibles dans le référentiel [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build)
 
 ## Que faisons-nous ?
 
-- Pour assurer le support de ce cours, nous devrons effectuer des mises à jour fréquentes de son contenu afin qu’il soit à jour avec les services Power Platform qui y sont utilisés.  Nous publions les instructions et les fichiers d’atelier sur GitHub pour permettre des contributions ouvertes entre les auteurs du cours et les MCT afin de maintenir le contenu à jour avec les modifications de la plateforme.
+- Pour assurer le support de ce cours, nous devrons effectuer des mises à jour fréquentes du contenu de la formation pour maintenir à jour les services Azure qui y sont utilisés.  Nous publions les instructions des laboratoires sur GitHub pour permettre des contributions ouvertes entre les auteurs du cours et les MCT afin de maintenir le contenu à jour avec les modifications de la plateforme.
 
-- Nous espérons ainsi vous donner un sentiment de collaboration aux ateliers comme jamais auparavant. Si Power Platform change et que vous le découvrez en dispensant le cours, apportez une amélioration directement dans la source de l’atelier.  Aidez vos collègues MCT.
+- Nous espérons que vous aurez ainsi un sentiment de collaboration aux laboratoires comme vous ne l’avez jamais ressenti. Si Power Platform change et que vous le découvrez lorsque vous effectuez un laboratoire en direct, apportez une amélioration directement dans la source du laboratoire.  Aidez vos collègues MCT (Microsoft Certified Technology Specialisty).
 
 ## Comment dois-je utiliser ces fichiers par rapport aux fichiers MOC publiés ?
 
@@ -28,7 +28,7 @@
 
 - Vous pouvez soumettre des bogues, des changements, des améliorations et des idées.  Vous avez découvert une nouvelle fonctionnalité Azure avant nous ?  Envoyez une nouvelle démo !
 
-## Remarques
+## Notes
 
 ### Documents de classe
 

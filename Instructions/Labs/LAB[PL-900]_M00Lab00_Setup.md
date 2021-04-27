@@ -1,20 +1,20 @@
 ---
 lab:
-    title: 'Labo : Valider l’environnement de labo'
+    title: 'Labo : Validation de l’environnement de laboratoire'
     module: 'Module 0 : Présentation du cours'
 ---
 
 Module 0 : Présentation du cours
 =================================
 
-## Labo : validation d’un environnement de laboratoire
+## Labo : Validation de l’environnement de laboratoire
 
-### Avis important (en vigueur depuis novembre 2020) :
-Common Data Service a été renommé en Microsoft Dataverse. Une partie de la terminologie de Microsoft Dataverse a été mise à jour. Par exemple, une entité est désormais une table. Les champs et les enregistrements dans les bases de données Dataverse sont désormais appelés colonnes et lignes.
+### Avis important (à compter de novembre 2020) :
+Common Data Service a été renommé Microsoft Dataverse. Une partie de la terminologie propre à Microsoft Dataverse a été mise à jour. Par exemple, « entité» est devenu « table ». Les « champs » et « enregistrements » des bases de données Dataverse sont désormais appelés « colonnes » et « lignes ».
 
-Le processus de mise à jour de l’expérience utilisateur est en cours pour les applications, par contre il se peut que certaines références à la terminologie de Microsoft Dataverse, par exemple entité (désormais **table**), champ (désormais **colonne**) et enregistrement (désormais **ligne**), soient obsolètes. Veuillez garder ce changement à l’esprit lorsque vous effectuez les labos. Nous prévoyons que notre contenu soit très prochainement à jour dans son intégralité. 
+Les applications mettant progressivement à jour leur expérience utilisateur, les termes « entité », « champ » et « enregistrement » (respectivement **table**, **colonne** et **ligne**) peuvent s’avérer obsolètes pour Microsoft Dataverse. Gardez ces changements à l’esprit pour les labos. La mise à jour complète de notre contenu est bientôt terminée. 
 
-Pour plus d’informations et pour une liste complète des termes concernés, veuillez consulter [Présentation de Microsoft Dataverse](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates).
+Pour plus d’informations et la liste complète des conditions, consultez la section [Qu’est-ce que Microsoft Dataverse ?](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 Scénario
 --------
@@ -25,11 +25,11 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer votre environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
+Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer votre environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
 
 ## Exercice n°1 - Configuration
 
-### Tâche n°1 - Acquérir votre locataire d’essai Power Platform
+### Tâche n°1 - Acquérir votre locataire d’essai Power Platform
 
 1. Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé.
 
@@ -63,17 +63,17 @@ Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Pla
 
     > L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
 
-# Exercice \#2 : Configurer un portail Power Apps
+# Exercice 2 : Configurer un portail Power Apps
 
-**Objectif :** L’approvisionnement d’un portail Power Apps peut prendre un certain temps. Au cours de cet exercice, vous apprendrez à créer votre portail Power Apps dans votre environnement afin que le processus d’approvisionnement puisse être lancé. Vous utiliserez ce portail dans un labo ultérieur.
+**Objectif :** L’approvisionnement d’un portail Power Apps peut prendre un certain temps. Au cours de cet exercice, vous apprendrez à créer votre portail Power Apps dans votre environnement afin que le processus d’approvisionnement puisse être lancé. Vous utiliserez ce portail dans un labo ultérieur.
 
-## Tâche n°1 : Créez un portail Power Apps
+## Tâche 1 : Créez un portail Power Apps
 
 1.  Connectez-vous à <https://make.powerapps.com>
 
-2.  Si l’**Environnement** affiché en haut à droite n’est pas votre environnement de pratique, sélectionnez votre environnement.
+2.  Si l’**Environnement** affiché en haut à droite n’est pas votre environnement de pratique, cliquez dessus pour changer.
 
-3.  Cliquez sur le panneau **Portail à partir de zéro** sous **Créer votre propre application**
+3.  Sur la page d’accueil, cliquez sur le panneau **Portail à partir de zéro** sous **Créer votre propre application**.
 
     > Si vous ne voyez pas cette option, essayez de faire un zoom arrière.
 

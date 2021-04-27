@@ -1,64 +1,66 @@
 ---
 lab:
-    title: 'Labo 5 : comment créer un portail Power Apps'
-    module: 'Module 3 : Premiers pas avec Power Apps'
+    title: 'Labo 5 : comment créer un portail Power Apps'
+    module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
+# Module 3 : Premiers pas avec Power Apps
 
-## Labo 4 : Comment créer un portail Power Apps
+## Labo 4 : Comment créer un portail Power Apps
 
-### Avis important (en vigueur depuis novembre 2020) :
-Common Data Service a été renommé en Microsoft Dataverse. Une partie de la terminologie de Microsoft Dataverse a été mise à jour. Par exemple, une entité est désormais une table. Les champs et les enregistrements dans les bases de données Dataverse sont désormais appelés colonnes et lignes.
+### Avis important (à compter de novembre 2020) :
+Common Data Service a été renommé Microsoft Dataverse. Une partie de la terminologie propre à Microsoft Dataverse a été mise à jour. Par exemple, « entité» est devenu « table ». Les « champs » et « enregistrements » des bases de données Dataverse sont désormais appelés « colonnes » et « lignes ».
 
-Le processus de mise à jour de l’expérience utilisateur est en cours pour les applications, par contre il se peut que certaines références à la terminologie de Microsoft Dataverse, par exemple entité (désormais **table**), champ (désormais **colonne**) et enregistrement (désormais **ligne**), soient obsolètes. Veuillez garder ce changement à l’esprit lorsque vous effectuez les labos. Nous prévoyons que notre contenu soit très prochainement à jour dans son intégralité. 
+Les applications mettant progressivement à jour leur expérience utilisateur, les termes « entité », « champ » et « enregistrement » (respectivement **table**, **colonne** et **ligne**) peuvent s’avérer obsolètes pour Microsoft Dataverse. Gardez ces changements à l’esprit pour les labos. La mise à jour complète de notre contenu est bientôt terminée. 
 
-Pour plus d’informations et pour une liste complète des termes concernés, veuillez consulter [Présentation de Microsoft Dataverse](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates).
+Pour plus d’informations et la liste complète des conditions, consultez la section [Qu’est-ce que Microsoft Dataverse ?](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
-L’administration du campus souhaite fournir aux visiteurs des informations sur les bâtiments du campus. Les visiteurs pourront voir la liste des bâtiments sur un site web, construit à l’aide d’un portail Power Apps.
+L’administration du campus souhaite fournir aux visiteurs des informations sur les bâtiments du campus. Les visiteurs pourront voir la liste des bâtiments sur un site web, construit à l’aide d’un portail Power Apps.
 
-Dans ce labo, vous allez configurer un portail Power Apps et créer une page web de portails qui affichera une liste des bâtiments du campus.
+Dans ce labo, vous allez configurer un portail Power Apps et créer une page web de portails qui affichera une liste des bâtiments du campus.
 
-# Étapes de labo de haut niveau
+# Principales étapes de labo
 
-Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
+Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
-* Configurer un portail Power Apps dans l’environnement Common Data Service
+* Configurer un portail Power Apps dans l’environnement Dataverse
 * Créer et configurer une page web pour afficher une liste des bâtiments
 * Créer un nouveau thème et l’appliquer au portail
 
 ## Prérequis
 
-* Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
-* Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
+* Achèvement du **labo 0 du module 0 : Validation de l’environnement de laboratoire**
+* Achèvement du **labo 1 du module 2 : Présentation de Microsoft Dataverse**
 
 ## Éléments à considérer avant de commencer
 
-* Les applications Portails Power Apps sont toujours lancées à partir d’un modèle et non d’une application vide. Votre portail doit avoir été créé dans le labo 0 du module 0. Une fois que vous avez configuré un portail, il est déjà doté de pages, de menus et d’un thème par défaut. 
+* Les applications Portails Power Apps sont toujours lancées à partir d’un modèle et non d’une application vide. Votre portail doit avoir été créé dans le labo 0 du module 0. Une fois que vous avez configuré un portail, il est déjà doté de pages, de menus et d’un thème par défaut. 
 
-# Exercice \#1 : Créez une page web de portail
+# Exercice 1 : Créer une page web de portail
 
-**Objectif :** Dans cet exercice, vous allez créer une nouvelle page web qui affichera du contenu statique, ainsi qu’une liste des bâtiments du Common Data Service.
+**Objectif :** Dans cet exercice, vous allez créer une nouvelle page web qui affichera du contenu statique, ainsi qu’une liste des bâtiments de Dataverse.
 
-## Tâche n°1 : Accédez au portail
+## Tâche 1 : Accéder au portail
 
-1.  Allez à <https://make.powerapps.com>.
+1.  Allez à l’adresse <https://make.powerapps.com>.
 
-2.  Cliquez sur **Application**
+2.  Vérifiez que vous êtes dans votre environnement Exercices pratiques. Si ce n’est pas le cas, modifiez l’environnement en haut à droite.
 
-3.  Localisez l’application qui possède le **Type** **Portail**
+3.  Cliquez sur **Application**
 
-4.  Cliquez sur le nom de l’application pour ouvrir le portail
+4.  Localisez l’application qui possède le **Type** **Portail**
 
-    > Vous serez ensuite redirigé sur la page d’arrivée du site web de votre portail, avec un message de bienvenue
+5.  Cliquez sur le nom de l’application pour ouvrir le portail
 
-## Tâche \n°2 : Créer une page web
+    > Vous serez ensuite redirigé sur la page d’arrivée du site web de votre portail, avec un message de bienvenue. Naviguez sur votre portail pour voir ce qui a été créé par défaut au moment de la configuration. 
 
-1.  Ouvrez Portails Power Apps Studio
+## Tâche 2 : Créer une page web
+
+1.  Ouvrez Portails Power Apps Studio
 
     -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets)
 
@@ -66,9 +68,9 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
     
     -   Localisez l’application qui possède le **Type** **Portail**
 
-    -   Cliquez sur les ellipses (**...**) à droite du nom de l’application des portails et choisissez **Modifier**
+    -   Cliquez sur les ellipses (**... **) à droite du nom de l’application des portails et choisissez **Modifier**
 
-Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
+    > Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
 
 2.  Créer une nouvelle page
 
@@ -82,7 +84,7 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
 
     > Le titre de la page doit maintenant indiquer **Répertoire du bâtiment**
     
-## Tâche n°3 : Ajouter du contenu statique
+## Tâche 3 : Ajouter du contenu statique
 
 1.  Ajouter une section à la page web
 
@@ -122,7 +124,7 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
 
     > Vous devrez peut-être configurer votre navigateur pour autoriser les fenêtres contextuelles.
 
-## Tâche n°4 : Ajoutez un composant de liste
+## Tâche 4 : Ajouter un composant de liste
 
 1.  Accédez à l’onglet précédent et passez à l’Étape n°2. S’il n’est pas disponible, procédez comme suit pour revenir à cet emplacement.
 
@@ -130,13 +132,15 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
 
     -   Localisez l’application qui possède le **Type** **Portail**
 
-    -   Cliquez sur les ellipses (**...**) et choisissez **Éditer**
+    -   Cliquez sur les ellipses (**... **) et choisissez **Éditer**
     
     -   Dans la ceinture porte-outils (côté gauche), choisissez l’option **Pages** 
 
     -   Localisez et sélectionnez la page **Répertoire du bâtiment** que vous avez créée précédemment
     
 2.  Ajoutez un composant de liste à la page Répertoire des bâtiments
+
+    -   Sélectionnez la section à deux colonnes.
 
     -   Sur la ceinture porte-outils (côté gauche), sélectionnez l’icône **Composants**
 
@@ -154,7 +158,7 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
 
     -   Dans le volet droit du panneau Propriétés, saisissez `Liste des bâtiments` dans le champ **Nom**
 
-    -   Dans le champ **Entité**, sélectionnez **Bâtiment (bc_building)** dans la liste déroulante.
+    -   Dans le champ **Table**, sélectionnez **Bâtiment (bc_building)** dans la liste déroulante.
 
     -   Dans les **Vues**, choisissez **Bâtiments actifs**
 
@@ -162,9 +166,9 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
     
 4.  Cliquez sur **Parcourir le site web** pour afficher la page. 
 
-    > Vous devriez voir la liste des Bâtiments du Common Data Service apparaître sur la page web.
+    > Vous devriez voir la liste des Bâtiments de la base de données Dataverse apparaître sur la page web.
 
-# Exercice \#2 : Modifier le thème du portail
+# Exercice 2 : Modifier le thème du portail
 
 **Objectif :** Dans cet exercice, vous allez créer un nouveau thème qui modifiera le modèle de couleurs de votre portail. 
 
@@ -176,7 +180,7 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
 
     -   Localisez l’application qui possède le **Type** **Portail**
 
-    -   Cliquez sur les ellipses (**...**) et choisissez **Éditer**
+    -   Cliquez sur les ellipses (**... **) et choisissez **Éditer**
     
 2.  Appliquer et personnaliser un thème de base
 
@@ -184,15 +188,15 @@ Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous p
     
     -   Basculez le bouton sur **Activer le thème de base** pour activer cette caractéristique.
     
-    -   Sur l’un des préréglages, cliquez sur les ellipses (**...**) et choisissez **Personnaliser**
+    -   Sur l’un des préréglages, cliquez sur les ellipses (**... **) et choisissez **Personnaliser**
     
     -   Une copie du thème de base a été créée. 
     
     -   Dans le volet des propriétés, jouez avec la modification des couleurs et découvrez l’impact de ces modifications sur votre portail.
     
-    -   Renommez votre thème
+    -   Renommer votre thème
     
-3.  Dans la barre de commandes, cliquez sur **Configuration de la synchronisation**
+3.  Dans la barre de commandes, cliquez sur **Configuration de la synchronisation**.
 
 La disposition de votre application doit ressembler à la structure suivante :
 
@@ -202,6 +206,6 @@ La disposition de votre application doit ressembler à la structure suivante :
 
 * Créez une vue Bâtiments différente, qui affiche uniquement le nom du bâtiment. Sélectionnez **Parcourir le site web** dans le studio Portal pour voir les modifications.
 * Sur la ceinture porte-outils, cliquez sur l’icône **Thèmes** et modifiez le CSS de votre thème personnalisé.
-* Créez une page avec le composant **Formulaire** et modifiez un composant **Liste** pour ajouter ou modifier des enregistrements Common Data Service avec le formulaire.
+* Créez une page avec le composant **Formulaire** et modifiez un composant **Liste** pour ajouter ou modifier des lignes Dataverse avec le formulaire.
 * Si vous activez **Autorisations d’entité** dans les **Réglages**d’un composant **Liste**, qu’arrive-t-il aux données ?
 * Dans le studio Portail, sélectionnez l’icône Éditeur de code source `</>` pour afficher la source de la page. Si vous êtes familiarisé avec HTML, apportez quelques modifications et affichez les résultats.

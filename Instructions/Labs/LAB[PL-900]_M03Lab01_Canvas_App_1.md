@@ -1,19 +1,19 @@
 ---
 lab:
     title: 'Labo 2 : Comment créer une application canevas, partie 1'
-    module: 'Module 3 : Premiers pas avec Power Apps'
+    module: 'Module 3 : Premiers pas avec Power Apps'
 ---
 
-# Module 3 : Premiers pas avec Power Apps
+# Module 3 : Premiers pas avec Power Apps
 
 ## Labo : Comment créer une application canevas, partie 1
 
-### Avis important (en vigueur depuis novembre 2020) :
-Common Data Service a été renommé en Microsoft Dataverse. Une partie de la terminologie de Microsoft Dataverse a été mise à jour. Par exemple, une entité est désormais une table. Les champs et les enregistrements dans les bases de données Dataverse sont désormais appelés colonnes et lignes.
+### Avis important (à compter de novembre 2020) :
+Common Data Service a été renommé Microsoft Dataverse. Une partie de la terminologie propre à Microsoft Dataverse a été mise à jour. Par exemple, « entité» est devenu « table ». Les « champs » et « enregistrements » des bases de données Dataverse sont désormais appelés « colonnes » et « lignes ».
 
-Le processus de mise à jour de l’expérience utilisateur est en cours pour les applications, par contre il se peut que certaines références à la terminologie de Microsoft Dataverse, par exemple entité (désormais **table**), champ (désormais **colonne**) et enregistrement (désormais **ligne**), soient obsolètes. Veuillez garder ce changement à l’esprit lorsque vous effectuez les labos. Nous prévoyons que notre contenu soit très prochainement à jour dans son intégralité. 
+Les applications mettant progressivement à jour leur expérience utilisateur, les termes « entité », « champ » et « enregistrement » (respectivement **table**, **colonne** et **ligne**) peuvent s’avérer obsolètes pour Microsoft Dataverse. Gardez ces changements à l’esprit pour les labos.
 
-Pour plus d’informations et pour une liste complète des termes concernés, veuillez consulter [Présentation de Microsoft Dataverse](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates).
+Pour plus d’informations et la liste complète des conditions, consultez la section [Qu’est-ce que Microsoft Dataverse ?](https://docs.microsoft.com/fr-fr/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Scénario
 
@@ -23,9 +23,9 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.  
 
-Dans la première partie de ce labo, vous allez créer une application canevas Power Apps qui permettra au personnel de l’université de gérer les visites de ses invités.
+Dans la première partie de ce labo, vous allez créer une application canevas Power Apps qui permettra au personnel de l’université de gérer les visites de ses invités.
 
-# Étapes de labo de haut niveau
+# Principales étapes de labo
 
 Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
@@ -37,8 +37,8 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ## Prérequis
 
-* Achèvement du **labo 0 du module 0 : Valider l’environnement de laboratoire**
-* Achèvement du **labo 1 du module 2 : Introduction à Common Data Service**
+* Achèvement du **labo 0 du module 0 : Validation de l’environnement de laboratoire**
+* Achèvement du **labo 1 du module 2 : Présentation de Microsoft Dataverse**
 
 ## Éléments à considérer avant de commencer
 
@@ -46,16 +46,15 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 -   Estimer le nombre d’enregistrements dans le système 
 -   Comment réduire les enregistrements sélectionnés pour améliorer les niveaux de performance de l’application et l’adoption par les utilisateurs
 
-
-# Exercice \#1 : Créer une application de canevas du personnel
+# Exercice 1 : Créer une application canevas du personnel
 
 **Objectif :** Dans cet exercice, vous allez créer une application canevas à partir d’un modèle, puis la modifier pour y inclure les données requises
 
-## Tâche n°1 : Créer une application de canevas
+## Tâche 1 : Créer une application canevas
 
-Dans cette tâche, vous allez créer une application canevas à l’aide du modèle de disposition du téléphone, basé sur Common Data Service. En utilisant Visites comme entité sélectionnée depuis Common Data Service, le modèle va générer l’application Galerie - Afficher - Modifier pour gérer les visites sur le campus.
+Dans cette tâche, vous allez créer une application canevas à l’aide du modèle de disposition du téléphone basé sur Microsoft Dataverse. En sélectionnant la table Visites à partir de Dataverse, le modèle génère l’application Galerie - Afficher - Éditer pour gérer les visites sur le campus.
 
-1.  Ouvrez votre solution Gestion du campus.
+1.  Affichez les applications de votre environnement.
 
     -   Connectez-vous à <https://make.powerapps.com>
 
@@ -68,29 +67,29 @@ Dans cette tâche, vous allez créer une application canevas à l’aide du mod�
 
     -   Cliquez sur **Nouvelle application** et sélectionnez **Canevas**.
 
-    -   Sélectionnez **Mode téléphone** sous **Common Data Service**.
+    -   Sélectionnez **Mode téléphone** sous **Common Data Service**.
 
-3.  Sélectionnez la connexion **Common Data Service** puis cliquez sur **Créer**.
+3.  Sélectionnez **Créer** sous la connexion **Common Data Service**.
 
 4.  Sélectionnez la table **Visites**
 
 5.  Cliquez sur **Se connecter**
 
-6.  Il est possible que la fenêtre **Bienvenue dans Power Apps Studio** apparaisse. Cliquez sur **Ignorer**.
+6.  Il est possible que la fenêtre **Bienvenue dans Power Apps Studio** apparaisse. Cliquez sur **Ignorer**.
 
 7.  Enregistrer l’application
 
     -   Cliquez sur **Fichier \> Enregistrer**.
 
-    -   Entrez **Personnel du campus [Votre nom de famille]** dans le champ **Nom**.
+    -   Entrez **Personnel du campus [Votre nom de famille]** dans le champ réservé au nom de l’application.
 
     -   Sélectionnez **Enregistrer**.
 
-## Tâche \n°2 : Configurer le formulaire de détails des visites
+## Tâche 2 : Configurer le formulaire de détails des visites
 
 Dans cette tâche, vous allez configurer le formulaire de détails pour afficher les informations sur les enregistrements de visite individuelle.
 
-1.  Sélectionnez la flèche **Retour**, en haut à gauche, pour revenir à la définition de l’application.
+1. Sélectionnez la flèche **Retour**, en haut à gauche, pour revenir à la définition de l’application.
 
 2. Développez **DetailScreen1** sous **Arborescence**
 
@@ -120,12 +119,17 @@ Dans cette tâche, vous allez configurer le formulaire de détails pour afficher
 
 8.  Réorganisez les champs dans le volet **Champs** en glissant et déposant les noms de champs vers le haut ou vers le bas. L’ordre recommandé est le suivant :
     * Code, nom, bâtiment, visiteur, début planifié, fin planifiée, début réel, fin réelle
-    
-9.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+    >**Astuce :** Vous pouvez réduire chaque champ en cliquant sur la flèche du bas, à côté du nom du champ.
 
-## Tâche n°3 : Configurer le formulaire de modification des visites 
+9.  Supprimez le champ **Créé le** en cliquant sur les points de suspension (**...**) à côté du nom du champ et en sélectionnant **Supprimer**. 
 
-Dans cette tâche, vous allez configurer un formulaire pour modifier les informations sur les enregistrements de visite individuelle.
+10.  Fermez le volet **Champs**.
+ 
+11.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+
+## Tâche 3 : Configurer le formulaire de modification des visites
+
+Dans cette tâche, vous allez configurer un formulaire pour modifier les informations sur les lignes de visite individuelle.
 
 1.  Développez **EditScreen1** sous **Arborescence**
 
@@ -152,40 +156,41 @@ Dans cette tâche, vous allez configurer un formulaire pour modifier les informa
 8.  Réorganisez les champs dans le volet **Champs** en glissant et déposant les noms de champs vers le haut ou vers le bas. L’ordre recommandé est le suivant :
     
     * Nom, bâtiment, visiteur, début planifié, fin planifiée
-    
-    Votre écran doit plus ou moins ressembler à ceci :
+    >**Astuce :** Vous pouvez réduire chaque champ en cliquant sur la flèche du bas, à côté du nom du champ. 
+
+9.  Fermez le volet **Champs**.
+
+10.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+
+Votre écran doit plus ou moins ressembler à ceci :
 
 ![Formulaire de modification des canevas](media/2-canvas-edit-form.png)
 
-9.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+## Tâche 4 : Configurer la galerie de visites
 
-## Tâche n°4 : Configurer la galerie de visites
-
-Dans cette tâche, vous allez configurer la galerie pré-générée pour afficher le titre et les dates de début et de fin de la visite. 
+Dans cette tâche, vous allez configurer la galerie pré-générée pour afficher le titre, la date de début et la date de fin de la visite. 
 
 1.  Développez **BrowseScreen1** sous **Arborescence**
 
 2.  Sélectionnez **BrowseGallery1**
 
-3.  Sélectionnez la propriété **TemplateSize** dans le volet droit du panneau Propriétés
+3.  Sélectionnez la propriété **TemplateSize** dans le volet droit du panneau Propriétés avancées.
 
 4.  Remplacez l’expression par la suivante `Min(150, BrowseGallery1.Height - 60)`. Cette action garantit un espace suffisant pour des informations supplémentaires.
 
-5.  Modifiez la galerie en appuyant sur l’icône en forme de crayon dans le coin supérieur gauche de la galerie (survolez l’aperçu de l’application et cliquez sur l’icône en forme de crayon).
+5.  Dans l’aperçu de l’application, sélectionnez le premier champ Date Heure de la galerie.
 
-6.  Sélectionnez le champ Date et heure.
+6.  Dans la partie supérieure de la barre de formule, remplacez **« ThisItem.’Created On »** par `ThisItem.’Scheduled Start`.
 
-7.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Created On'** par `ThisItem.'Scheduled Start'`.
+7.  Sélectionnez à nouveau le champ
 
-8.  Sélectionnez à nouveau le champ
+8.  Appuyez sur **CTRL+C**, puis sur **CTRL+V** pour créer une copie du champ.
 
-9.  Appuyez sur **CTRL+C**, puis sur **CTRL+V** pour créer une copie du champ.
+9.  À l’aide de la souris ou du clavier, déplacez le contrôle copié vers le bas et alignez-le avec les autres contrôles dans la galerie, sous le champ Date et heure.
 
-10.  À l’aide de la souris ou du clavier, déplacez le contrôle copié vers le bas et alignez-le avec les autres contrôles dans la galerie, sous le champ Date et heure.
+10.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Scheduled Start'** par `ThisItem.'Scheduled End'`.
 
-11.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Scheduled Start'** par `ThisItem.'Scheduled End'`.
-
-12.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+11.  Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
 ## Tâche 5 : Ajouter un filtre de date
 
@@ -203,7 +208,7 @@ Dans cette tâche, vous allez configurer la galerie pré-générée pour affiche
 
 6. Redimensionnez et déplacez le contrôle de galerie pour qu’il se trouve sous le sélecteur de date et recouvre l’écran. Pour ce faire, cliquez sur l’icône de redimensionnement en haut au centre du contrôle de galerie et en redimensionnez le contrôle pour qu’il commence après le sélecteur de date.
 
-7. Tout en maintenant **BrowseGallery1** sélectionné, cliquez sur l’onglet **Avancé** dans le volet Propriétés.
+7. Tout en maintenant **BrowseGallery1** sélectionné, cliquez sur l’onglet **Avancé** dans le volet Propriétés.
 
 8. Localisez la propriété **Articles** et cliquez dans la zone de texte.
 
@@ -224,21 +229,21 @@ Dans cette tâche, vous allez configurer la galerie pré-générée pour affiche
    )
    ```
    
+10. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
+
 Votre écran doit plus ou moins ressembler à ceci :
 
 ![Galerie de filtrage de canevas](media/2-canvas-browse.png)
 
-10. Pour conserver le travail en cours, cliquez sur **Fichier** puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
-
-# Exercice n°2 : Finaliser l’application
+# Exercice 2 : Finaliser l’application
 
 Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comme prévu, vous l’ajoutez ensuite à votre solution.
 
-## Tâche n°1 : Tester l’application
+## Tâche 1 : Tester l’application
 
 1.  Démarrer l’application
 
-    -   Sélectionnez **BrowseScreen1** et appuyez sur la touche **F5**, ou cliquez sur l’icône **Lire** dans le coin supérieur droit pour afficher un aperçu de l’application.
+    -   Sélectionnez **BrowseScreen1** et appuyez sur la touche de fonction **F5**, ou cliquez sur l’icône **Lire** dans le coin supérieur droit pour afficher un aperçu de l’application.
     
     -   L’application doit se charger et afficher la liste des visites. 
     
@@ -246,7 +251,7 @@ Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comm
     
     -   Sélectionnez une visite et vérifiez que le formulaire d’affichage fonctionne correctement
     
-    -   Retournez dans la galerie et appuyez sur **+** pour créer une nouvelle visite. Vérifiez que le formulaire de modification contient les champs obligatoires, y compris le visiteur, le bâtiment et les dates de début et de fin planifiées.
+    -   Retournez dans la galerie et appuyez sur **+** pour créer une nouvelle visite. Vérifiez que le formulaire de modification contient les colonnes obligatoires, y compris le visiteur, le bâtiment et les dates de début et de fin planifiées.
     
     -   Renseignez les informations avant l’envoi. Vérifiez que le nouvel enregistrement apparaît dans la galerie.
     
@@ -286,7 +291,7 @@ Au cours de cet exercice, vous testerez l’application. Si elle fonctionne comm
 
 4. Sélectionnez votre application **Personnel du campus** puis cliquez sur **Ajouter**.
 
-5. Sélectionnez **Publier toutes les personnalisations**.
+5. Sélectionnez **Publier toutes les personnalisations.**
 
 # Défis
 
