@@ -132,7 +132,7 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
           
 2.  Créer une table Bâtiment
 
-    -   Cliquez sur **Nouveau** et sélectionnez **Flux**.
+    -   Cliquez sur **Nouveau** et sélectionnez **Table**.
     
     -   Entrez **Bâtiment** dans le champ **Nom d’affichage**. 
     
@@ -150,7 +150,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 2. Créer une table Visite
 
-   * Cliquez sur **Nouveau** et sélectionnez **Flux**.
+   * Cliquez sur **Nouveau** et sélectionnez **Table**.
    
    * Entrez **Visite** dans le champ **Nom d’affichage**. 
    
