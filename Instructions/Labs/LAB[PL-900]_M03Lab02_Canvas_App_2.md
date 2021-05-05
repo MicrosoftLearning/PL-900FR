@@ -273,7 +273,7 @@ Pour implémenter le processus d’entrée et de sortie, nous devons mettre à j
 
    Cette expression se décompose comme suit :
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour la table **Visites**, la ligne identifiée par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur de la colonne *Début réel* sur la date du jour et l’heure actuelle (méthode **Now()).
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. La méthode *Patch* met à jour la table **Visites**, la ligne identifiée par la variable **Visite** (qui correspond à la visite actuelle). L’expression définit la valeur de la colonne *Début réel* sur la date du jour et l’heure actuelle (méthode *Now()*).
    * **Refresh([@Visits]);**. Cette expression actualise les lignes de visite à mesure que les valeurs sous-jacentes changent
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Cette expression met à jour la variable *Visite* avec de nouvelles données de Dataverse.
    

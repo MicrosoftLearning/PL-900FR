@@ -100,16 +100,16 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
         > Le contenu dynamique doit être placé là où les champs sont nommés entre crochets. Il est recommandé de commencer par copier et coller l’ensemble du texte, puis d’ajouter du contenu dynamique aux endroits appropriés.
    
         ```
-        Cher {« Prénom »},
+        Dear {First Name},
 
-        Vous avez actuellement une visite planifiée à Bellows Campus de {Début prévu} à {Fin prévue}.
+        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-        Votre code de sécurité est {Code}. Veuillez ne pas le partager. Vous devrez renseigner ce code lors de votre visite.
+        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
-        Cordialement,
+        Best regards,
 
-        L’administration du campus
-        Bellows College
+        Campus Administration
+        Bellows College
         ```
    
 10.  Sélectionnez le nom du flux **Sans titre** en haut et renommez-le `Notification de visite`.
@@ -148,7 +148,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 13.  Dans la section **Détails**, remarquez que le **Statut** est défini sur **Activé**. Cela signifie que votre flux s’exécutera lors de la création de chaque nouvelle visite, jusqu’à ce que vous la désactiviez. Chaque fois que le flux s’exécute, vous le verrez ajouté à la liste de l’ **Historique des exécutions de 28 jours**.
 
-14.  Désactivez le flux en cliquant sur **Désactivé** dans la barre de commandes. Vous devrez peut-être appuyer sur les ellipses (**... **) pour voir cette option.
+14.  Désactivez le flux en cliquant sur **Désactivé** dans la barre de commandes. Vous devrez peut-être appuyer sur les ellipses (**...**) pour voir cette option.
 
 15.  Fermez cette fenêtre.
 
@@ -183,7 +183,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
    * Entrez l’expression suivante dans la section **Filtrer les lignes** :
 
    ```
-     statecode eq 0 et bc_actualstart ne null et bc_actualend eq null et Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
+     statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
    ```
    
    * Pour la décomposer :
@@ -235,17 +235,17 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 13.  Saisissez ce qui suit dans le champ **Sujet**. **Nom complet** est un contenu dynamique de l’étape **Recevoir un visiteur**.
 
    ```
-   {Full Name} a dépassé la durée autorisée de sa visite
+   {Full Name} overstayed their welcome
    ```
    
 14.  Saisissez ce qui suit dans le champ **Corps**. **Nom** est un contenu dynamique de l’étape **Obtenir un bâtiment**.
 
    ```
-   La durée limite de la visite a été dépassée pour {Name}.
+   There is an overstay in building {Name}.
          
-   Cordialement,
+   Best,
          
-   Sécurité du campus
+   Campus Security
    ```
 
 17.  Sélectionnez le nom du flux **Sans titre** dans le coin supérieur gauche et renommez-le **Balayage de sécurité**.

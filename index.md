@@ -10,7 +10,7 @@ Les liens hypertexte vers chaque exercice et démonstration de laboratoire sont 
 
 ## Laboratoires
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains ’/Instructions/Labs’" %}
+{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | Module | Laboratoire |
 | --- | --- | 
 {% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
@@ -18,7 +18,7 @@ Les liens hypertexte vers chaque exercice et démonstration de laboratoire sont 
 
 ## Démonstrations
 
-{% assign demos = site.pages | where_exp:"page", "page.url contains ’/Instructions/Demos’" %}
+{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
 | Module | Démonstration |
 | --- | --- | 
 {% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
