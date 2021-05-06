@@ -78,9 +78,9 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Passez la souris sur **Dispositions fixes** et choisissez **Page avec titre**
 
-3.  Dans le panneau Propriétés, sous **Afficher**, remplacez le **Nom** **Nouvelle page (1)** par `Répertoire des bâtiments`
+3.  Dans le panneau Propriétés, sous **Afficher**, remplacez le **Nom** **Nouvelle page (1)** par `Building Directory`
 
-4.  Dans l’**URL partielle**, remplacez la valeur existante par `Répertoire des bâtiments`, appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
+4.  Dans l’**URL partielle**, remplacez la valeur existante par `building-directory`, appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
 
     > Le titre de la page doit maintenant indiquer **Répertoire du bâtiment**
     
@@ -104,7 +104,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Dans la nouvelle zone de texte, saisissez le texte suivant :
           ```
-          Voici le répertoire du bâtiment.
+          The following is the building directory.
           ```
     -   Sélectionnez la zone de texte au-dessus de celle que vous venez de modifier, puis cliquez sur **Supprimer** dans la barre de commandes pour supprimer le texte par défaut.
 
@@ -156,7 +156,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Sélectionnez le composant de liste sur le canevas
 
-    -   Dans le volet droit du panneau Propriétés, saisissez `Liste des bâtiments` dans le champ **Nom**
+    -   Dans le volet droit du panneau Propriétés, saisissez `Buildings List` dans le champ **Nom**
 
     -   Dans le champ **Table**, sélectionnez **Bâtiment (bc_building)** dans la liste déroulante.
 

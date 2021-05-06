@@ -135,7 +135,7 @@ Dans cette tâche, vous allez modifier le message d’accueil spécifique à la 
 
 4.  Le sujet de message d’accueil contient 52 phrases de déclenchement. Cliquez sur **Accéder au canevas de création**.
 
-5.  Accédez au premier message et remplacez-le par `Bonjour, je suis un agent virtuel. Je peux vous expliquer comment la COVID-19 se propage, comment vous protéger, préparer votre maison et votre famille au COVID-19, les symptômes, les tests, etc.`
+5.  Accédez au premier message et remplacez-le par `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
 
 6.  Cliquez sur **Enregistrer**.
 
@@ -159,13 +159,13 @@ Dans cet exercice, vous allez apprendre à publier le bot.
 
 5.  Vous accédez à la liste des canaux disponibles sur lesquels vous pouvez publier votre bot. Sélectionnez **Version de démonstration du site web**.
 
-6.  Remplacez le message de bienvenue par `Testez ma FAQ bot sur la COVID-19.`
+6.  Remplacez le message de bienvenue par `Try my COVID-19 FAQ bot.`
 
 7.  Entrez ce qui suit dans la zone **Démarreurs de conversation** :
     ```
-     « Qui risque de développer une forme grave de la COVID-19 »
-     « Que signifie une forme plus grave »
-     « Que fait le CDC face à la COVID-19 »
+     “Who is at higher risk for serious illness from COVID-19”
+     “What does more severe illness mean”
+     “What is the CDC doing about COVID-19”
     ```
     
 8.  Cliquez sur **Enregistrer**.

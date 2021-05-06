@@ -107,7 +107,7 @@ Vous suivrez le schéma ci-dessous pour concevoir l’application canevas :
 
     -   Tout en gardant l’objet d’entrée de texte sélectionné, sélectionnez le texte dans la propriété **Par défaut** et effacez la valeur.
     
-    -   Sélectionnez la propriété **Texte d’information** et saisissez `Saisir le code visiteur` en tant que valeur (y compris les guillemets).
+    -   Sélectionnez la propriété **Texte d’information** et saisissez `“Enter visitor code”` en tant que valeur (y compris les guillemets).
     
     -   Cliquez sur **...**, à côté du nom du contrôle dans la vue d’arborescence (TextInput1), sélectionnez **Renommer** et remplacez le nom par `textCode`.
     

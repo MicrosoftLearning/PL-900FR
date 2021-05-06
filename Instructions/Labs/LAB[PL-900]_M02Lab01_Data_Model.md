@@ -119,7 +119,7 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
     
 10.  Cliquez à nouveau sur **Ajouter**. Cela ajoutera la table Contact avec la vue et le formulaire sélectionnés à la solution nouvellement créée. 
     
-    > Votre solution doit maintenant avoir une seule table : Contact.
+> Votre solution doit maintenant avoir une seule table : Contact.
 
 ## Tâche 2 : Créer une table Bâtiment
 
@@ -132,7 +132,7 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
           
 2.  Créer une table Bâtiment
 
-    -   Cliquez sur **Nouveau** et sélectionnez **Table**.
+    -   Cliquez sur **Nouveau** et sélectionnez **Flux**.
     
     -   Entrez **Bâtiment** dans le champ **Nom d’affichage**. 
     
@@ -150,7 +150,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 2. Créer une table Visite
 
-   * Cliquez sur **Nouveau** et sélectionnez **Table**.
+   * Cliquez sur **Nouveau** et sélectionnez **Flux**.
    
    * Entrez **Visite** dans le champ **Nom d’affichage**. 
    

@@ -252,7 +252,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 18.  Appuyez sur **Enregistrer**
 
-    Votre flux doit ressembler à ceci :
+Votre flux doit ressembler à ceci :
 
 ![Flux planifié de balayage de sécurité, partie 1](media/4-power-automate-security-sweep-flow.png)
 
