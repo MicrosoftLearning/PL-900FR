@@ -138,7 +138,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 14.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. 
 
-    > **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
+> **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 
 15.  Cliquez sur la **flèche déroulante** affichée en regard du bouton Enregistrer (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 
@@ -235,7 +235,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 12.  Cliquez sur **Valider** pour valider les modifications effectuées dans l’application. 
 
-    >  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
+>  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
      
 13. Cliquez sur **Publier**.
 

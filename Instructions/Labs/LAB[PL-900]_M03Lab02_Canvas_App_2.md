@@ -183,7 +183,7 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
    
    * Cliquez sur **Bouton**.
    
-   * Dans le volet des propriétés, remplacez la valeur du bouton propriété **Texte** par "`Check In`" (vous pouvez taper la valeur entre les guillemets existants).
+   * Dans le volet des propriétés, remplacez la valeur du bouton propriété **Texte** par « `Check In` » (vous pouvez taper la valeur entre les guillemets existants).
    
    * Cliquez sur **[...]** en regard du nom du bouton dans la vue d’arborescence (Button1), sélectionnez **Renommer** et remplacez le nom par `CheckInButton`.
 
@@ -191,7 +191,7 @@ Dans cette tâche, nous créerons des boutons permettant à l’utilisateur d’
 
    * Cliquez sur **Bouton** dans l’onglet Insertion pour insérer un autre bouton.
    
-   * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par "`Check Out`" (vous pouvez la taper entre les guillemets existants).
+   * Dans le volet des propriétés, remplacez la valeur de la propriété du bouton **Texte** par « `Check Out` » (vous pouvez la taper entre les guillemets existants).
    
    * Renommez le bouton `CheckOutButton`.
    
@@ -216,11 +216,11 @@ Dès lors que les utilisateurs ont recherché la visite, nous souhaitons qu’il
 
    L’expression peut être décomposée comme suit :
 
-   * **!IsBlank(Visit)** -  : un enregistrement de visite a été trouvé.
-   * **&&** -  : opérateur logique ET
-   * **Visit.Status = 'Status (Visits)'.Active** : le statut de l’enregistrement est *Actif*.
-   * **IsBlank(Visit.'Actual Start')** : le champ Début effectif ne contient aucune donnée.
-   * **DisplayMode.Edit, DisplayMode.Disabled** -  : si les conditions ci-dessus sont remplies, le bouton deviendra modifiable. Sinon, le bouton restera désactivé.
+   * **!IsBlank(Visit)** - un enregistrement de visite a été trouvé.
+   * **&&** - opérateur logique ET
+   * **Visit.Status = 'Status (Visits)'.Active** - le statut de l’enregistrement est *Actif*.
+   * **IsBlank(Visit.'Actual Start')** - le champ Début effectif ne contient aucune donnée.
+   * **DisplayMode.Edit, DisplayMode.Disabled** - si les conditions ci-dessus sont remplies, le bouton deviendra modifiable. Sinon, le bouton restera désactivé.
 
 Nous aimerions activer le bouton **Sortie** lorsque l’enregistrement de visite a été localisé (n’est pas vide), l’état de l’enregistrement est actif et la visite a déjà commencé, c’est-à-dire que la valeur de début effectif n’est pas vide.
 

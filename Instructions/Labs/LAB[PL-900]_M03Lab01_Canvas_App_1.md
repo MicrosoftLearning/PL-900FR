@@ -170,11 +170,11 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 
 3.  Sélectionnez la propriété **TemplateSize** dans le volet droit du panneau Propriétés avancées.
 
-4.  Remplacez l’expression par la suivante « Min(150, BrowseGallery1.Height - 60) ». Cette action garantit un espace suffisant pour des informations supplémentaires.
+4.  Remplacez l’expression par la suivante `Min(150, BrowseGallery1.Height - 60)`. Cette action garantit un espace suffisant pour des informations supplémentaires.
 
 5.  Dans la prévisualisation de l’application, sélectionnez le premier champ Date et heure de la galerie.
 
-6.  Dans la partie supérieure de la barre de formule, remplacez **« ThisItem.'Created On »** par « ThisItem.'Scheduled Start ».
+6.  Dans la partie supérieure de la barre de formule, remplacez **« ThisItem.'Created On' »** par `ThisItem.'Scheduled Start'`.
 
 7.  Sélectionnez à nouveau le champ.
 
@@ -182,7 +182,7 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 
 9.  À l’aide de la souris ou du clavier, déplacez le contrôle copié vers le bas et alignez-le avec les autres contrôles dans la galerie, sous le champ Date et heure.
 
-10.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Scheduled Start'** par « ThisItem.'Scheduled End' ».
+10.  Dans la partie supérieure de la barre de formule, remplacez **ThisItem.'Scheduled Start'** par `ThisItem.'Scheduled End'`.
 
 11.  Pour conserver le travail en cours, cliquez sur **Fichier**, puis sur **Enregistrer**. Utilisez la flèche retour pour revenir à l’application.
 
@@ -206,7 +206,7 @@ Dans cette tâche, vous allez configurer la galerie prégénérée pour afficher
 
 8. Localisez la propriété **Articles** et cliquez dans la zone de texte.
 
-9. Dans l’expression, recherchez **[@Visits]** et remplacez cette valeur par « Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate) ». L’expression complète doit ressembler à ce qui suit :
+9. Dans l’expression, recherchez **[@Visits]** et remplacez cette valeur par `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L’expression complète doit ressembler à ce qui suit :
 
    ```
    SortByColumns(

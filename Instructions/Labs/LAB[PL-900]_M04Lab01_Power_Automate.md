@@ -146,7 +146,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 13.  Dans la section **Détails**, remarquez que le **Statut** est défini sur **Activé**. Cela signifie que votre flux s’exécutera lors de la création de chaque nouvelle visite, jusqu’à ce que vous la désactiviez. Chaque fois que le flux s’exécute, vous le verrez ajouté à la liste de l’**Historique des exécutions de 28 jours**.
 
-14.  Désactivez le flux en cliquant sur **Désactiver** dans la barre de commandes. Vous devrez peut-être appuyer sur les points de suspension (**... **) pour voir cette option.
+14.  Désactivez le flux en cliquant sur **Désactiver** dans la barre de commandes. Vous devrez peut-être appuyer sur les points de suspension (**...**) pour voir cette option.
 
 15.  Fermez cette fenêtre.
 

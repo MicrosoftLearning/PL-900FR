@@ -66,7 +66,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
     
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**... **) à droite du nom de l’application des portails et choisissez **Modifier**.
+    -   Cliquez sur les points de suspension (**...**) à droite du nom de l’application des portails et choisissez **Modifier**.
 
     > Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
 
@@ -130,7 +130,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**... **) et choisissez **Éditer**.
+    -   Cliquez sur les points de suspension (**...**) et choisissez **Éditer**.
     
     -   Dans la ceinture porte-outils (côté gauche), choisissez l’option **Pages**. 
 
@@ -178,7 +178,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**... **) et choisissez **Éditer**.
+    -   Cliquez sur les points de suspension (**...**) et choisissez **Éditer**.
     
 2.  Appliquer et personnaliser un thème de base
 
@@ -186,7 +186,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
     
     -   Basculez le bouton sur **Activer le thème de base** pour activer cette caractéristique.
     
-    -   Sur l’un des préréglages, cliquez sur les points de suspension (**... **) et choisissez **Personnaliser**.
+    -   Sur l’un des préréglages, cliquez sur les points de suspension (**...**) et choisissez **Personnaliser**.
     
     -   Une copie du thème de base a été créée. 
     
