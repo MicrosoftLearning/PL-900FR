@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Labo 3 : Comment créer une application canevas, partie 2'
     module: 'Module 3 : Premiers pas avec Power Apps'
