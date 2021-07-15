@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Labo 1 : Modélisation de données'
     module: 'Module 2 : Présentation de Microsoft Dataverse'

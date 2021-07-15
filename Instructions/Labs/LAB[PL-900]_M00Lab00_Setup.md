@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Labo : Valider l’environnement de labo'
     module: 'Module 0 : Présentation du cours'
