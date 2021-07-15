@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Labo 5 : Comment développer un portail Power Apps'
     module: 'Module 3 : Premiers pas avec Power Apps'
